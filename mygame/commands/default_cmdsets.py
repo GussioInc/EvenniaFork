@@ -16,6 +16,7 @@ own cmdsets by inheriting from them or directly from `evennia.CmdSet`.
 
 from evennia import default_cmds
 from commands.combat_commands import CmdKill, CmdCast, CmdWeather, CmdDispel
+from commands.setchar import CmdSetChar
 
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
@@ -39,6 +40,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdCast())
         self.add(CmdWeather())
         self.add(CmdDispel())
+        self.add(CmdSetChar())
 
 
 class AccountCmdSet(default_cmds.AccountCmdSet):

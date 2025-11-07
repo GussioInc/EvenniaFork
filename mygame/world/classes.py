@@ -59,3 +59,113 @@ class Mage(BaseClass):
         8: ["acid_rain"],
         12: ["dispel"],
     }
+
+class Cleric(BaseClass):
+    """The Cleric class."""
+    key = "cleric"
+    base_hp = 15
+    hp_per_level = 5
+    base_mp = 15
+    mp_per_level = 6
+    hit_die = 6  # d6
+    mana_die = 8 # d8
+
+class Thief(BaseClass):
+    """The Thief class."""
+    key = "thief"
+    base_hp = 12
+    hp_per_level = 4
+    base_mp = 5
+    mp_per_level = 2
+    hit_die = 6  # d6
+    mana_die = 2 # d2
+
+class Paladin(BaseClass):
+    """The Paladin class."""
+    key = "paladin"
+    base_hp = 20
+    hp_per_level = 8
+    base_mp = 10
+    mp_per_level = 3
+    hit_die = 10 # d10
+    mana_die = 4 # d4
+
+class Ranger(BaseClass):
+    """The Ranger class."""
+    key = "ranger"
+    base_hp = 18
+    hp_per_level = 6
+    base_mp = 10
+    mp_per_level = 3
+    hit_die = 8 # d8
+    mana_die = 4 # d4
+
+class Assassin(BaseClass):
+    """The Assassin class."""
+    key = "assassin"
+    base_hp = 12
+    hp_per_level = 4
+    base_mp = 5
+    mp_per_level = 2
+    hit_die = 6  # d6
+    mana_die = 2 # d2
+
+class DarkKnight(BaseClass):
+    """The Dark Knight class."""
+    key = "dark_knight"
+    base_hp = 20
+    hp_per_level = 8
+    base_mp = 10
+    mp_per_level = 3
+    hit_die = 10 # d10
+    mana_die = 4 # d4
+
+class Bard(BaseClass):
+    """The Bard class."""
+    key = "bard"
+    base_hp = 14
+    hp_per_level = 5
+    base_mp = 12
+    mp_per_level = 4
+    hit_die = 6  # d6
+    mana_die = 6 # d6
+
+class Monk(BaseClass):
+    """The Monk class."""
+    key = "monk"
+    base_hp = 16
+    hp_per_level = 6
+    base_mp = 10
+    mp_per_level = 4
+    hit_die = 8 # d8
+    mana_die = 4 # d4
+
+class Druid(BaseClass):
+    """The Druid class."""
+    key = "druid"
+    base_hp = 15
+    hp_per_level = 5
+    base_mp = 15
+    mp_per_level = 6
+    hit_die = 6  # d6
+    mana_die = 8 # d8
+
+class Necromancer(BaseClass):
+    """The Necromancer class."""
+    key = "necromancer"
+    base_hp = 10
+    hp_per_level = 3
+    base_mp = 20
+    mp_per_level = 8
+    hit_die = 4  # d4
+    mana_die = 8 # d8
+
+class Illusionist(BaseClass):
+    """The Illusionist class."""
+    key = "illusionist"
+    base_hp = 10
+    hp_per_level = 3
+    base_mp = 20
+    mp_per_level = 8
+    hit_die = 4  # d4
+    mana_die = 8 # d8

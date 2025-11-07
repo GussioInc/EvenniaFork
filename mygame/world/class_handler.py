@@ -14,6 +14,17 @@ class ClassHandler:
     CLASS_MAP = {
         "warrior": classes.Warrior,
         "mage": classes.Mage,
+        "cleric": classes.Cleric,
+        "thief": classes.Thief,
+        "paladin": classes.Paladin,
+        "ranger": classes.Ranger,
+        "assassin": classes.Assassin,
+        "dark_knight": classes.DarkKnight,
+        "bard": classes.Bard,
+        "monk": classes.Monk,
+        "druid": classes.Druid,
+        "necromancer": classes.Necromancer,
+        "illusionist": classes.Illusionist,
     }
     
     def __init__(self, obj):

@@ -16,6 +16,7 @@ from evennia.contrib.rpg.buffs.buffhandler import BuffHandler
 # Import Handlers (which we will create in Step 1.2)
 from world.stats_handler import StatsHandler, VitalsHandler
 from world.class_handler import ClassHandler
+from world.race_handler import RaceHandler
 from world.skill_handler import SkillHandler
 from world.combat_handler import CharacterCombatHandler
 
@@ -42,6 +43,11 @@ class Character(DefaultCharacter):
         return ClassHandler(self)
 
     @lazy_property
+    def race_handler(self):
+        """Accesses the RaceHandler. Use: self.race_handler.get_race_obj()"""
+        return RaceHandler(self)
+
+    @lazy_property
     def skills(self):
         """Accesses the SkillHandler. Use: self.skills.execute("fireball")"""
         return SkillHandler(self)
@@ -66,6 +72,7 @@ class Character(DefaultCharacter):
         self.stats.initialize()
         self.vitals.initialize()
         self.class_handler.initialize()
+        self.race_handler.initialize()
         self.skills.initialize()
         self.combat.initialize()
         
