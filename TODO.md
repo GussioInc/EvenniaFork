@@ -4,6 +4,8 @@ This file tracks design questions and areas where the `crawl.txt` help files are
 
 ## Racial Innate Abilities
 
+**Design Note (2025-11-07):** Most innate abilities are the spell or skill of the same name, but without a cooldown timer. This should be the default implementation approach.
+
 The `crawl.txt` file lists many innate abilities for races. The exact mechanics for these are not always clear.
 
 *   **Fly**: (Aarakocra, Archon, Avatar, Daemon, Draconian, Fairy, DemiGod, Elemental)
@@ -40,3 +42,8 @@ The `crawl.txt` file lists many innate abilities for races. The exact mechanics 
 ## Character Creation
 
 *   How should the initial race and class selection be presented to the player? The current system defaults to a Human Warrior. We will need to create a character creation menu system.
+
+## Skill & Spell Mechanics
+
+*   **Damage Formulas**: The help files rarely specify exact damage. I will need to devise balanced formulas for skills and spells (e.g., `Bash`, `Kick`). The initial implementation will be a best guess based on descriptions.
+*   **Success Chances**: Skills like `Disarm` or `Bash` (for stunning) will require a success chance calculation, likely based on attacker's skill/stats vs. defender's stats. These will be implemented with placeholder logic for now.

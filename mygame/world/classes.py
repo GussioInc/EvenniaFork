@@ -36,6 +36,10 @@ class Warrior(BaseClass):
     
     skills_at_level = {
         1: ["bash"],
+        5: ["kick"],
+        10: ["disarm"],
+        15: ["critical_hit"],
+        20: ["berzerk"],
     }
 
 class Mage(BaseClass):

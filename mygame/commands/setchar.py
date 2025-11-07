@@ -4,10 +4,10 @@ from evennia import Command
 
 class CmdSetChar(Command):
     """
-    Set a character's race or class.
+    Set a character's race, class, or level.
 
     Usage:
-      +setchar <race|class> <key>
+      +setchar <race|class|level> <key>
     """
     key = "+setchar"
     help_category = "admin"
@@ -16,12 +16,12 @@ class CmdSetChar(Command):
     def func(self):
         """Implements the command."""
         if not self.args:
-            self.msg("Usage: +setchar <race|class> <key>")
+            self.msg("Usage: +setchar <race|class|level> <key>")
             return
 
         parts = self.args.split()
         if len(parts) != 2:
-            self.msg("Usage: +setchar <race|class> <key>")
+            self.msg("Usage: +setchar <race|class|level> <key>")
             return
 
         char_attribute, key = parts
@@ -40,5 +40,15 @@ class CmdSetChar(Command):
                 return
             self.caller.db.class_key = key
             self.msg(f"Class set to {key}.")
+        elif char_attribute == "level":
+            try:
+                level = int(key)
+                if level < 1:
+                    self.msg("Level must be a positive number.")
+                    return
+                self.caller.db.level = level
+                self.msg(f"Level set to {level}.")
+            except ValueError:
+                self.msg("Level must be a number.")
         else:
-            self.msg("Usage: +setchar <race|class> <key>")
+            self.msg("Usage: +setchar <race|class|level> <key>")
