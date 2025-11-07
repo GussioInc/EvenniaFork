@@ -57,11 +57,11 @@ class Mage(BaseClass):
     }
     
     skills_at_level = {
-        1: ["magic_missile"],
-        3: ["fireball"],
-        5: ["bless", "poison"],
-        8: ["acid_rain"],
-        12: ["dispel"],
+        1: ["magic_missile", "burning hands"],
+        2: ["armor"],
+        3: ["chill touch"],
+        4: ["invisibility"],
+        5: ["fireball"],
     }
 
 class Cleric(BaseClass):

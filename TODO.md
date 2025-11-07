@@ -47,3 +47,8 @@ The `crawl.txt` file lists many innate abilities for races. The exact mechanics 
 
 *   **Damage Formulas**: The help files rarely specify exact damage. I will need to devise balanced formulas for skills and spells (e.g., `Bash`, `Kick`). The initial implementation will be a best guess based on descriptions.
 *   **Success Chances**: Skills like `Disarm` or `Bash` (for stunning) will require a success chance calculation, likely based on attacker's skill/stats vs. defender's stats. These will be implemented with placeholder logic for now.
+*   **Mage Spell Assumptions**:
+    *   `Burning Hands`: Implemented as a simple low-damage direct-damage spell.
+    *   `Chill Touch`: Implemented as a low-damage spell that also applies a short-duration Strength debuff. The debuff amount is currently a fixed value.
+    *   `Armor`: Implemented as a buff that provides a fixed amount of damage reduction. This is a temporary stand-in for a proper Armor Class (AC) system.
+    *   `Invisibility`: Implemented as a simple "invisibility" buff. The game logic does not yet check for this buff to prevent targeting.

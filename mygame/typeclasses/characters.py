@@ -117,6 +117,12 @@ class Character(DefaultCharacter):
         """
         Called when this character takes damage.
         """
+        # Check for damage reduction from buffs (like Armor spell)
+        damage_reduction = self.buffs.get_total("damage_reduction", 0)
+        amount -= damage_reduction
+        if amount < 1:
+            amount = 1  # Always do at least 1 damage
+
         self.vitals.HP.current -= amount
         
         if attacker and self.combat.is_in_combat:

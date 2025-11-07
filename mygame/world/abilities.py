@@ -285,3 +285,50 @@ class Berzerk(BaseAbility):
         caster = self.caster
         caster.msg("You go into a berzerk rage!")
         caster.buffs.add("berzerk", duration=30, damage_mod=2, to_hit=-10)
+
+class BurningHands(BaseAbility):
+    key = "burning hands"
+    mana_cost = 5
+
+    def at_use(self, target, **kwargs):
+        """A classic offensive spell."""
+        caster = self.caster
+        int_mod = (caster.stats.INT.value - 10) // 2
+        damage = random.randint(1, 8) + int_mod
+
+        caster.msg(f"You shoot a fan of flames at {target.key}!")
+        target.at_damage(damage, attacker=caster)
+
+class ChillTouch(BaseAbility):
+    key = "chill touch"
+    mana_cost = 5
+
+    def at_use(self, target, **kwargs):
+        """A touch of cold that weakens the target."""
+        caster = self.caster
+        int_mod = (caster.stats.INT.value - 10) // 2
+        damage = random.randint(1, 4) + int_mod
+
+        caster.msg(f"You touch {target.key} with a chilling hand!")
+        target.at_damage(damage, attacker=caster)
+        target.buffs.add("chill_touch", duration=10, STR=-2)
+
+class Armor(BaseAbility):
+    key = "armor"
+    mana_cost = 10
+
+    def at_use(self, target, **kwargs):
+        """A magical shield that reduces incoming damage."""
+        caster = self.caster
+        caster.msg(f"You encase {target.key} in magical armor.")
+        target.buffs.add("armor", duration=60, damage_reduction=5)
+
+class Invisibility(BaseAbility):
+    key = "invisibility"
+    mana_cost = 15
+
+    def at_use(self, target, **kwargs):
+        """Render the target invisible."""
+        caster = self.caster
+        caster.msg(f"You fade {target.key} from sight.")
+        target.buffs.add("invisibility", duration=60)
