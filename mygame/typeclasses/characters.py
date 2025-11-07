@@ -12,6 +12,7 @@ creation commands.
 from evennia import DefaultCharacter
 from evennia.utils.utils import lazy_property
 from evennia.contrib.rpg.buffs.buffhandler import BuffHandler
+from evennia.contrib.rpg.equipment import EquipmentHandler
 
 # Import Handlers (which we will create in Step 1.2)
 from world.stats_handler import StatsHandler, VitalsHandler
@@ -62,6 +63,26 @@ class Character(DefaultCharacter):
         """Accesses the BuffHandler contrib. Use: self.buffs.add(...)"""
         return BuffHandler(self)
 
+    @lazy_property
+    def equipment(self):
+        """Accesses the EquipmentHandler. Use: self.equipment.wear()"""
+        return EquipmentHandler(self, slots={
+            "head": None,
+            "finger1": None, "finger2": None,
+            "neck1": None, "neck2": None,
+            "hands": None,
+            "arms": None,
+            "chest": None,
+            "about_waist": None,
+            "legs": None,
+            "feet": None,
+            "about_body": None,
+            "light": None,
+            "shield": None,
+            "wield1": None,
+            "wrist1": None, "wrist2": None,
+        })
+
     def at_object_creation(self):
         """
         Called only once, when the object is first created.
@@ -75,6 +96,7 @@ class Character(DefaultCharacter):
         self.race_handler.initialize()
         self.skills.initialize()
         self.combat.initialize()
+        self.equipment.initialize()
         
         self.scripts.add("world.regen_script.RegenScript")
 

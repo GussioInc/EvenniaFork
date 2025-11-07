@@ -259,9 +259,9 @@ class Disarm(BaseAbility):
 
         # Success check
         if random.randint(1, 100) < 30 + (caster.level - target.level) * 5:
-            target_weapon = target.equipment.get("wield1")
+            target_weapon = target.equipment.slots.get("wield1")
             if target_weapon:
-                target.equipment.move(target_weapon)
+                target.equipment.remove(target_weapon)
                 caster.msg(f"You disarm {target.key}!")
                 target.msg(f"{caster.key} disarms you!")
             else:

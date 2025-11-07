@@ -30,8 +30,8 @@ The MUD has shops for buying and selling, and a bank for storing gold.
 *   **Shops**: We will need to create a new NPC typeclass for shopkeepers, with a custom `list`, `buy`, and `sell` command set. How is the sell price determined? Is it a percentage of the item's value?
 *   **Bank**: The bank allows depositing and withdrawing gold. We'll need a "banker" NPC and a way to store the player's bank balance on their character.
 *   **Item Properties**: To support shops and a more detailed game world, items will need more properties:
-    *   **Equipment Slots**: Where can the item be worn? (e.g., head, body, legs, hands).
-    *   **Weapon/Armor Types**: `HELP ARMOR TYPES` and `HELP PROFICIENCIES` mention types like `Plate`, `Leather`, `Slash`, `Pierce`. These will be important for class restrictions and skill bonuses.
+    *   **Equipment Slots**: **Implemented (2025-11-07)**. The `EquipmentHandler` has been integrated with the following slots: `head`, `finger1`, `finger2`, `neck1`, `neck2`, `hands`, `arms`, `chest`, `about_waist`, `legs`, `feet`, `about_body`, `light`, `shield`, `wield1`, `wrist1`, `wrist2`.
+    *   **Weapon/Armor Types**: `HELP ARMOR TYPES` and `HELP PROFICIENCIES` mention types like `Plate`, `Leather`, `Slash`, `Pierce`. These will be important for class restrictions and skill bonuses. We need to decide how to store this information on items.
     *   **Value**: How much is the item worth in gold?
 
 ## Grouping Mechanics
