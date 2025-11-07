@@ -2,6 +2,45 @@
 
 This file tracks design questions and areas where the `crawl.txt` help files are ambiguous. We can review this file in subsequent sessions to make decisions on how to proceed.
 
+## Core Combat Mechanics
+
+The current combat calculation is a placeholder. To faithfully recreate the MUD, we need to implement a system based on Armor Class (AC), Hitroll, and Damroll.
+
+*   **Armor Class (AC)**: The `HELP ARMOR CLASS` entry states "A lower AC is better." How should AC be calculated? It seems to be a combination of armor worn, Dexterity, level, and spells. We need to define the formula for this.
+*   **Hitroll**: This attribute adds a bonus to the chance to hit. How does it interact with the target's AC? Is it a direct comparison (e.g., `roll + hitroll vs. AC`) or a more complex formula?
+*   **Damroll**: This attribute adds a bonus to damage on each successful hit. Should this be a flat addition to the weapon's base damage?
+*   **Implementation**: Where should this logic live? It seems like the `at_damage` hook in `characters.py` is a good place for the final damage calculation, but the "to-hit" roll should happen before that, likely in the `CombatHandler`.
+
+## Death, Corpses, and Experience Loss
+
+The `HELP CHEATING DEATH` and `HELP DYING` entries describe a clear death cycle.
+
+*   **Experience Loss**: What is the formula for XP loss on death? Is it a flat percentage of the current level's XP?
+*   **Corpse Mechanics**:
+    *   A corpse is created on death, holding all the character's equipment. Should this be a new object typeclass?
+    *   Corpses decay after "about 3 real-life hours". We will need a script to handle this cleanup.
+    *   The `get corpse` command is mentioned. How does this differ from `get all from corpse`?
+*   **Recall Point**: Characters return to their "recall point" on death. We need a way to set and store this location on the character.
+*   **Corpse Keepers**: The `HELP CORPSE KEEPER` mentions an NPC that can retrieve a corpse for a fee. This will be a good feature to add after the basic death mechanics are in place.
+
+## Economy and Items
+
+The MUD has shops for buying and selling, and a bank for storing gold.
+
+*   **Shops**: We will need to create a new NPC typeclass for shopkeepers, with a custom `list`, `buy`, and `sell` command set. How is the sell price determined? Is it a percentage of the item's value?
+*   **Bank**: The bank allows depositing and withdrawing gold. We'll need a "banker" NPC and a way to store the player's bank balance on their character.
+*   **Item Properties**: To support shops and a more detailed game world, items will need more properties:
+    *   **Equipment Slots**: Where can the item be worn? (e.g., head, body, legs, hands).
+    *   **Weapon/Armor Types**: `HELP ARMOR TYPES` and `HELP PROFICIENCIES` mention types like `Plate`, `Leather`, `Slash`, `Pierce`. These will be important for class restrictions and skill bonuses.
+    *   **Value**: How much is the item worth in gold?
+
+## Grouping Mechanics
+
+The `HELP GROUP` entry describes how players can form groups.
+
+*   **Experience Sharing**: How is XP shared among group members? Is it split evenly? Do members have to be in the same room or area?
+*   **Group Commands**: We will need to implement the `group` command to invite players and the `gt` (group tell) command for communication.
+
 ## Racial Innate Abilities
 
 **Design Note (2025-11-07):** Most innate abilities are the spell or skill of the same name, but without a cooldown timer. This should be the default implementation approach.
