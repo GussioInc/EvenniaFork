@@ -17,6 +17,15 @@ class SkillHandler:
         "poison": abilities.Poison,
         "heal": abilities.Heal,
         "shield of faith": abilities.ShieldOfFaith,
+        "bash": abilities.Bash,
+        "kick": abilities.Kick,
+        "disarm": abilities.Disarm,
+        "critical_hit": abilities.CriticalHit,
+        "berzerk": abilities.Berzerk,
+        "burning hands": abilities.BurningHands,
+        "chill touch": abilities.ChillTouch,
+        "armor": abilities.Armor,
+        "invisibility": abilities.Invisibility,
     }
 
     def __init__(self, obj):

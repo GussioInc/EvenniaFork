@@ -1,6 +1,7 @@
 # mygame/world/abilities.py
 from evennia.scripts.scripts import DefaultScript
 from evennia.contrib.rpg.buffs.buff import BaseBuff
+from evennia.utils import gametime
 import random
 
 class BaseAbility:
@@ -205,3 +206,130 @@ class ShieldOfFaith(BaseAbility):
         caster.msg(f"You call upon a shield of faith to protect {target.key}.")
         if caster != target:
             target.msg(f"{caster.key} calls upon a shield of faith to protect you.")
+
+class Bash(BaseAbility):
+    key = "bash"
+    cooldown_seconds = 10
+
+    def at_use(self, target, **kwargs):
+        """Slam into the target, potentially stunning them."""
+        caster = self.caster
+        str_mod = (caster.stats.STR.value - 10) // 2
+        damage = random.randint(1, 4) + str_mod
+
+        caster.msg(f"You slam into {target.key}!")
+        caster.location.msg_contents(
+            f"{caster.key} slams into {target.key}!",
+            exclude=[caster, target]
+        )
+        target.msg(f"{caster.key} slams into you!")
+
+        target.at_damage(damage, attacker=caster)
+
+        # Stun check
+        if random.randint(1, 100) < 25 + (caster.level - target.level) * 5:
+            target.msg("You are stunned!")
+            target.buffs.add("stun", duration=6, tick_rate=6, damage_per_tick=0)
+
+class Kick(BaseAbility):
+    key = "kick"
+    cooldown_seconds = 5
+
+    def at_use(self, target, **kwargs):
+        """A swift kick to the target."""
+        caster = self.caster
+        str_mod = (caster.stats.STR.value - 10) // 2
+        damage = random.randint(1, 6) + str_mod
+
+        caster.msg(f"You kick {target.key}!")
+        caster.location.msg_contents(
+            f"{caster.key} kicks {target.key}!",
+            exclude=[caster, target]
+        )
+        target.msg(f"{caster.key} kicks you!")
+
+        target.at_damage(damage, attacker=caster)
+
+class Disarm(BaseAbility):
+    key = "disarm"
+    cooldown_seconds = 15
+
+    def at_use(self, target, **kwargs):
+        """Attempt to disarm the target."""
+        caster = self.caster
+
+        # Success check
+        if random.randint(1, 100) < 30 + (caster.level - target.level) * 5:
+            target_weapon = target.equipment.slots.get("wield1")
+            if target_weapon:
+                target.equipment.remove(target_weapon)
+                caster.msg(f"You disarm {target.key}!")
+                target.msg(f"{caster.key} disarms you!")
+            else:
+                caster.msg(f"{target.key} is not wielding a weapon.")
+        else:
+            caster.msg(f"You fail to disarm {target.key}.")
+
+class CriticalHit(BaseAbility):
+    key = "critical_hit"
+
+    def at_use(self, target, **kwargs):
+        """Passive skill that grants a chance for extra damage."""
+        target.buffs.add("critical_hit", duration=-1, damage_mod=1.5, chance=10)
+
+class Berzerk(BaseAbility):
+    key = "berzerk"
+    cooldown_seconds = 180
+
+    def at_use(self, target, **kwargs):
+        """Go into a berzerk rage."""
+        caster = self.caster
+        caster.msg("You go into a berzerk rage!")
+        caster.buffs.add("berzerk", duration=gametime.gametime(minutes=1), damage_mod=2, to_hit=-10)
+
+class BurningHands(BaseAbility):
+    key = "burning hands"
+    mana_cost = 5
+
+    def at_use(self, target, **kwargs):
+        """A classic offensive spell."""
+        caster = self.caster
+        int_mod = (caster.stats.INT.value - 10) // 2
+        damage = random.randint(1, 8) + int_mod
+
+        caster.msg(f"You shoot a fan of flames at {target.key}!")
+        target.at_damage(damage, attacker=caster)
+
+class ChillTouch(BaseAbility):
+    key = "chill touch"
+    mana_cost = 5
+
+    def at_use(self, target, **kwargs):
+        """A touch of cold that weakens the target."""
+        caster = self.caster
+        int_mod = (caster.stats.INT.value - 10) // 2
+        damage = random.randint(1, 4) + int_mod
+
+        caster.msg(f"You touch {target.key} with a chilling hand!")
+        target.at_damage(damage, attacker=caster)
+        target.buffs.add("chill_touch", duration=gametime.gametime(minutes=2), STR=-2)
+
+class Armor(BaseAbility):
+    key = "armor"
+    mana_cost = 10
+
+    def at_use(self, target, **kwargs):
+        """A magical shield that reduces incoming damage."""
+        caster = self.caster
+        caster.msg(f"You encase {target.key} in magical armor.")
+        target.buffs.add("armor", duration=gametime.gametime(minutes=5), damage_reduction=5)
+
+class Invisibility(BaseAbility):
+    key = "invisibility"
+    mana_cost = 15
+
+    def at_use(self, target, **kwargs):
+        """Render the target invisible."""
+        caster = self.caster
+        caster.msg(f"You fade {target.key} from sight.")
+        target.buffs.add("invisibility", duration=gametime.gametime(minutes=5))

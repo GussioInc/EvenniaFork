@@ -12,10 +12,12 @@ creation commands.
 from evennia import DefaultCharacter
 from evennia.utils.utils import lazy_property
 from evennia.contrib.rpg.buffs.buffhandler import BuffHandler
+from evennia.contrib.rpg.equipment import EquipmentHandler
 
 # Import Handlers (which we will create in Step 1.2)
 from world.stats_handler import StatsHandler, VitalsHandler
 from world.class_handler import ClassHandler
+from world.race_handler import RaceHandler
 from world.skill_handler import SkillHandler
 from world.combat_handler import CharacterCombatHandler
 
@@ -42,6 +44,11 @@ class Character(DefaultCharacter):
         return ClassHandler(self)
 
     @lazy_property
+    def race_handler(self):
+        """Accesses the RaceHandler. Use: self.race_handler.get_race_obj()"""
+        return RaceHandler(self)
+
+    @lazy_property
     def skills(self):
         """Accesses the SkillHandler. Use: self.skills.execute("fireball")"""
         return SkillHandler(self)
@@ -56,6 +63,26 @@ class Character(DefaultCharacter):
         """Accesses the BuffHandler contrib. Use: self.buffs.add(...)"""
         return BuffHandler(self)
 
+    @lazy_property
+    def equipment(self):
+        """Accesses the EquipmentHandler. Use: self.equipment.wear()"""
+        return EquipmentHandler(self, slots={
+            "head": None,
+            "finger1": None, "finger2": None,
+            "neck1": None, "neck2": None,
+            "hands": None,
+            "arms": None,
+            "chest": None,
+            "about_waist": None,
+            "legs": None,
+            "feet": None,
+            "about_body": None,
+            "light": None,
+            "shield": None,
+            "wield1": None,
+            "wrist1": None, "wrist2": None,
+        })
+
     def at_object_creation(self):
         """
         Called only once, when the object is first created.
@@ -66,8 +93,10 @@ class Character(DefaultCharacter):
         self.stats.initialize()
         self.vitals.initialize()
         self.class_handler.initialize()
+        self.race_handler.initialize()
         self.skills.initialize()
         self.combat.initialize()
+        self.equipment.initialize()
         
         self.scripts.add("world.regen_script.RegenScript")
 
@@ -110,6 +139,12 @@ class Character(DefaultCharacter):
         """
         Called when this character takes damage.
         """
+        # Check for damage reduction from buffs (like Armor spell)
+        damage_reduction = self.buffs.get_total("damage_reduction", 0)
+        amount -= damage_reduction
+        if amount < 1:
+            amount = 1  # Always do at least 1 damage
+
         self.vitals.HP.current -= amount
         
         if attacker and self.combat.is_in_combat:

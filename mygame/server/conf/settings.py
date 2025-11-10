@@ -34,6 +34,32 @@ from evennia.settings_default import *
 # This is the name of your game. Make it catchy!
 SERVERNAME = "mygame"
 
+######################################################################
+# Gametime setup
+######################################################################
+
+TIME_FACTOR = 48.0
+TIME_GAME_EPOCH = 0
+TIME_UNITS = {
+    "sec": 1,
+    "min": 60,
+    "hr": 3600,
+    "day": 86400,
+    "week": 604800,
+    "month": 3024000, # 35 days
+    "year": 51408000, # 17 months
+}
+TIME_MONTH_NAMES = [
+    "Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7", "Month 8",
+    "Month 9", "Month 10", "Month 11", "Month 12", "Month 13", "Month 14", "Month 15", "Month 16", "Month 17"
+]
+TIME_WEEK_NAMES = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7"]
+TIME_DAY_NAMES = TIME_WEEK_NAMES
+TIME_NR_MONTHS = 17
+TIME_DAYS_PER_MONTH = 35
+TIME_WEEKS_PER_MONTH = 5
+TIME_DAYS_PER_WEEK = 7
+
 
 ######################################################################
 # Settings given in secret_settings.py override those in this file.

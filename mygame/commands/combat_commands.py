@@ -38,15 +38,16 @@ class CmdKill(Command):
         if not target.is_pc:
             handler.add_aggro(target, caller, 1)
 
-class CmdCast(Command):
+class CmdUse(Command):
     """
     Casts a spell or uses a skill.
     
     Usage:
+      use <skill> [on <target>]
       cast <skill> [on <target>]
     """
-    key = "cast"
-    aliases = ["use"]
+    key = "use"
+    aliases = ["cast"]
     
     def parse(self):
         """Parses 'skill on target' syntax"""
