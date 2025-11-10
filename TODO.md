@@ -2,6 +2,16 @@
 
 This file tracks design questions and areas where the `crawl.txt` help files are ambiguous. We can review this file in subsequent sessions to make decisions on how to proceed.
 
+## Game Time and Calendar
+
+*   **Calendar Naming**: The calendar system has been implemented with generic names (Month 1, Day 1, etc.). We should come up with thematic names for the months and days of the week to enhance immersion.
+*   **Game Time Integration**: The `gametime` system is now active, but it is not yet used by other game mechanics. The next step is to integrate it with the following systems:
+    *   **Buff Durations**: Spells like `Armor` and `Chill Touch` currently use real-world seconds for their duration. These should be updated to use in-game time.
+    *   **Ability Cooldowns**: Skills and spells currently use real-world seconds for cooldowns. These should also be converted to in-game time.
+    *   **Weather System**: The weather script should be updated to change based on the in-game time and date.
+    *   **Shop Hours**: When shops are implemented, their opening and closing times should be based on the in-game clock.
+    *   **Regeneration**: The `RegenScript` should be updated to fire based on in-game time intervals, not real-world seconds.
+
 ## Core Combat Mechanics
 
 The current combat calculation is a placeholder. To faithfully recreate the MUD, we need to implement a system based on Armor Class (AC), Hitroll, and Damroll.

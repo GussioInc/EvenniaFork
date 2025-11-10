@@ -1,6 +1,7 @@
 # mygame/world/abilities.py
 from evennia.scripts.scripts import DefaultScript
 from evennia.contrib.rpg.buffs.buff import BaseBuff
+from evennia.utils import gametime
 import random
 
 class BaseAbility:
@@ -284,7 +285,7 @@ class Berzerk(BaseAbility):
         """Go into a berzerk rage."""
         caster = self.caster
         caster.msg("You go into a berzerk rage!")
-        caster.buffs.add("berzerk", duration=30, damage_mod=2, to_hit=-10)
+        caster.buffs.add("berzerk", duration=gametime.gametime(minutes=1), damage_mod=2, to_hit=-10)
 
 class BurningHands(BaseAbility):
     key = "burning hands"
@@ -311,7 +312,7 @@ class ChillTouch(BaseAbility):
 
         caster.msg(f"You touch {target.key} with a chilling hand!")
         target.at_damage(damage, attacker=caster)
-        target.buffs.add("chill_touch", duration=10, STR=-2)
+        target.buffs.add("chill_touch", duration=gametime.gametime(minutes=2), STR=-2)
 
 class Armor(BaseAbility):
     key = "armor"
@@ -321,7 +322,7 @@ class Armor(BaseAbility):
         """A magical shield that reduces incoming damage."""
         caster = self.caster
         caster.msg(f"You encase {target.key} in magical armor.")
-        target.buffs.add("armor", duration=60, damage_reduction=5)
+        target.buffs.add("armor", duration=gametime.gametime(minutes=5), damage_reduction=5)
 
 class Invisibility(BaseAbility):
     key = "invisibility"
@@ -331,4 +332,4 @@ class Invisibility(BaseAbility):
         """Render the target invisible."""
         caster = self.caster
         caster.msg(f"You fade {target.key} from sight.")
-        target.buffs.add("invisibility", duration=60)
+        target.buffs.add("invisibility", duration=gametime.gametime(minutes=5))
