@@ -11,7 +11,7 @@ class BaseAbility:
     """
     key = "base_ability"
     mana_cost = 0
-    cooldown_seconds = 0
+    cooldown = 0  # In-game seconds
     maintenance_cost = 0
     
     def __init__(self, caster):
@@ -38,7 +38,7 @@ class BaseAbility:
         
         if not self.caster.ndb.cooldowns:
             self.caster.ndb.cooldowns = {}
-        self.caster.ndb.cooldowns[self.key] = self.cooldown_seconds
+        self.caster.ndb.cooldowns[self.key] = self.cooldown
         
         from evennia.utils import delay
         
@@ -46,7 +46,8 @@ class BaseAbility:
             if caster.ndb.cooldowns and key in caster.ndb.cooldowns:
                 del caster.ndb.cooldowns[key]
 
-        delay(self.cooldown_seconds, clear_cooldown, self.caster, self.key)
+        real_seconds = gametime.game_time_to_real_time(self.cooldown)
+        delay(real_seconds, clear_cooldown, self.caster, self.key)
 
     def at_use(self, target, **kwargs):
         """
@@ -58,7 +59,7 @@ class BaseAbility:
 class Fireball(BaseAbility):
     key = "fireball"
     mana_cost = 15
-    cooldown_seconds = 6
+    cooldown = 288  # 6 seconds * 48
     
     def at_use(self, target, **kwargs):
         """Execute the fireball."""
@@ -119,12 +120,17 @@ class Poison(BaseAbility):
         caster.msg(f"You inflict a venomous poison on {target.key}.")
         target.msg(f"You have been poisoned by {caster.key}!")
         
-        target.buffs.add("poison", duration=60, damage_per_tick=5, tick_rate=10)
+        target.buffs.add(
+            "poison",
+            duration=gametime.gametime(seconds=60),
+            damage_per_tick=5,
+            tick_rate=gametime.gametime(seconds=10)
+        )
 
 class AcidRain(BaseAbility):
     key = "acid_rain"
     mana_cost = 40
-    cooldown_seconds = 30
+    cooldown = 1440  # 30 seconds * 48
     
     def at_use(self, target, **kwargs):
         """Calls down a shower of acid on the room."""
@@ -170,7 +176,7 @@ class Dispel(BaseAbility):
 class Heal(BaseAbility):
     key = "heal"
     mana_cost = 10
-    cooldown_seconds = 5
+    cooldown = 240  # 5 seconds * 48
     
     def at_use(self, target, **kwargs):
         """Heals the target."""
@@ -209,7 +215,7 @@ class ShieldOfFaith(BaseAbility):
 
 class Bash(BaseAbility):
     key = "bash"
-    cooldown_seconds = 10
+    cooldown = 480  # 10 seconds * 48
 
     def at_use(self, target, **kwargs):
         """Slam into the target, potentially stunning them."""
@@ -229,11 +235,16 @@ class Bash(BaseAbility):
         # Stun check
         if random.randint(1, 100) < 25 + (caster.level - target.level) * 5:
             target.msg("You are stunned!")
-            target.buffs.add("stun", duration=6, tick_rate=6, damage_per_tick=0)
+            target.buffs.add(
+                "stun",
+                duration=gametime.gametime(seconds=6),
+                tick_rate=gametime.gametime(seconds=6),
+                damage_per_tick=0
+            )
 
 class Kick(BaseAbility):
     key = "kick"
-    cooldown_seconds = 5
+    cooldown = 240  # 5 seconds * 48
 
     def at_use(self, target, **kwargs):
         """A swift kick to the target."""
@@ -252,7 +263,7 @@ class Kick(BaseAbility):
 
 class Disarm(BaseAbility):
     key = "disarm"
-    cooldown_seconds = 15
+    cooldown = 720  # 15 seconds * 48
 
     def at_use(self, target, **kwargs):
         """Attempt to disarm the target."""
@@ -279,7 +290,7 @@ class CriticalHit(BaseAbility):
 
 class Berzerk(BaseAbility):
     key = "berzerk"
-    cooldown_seconds = 180
+    cooldown = 8640  # 180 seconds * 48
 
     def at_use(self, target, **kwargs):
         """Go into a berzerk rage."""
