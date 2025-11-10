@@ -5,8 +5,8 @@ This file tracks design questions and areas where the `crawl.txt` help files are
 ## Game Time and Calendar
 
 *   **Calendar Naming**: The calendar system has been implemented with generic names (Month 1, Day 1, etc.). We should come up with thematic names for the months and days of the week to enhance immersion.
-*   **Game Time Integration**: The `gametime` system is now active, but it is not yet used by other game mechanics. The next step is to integrate it with the following systems:
-    *   **Buff Durations**: Spells like `Armor` and `Chill Touch` currently use real-world seconds for their duration. These should be updated to use in-game time.
+*   **Game Time Integration**: The `gametime` system is now active. The initial integration is complete, but it needs to be expanded to more systems:
+    *   **Buff Durations**: **Partially Implemented (2025-11-09)**. Core buff spells (`Armor`, `Invisibility`, `Chill Touch` debuff) have been updated to use `gametime`. This needs to be verified for all future buffs and effects.
     *   **Ability Cooldowns**: Skills and spells currently use real-world seconds for cooldowns. These should also be converted to in-game time.
     *   **Weather System**: The weather script should be updated to change based on the in-game time and date.
     *   **Shop Hours**: When shops are implemented, their opening and closing times should be based on the in-game clock.
@@ -91,6 +91,12 @@ The `crawl.txt` file lists many innate abilities for races. The exact mechanics 
 ## Character Creation
 
 *   How should the initial race and class selection be presented to the player? The current system defaults to a Human Warrior. We will need to create a character creation menu system.
+
+## World and Area Building
+
+*   **Area Importer**: **Implemented (2025-11-10)**. A parser for DikuMUD `.are` files has been created in `world/area_parser.py`. It can convert rooms, mobs, and objects into an Evennia batch-build file.
+    *   **Newthalos**: The `newthalos.are` area has been successfully parsed and is loaded on the server's first start via `at_server_cold_start`.
+    *   **Future Areas**: The `CmdImportArea` command exists but is not fully robust. Future area imports may require manual conversion steps.
 
 ## Skill & Spell Mechanics
 

@@ -17,6 +17,7 @@ at_server_cold_stop()
 
 """
 from evennia import scripts
+from commands.area_importer import CmdImportArea
 
 def at_server_init():
     """
@@ -63,7 +64,10 @@ def at_server_cold_start():
     This is called only when the server starts "cold", i.e. after a
     shutdown or a reset.
     """
-    pass
+    from evennia.objects.models import ObjectDB
+    from evennia.utils import batchprocess
+    if not ObjectDB.objects.filter(db_key="The Grand Gate of Thalos").first():
+        batchprocess.batch_process_file("world/batch_build_newthalos.ev")
 
 
 def at_server_cold_stop():
