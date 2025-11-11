@@ -19,6 +19,7 @@ from commands.combat_commands import CmdKill, CmdUse, CmdWeather, CmdDispel
 from commands.setchar import CmdSetChar
 from commands.datetime import CmdGameTime, CmdRealTime, CmdCalendar
 from commands.area_importer import CmdImportArea
+from commands.group_commands import CmdFollow, CmdGroup, CmdGTell, CmdGWho
 from evennia.contrib.rpg.equipment import (
     CmdWear,
     CmdRemove,
@@ -55,6 +56,10 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdRealTime())
         self.add(CmdCalendar())
         self.add(CmdImportArea())
+        self.add(CmdFollow())
+        self.add(CmdGroup())
+        self.add(CmdGTell())
+        self.add(CmdGWho())
 
 
 class AccountCmdSet(default_cmds.AccountCmdSet):
