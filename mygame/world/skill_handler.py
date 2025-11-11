@@ -12,36 +12,22 @@ class SkillHandler:
     # This map REPLACES the giant 'switch' statement in do_cast
     # It maps a string key to the Python class that defines the ability.
     ABILITY_MAP = {
-        "fireball": abilities.Fireball,
-        "bless": abilities.Bless,
-        "poison": abilities.Poison,
-        "heal": abilities.Heal,
-        "shield of faith": abilities.ShieldOfFaith,
-        "bash": abilities.Bash,
-        "kick": abilities.Kick,
-        "disarm": abilities.Disarm,
-        "critical_hit": abilities.CriticalHit,
-        "berzerk": abilities.Berzerk,
-        "burning hands": abilities.BurningHands,
-        "chill touch": abilities.ChillTouch,
-        "armor": abilities.Armor,
-        "invisibility": abilities.Invisibility,
+        **{ability.key: ability for ability in abilities.BaseAbility.__subclasses__()},
     }
 
     def __init__(self, obj):
         self.obj = obj
         if not self.obj.db.known_skills:
-            self.obj.db.known_skills = [] # Persistent list of known skills
+            self.obj.db.known_skills = {} # {skill_key: {"proficiency": 1, "max": 100}}
             
     def initialize(self):
-        # Example: give Mages 'fireball' on creation
-        if self.obj.class_handler.key == "mage":
-             self.learn("fireball")
+        # We will learn skills via the class handler now
+        pass
 
-    def learn(self, skill_key):
+    def learn(self, skill_key, max_proficiency=100):
         if skill_key in self.ABILITY_MAP and \
            skill_key not in self.obj.db.known_skills:
-            self.obj.db.known_skills.append(skill_key)
+            self.obj.db.known_skills[skill_key] = {"proficiency": 1, "max": max_proficiency}
             self.obj.msg(f"You have learned {skill_key}!")
             
     def execute(self, skill_key, target, **kwargs):

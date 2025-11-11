@@ -35,6 +35,10 @@ class Object(ObjectParent, DefaultObject):
     directly - this will both set things up and efficiently save the object
     without `obj.save()` having to be called explicitly.
 
+    def at_object_creation(self):
+        super().at_object_creation()
+        self.db.armor_type = 0
+
     Note: Check the autodocs for complete class members, this may not always
     be up-to date.
 
