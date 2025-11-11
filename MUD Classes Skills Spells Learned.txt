@@ -1,0 +1,1445 @@
+Some are single classes:
+
+ Rogue       Ro  Paladin     Pa  Monk        Mo  Druid       Dr  
+ Bard        Ba  Assassin    As  DarKnight   Dk  Ranger      Ra  
+ Priest      Pr  Swordsman   Sw  Wizard      Wi  Necromancer Ne
+ Pirate      Pi
+
+
+ROGUE 
+
+Rogues are shady types that specialize and excel in equally shady ordeals.
+While having no grasp on the arcane or other magical abilities, they are one
+of the few classes that can steal, and focus around backstabbing and circling.
+They tend to be a bit more specialized than thieves, but can not be used in
+multi-classing. They're also adept at sneaking and hiding, and they tend not
+to fatigue as quickly as other classes. 
+   
+Armor Classification: Leather 
+ 
+ 
+Races that allow Rogue: Aarakocra, Barbarian, Bugbear, Bullywug, Changeling,
+Drow, Dwarf, Flind, Giant, Giff, Githzerai, Gnoll, Gnome, Halfling, Half-orc,
+Ratman, and the Evil remort races.
+ 
+
+skills rogue
+
+These are the skills the class rogue will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   1: caution                 (excellent)
+Level   4: sneak                   (excellent)
+Level   5: swim                    (excellent)
+Level   5: pick lock               (excellent)
+Level   5: dodge                      (Superb)
+Level   8: climb                   (excellent)
+Level   8: hide                    (excellent)
+Level   8: throw                   (excellent)
+Level  10: second attack           (excellent)
+Level  10: first aid               (excellent)
+Level  10: backstab                (excellent)
+Level  11: unfair fight            (excellent)
+Level  13: bluff                   (excellent)
+Level  14: steal                   (excellent)
+Level  17: escape                  (excellent)
+Level  18: tumble                  (excellent)
+Level  18: blindfight              (excellent)
+Level  20: kick                    (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: fan of knives           (excellent)
+Level  20: elite bluff             (excellent)
+Level  21: stun                    (excellent)
+Level  23: disarm foe              (excellent)
+Level  25: poison blade            (excellent)
+Level  27: sense stealth                (good)
+Level  30: dual weapons            (excellent)
+Level  30: parrying                (excellent)
+Level  30: mounted battle          (excellent)
+Level  30: elite poison blade      (excellent)
+Level  35: scout                     (average)
+Level  35: first to attack         (excellent)
+Level  36: legsweep                (excellent)
+Level  38: critical hit            (excellent)
+Level  38: taunt                   (excellent)
+Level  40: third attack            (excellent)
+Level  40: neutralize poison       (excellent)
+Level  49: kick dirt               (excellent)
+Level  50: track                     (average)
+Level  50: circle around           (excellent)
+Level  50: thieves guild           (excellent)
+Level  51: push                    (excellent)
+Level  55: extra damage            (excellent)
+Level  67: assassinate                  (good)
+Level  75: riding airborne         (excellent)
+Level  75: ambush                  (excellent)
+Level  75: preparation             (excellent)
+Level  95: lethal blow             (excellent)
+Level 108: elite backstab          (excellent)
+
+PALADIN 
+
+Templars, holy crusaders, warriors of God.  These fierce, but noble
+warriors have taken an oath to purge this realm of the putrid evil
+that roams freely.  Due to their holy vows, Paladins get an innate
+protection from evil, and they can naturally detect it, aiding them in
+their quest.  They aren't as proficient with the blade as a Swordsman
+would be, but they have protective and healing magics to suppliment them
+in battle.
+ 
+Armor Classification: Plate
+Races that allow Paladins: Changeling, Half-Elf, Human, and the Good
+Remort Races.
+ 
+See also: SKILLS PALADIN, SPELLS PALADIN
+
+skills paladin
+
+These are the skills the class paladin will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: reverse vitalize sta    (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   2: rescue                  (excellent)
+Level   5: swim                    (very good)
+Level   8: climb                   (excellent)
+Level   9: first aid               (excellent)
+Level  10: second attack           (excellent)
+Level  10: spellcraft                   (fair)
+Level  10: two-handed weapon       (excellent)
+Level  11: parrying                (excellent)
+Level  14: mounted battle          (excellent)
+Level  15: kick                    (excellent)
+Level  17: bash                    (excellent)
+Level  19: sense stealth           (excellent)
+Level  20: riding landbased        (excellent)
+Level  24: dodge                        (good)
+Level  25: battle tactics          (excellent)
+Level  29: escape                  (excellent)
+Level  30: blindfight              (excellent)
+Level  30: smite                   (excellent)
+Level  31: third attack            (excellent)
+Level  36: push                    (excellent)
+Level  38: first to attack         (excellent)
+Level  42: scout                     (average)
+Level  45: dual weapons            (excellent)
+Level  47: critical hit            (excellent)
+Level  47: heroic rescue           (excellent)
+Level  50: track                     (average)
+Level  50: vitalize mana           (excellent)
+Level  50: vitalize stamina        (excellent)
+Level  52: disarm foe              (excellent)
+Level  60: throw                   (excellent)
+Level  66: extra damage            (excellent)
+Level  72: shield block            (excellent)
+Level  75: riding airborne         (excellent)
+Level  75: wrath                   (excellent)
+Level  92: shield bash             (excellent)
+Level 102: lethal blow             (excellent)
+
+ 
+spells paladin
+
+These are the spells the class paladin will learn:
+
+Level   1: reverse vitalize man   (excellent)
+Level   7: sense traps                 (good)
+Level  10: read essence                (fair)
+Level  17: psychic blast               (fair)
+Level  17: accuracy                    (fair)
+Level  20: summon mount           (excellent)
+Level  25: armor                       (fair)
+Level  25: divine storm           (excellent)
+Level  27: detect evil            (excellent)
+Level  28: cure light             (excellent)
+Level  31: dispel evil               (Superb)
+Level  36: detect magic           (excellent)
+Level  38: bless                        (bad)
+Level  40: detect invisibility    (excellent)
+Level  41: word of healing             (good)
+Level  42: protection from evil   (excellent)
+Level  46: haste                  (excellent)
+Level  50: cure blind                  (good)
+Level  55: cure critic                 (good)
+Level  59: summon                       (bad)
+Level  59: relocate               (excellent)
+Level  60: remove poison            (average)
+Level  62: remove curse           (excellent)
+Level  65: sense life                  (good)
+Level  67: turn undead                 (poor)
+Level  70: heal                     (average)
+Level  73: charge wand              (average)
+Level  80: sanctuary                (average)
+Level  80: group heal             (excellent)
+Level  80: divine wrath           (excellent)
+Level  85: regeneration                 (bad)
+Level 100: mystic shield              (awful)
+Level 105: lay on hands           (excellent)
+
+ 
+MONK 
+
+These masters are devout to their teachings, seeking out the secrets of the 
+body and mind, becoming a cohesive fighting machine.  Though not well versed
+in offensive magic, the Monk tends to receieve a fair amount of protecting
+and healing spells.  And while not as proficient with weapons as other classes,
+the Monk does the brunt of his damage with his bare fists.  They are quick, and
+agile, making them hard to hit, and making them hit harder and faster.
+ 
+Armor Classification: Leather
+ 
+ 
+ 
+Races that allow Monks: Changeling, Githzerai, Humans, Good and Neutral Remort
+Paths.
+ 
+See also: SKILLS MONK, SPELLS MONK
+
+
+skills monk
+
+These are the skills the class monk will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: martial arts            (excellent)
+Level   1: reverse vitalize sta    (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   5: swim                    (excellent)
+Level   5: quivering palm          (excellent)
+Level   6: first aid               (excellent)
+Level   8: climb                   (excellent)
+Level  10: spellcraft              (excellent)
+Level  12: track                     (average)
+Level  12: spin kick               (excellent)
+Level  14: kick                    (excellent)
+Level  18: pugilism                (excellent)
+Level  19: parrying                (very good)
+Level  20: second attack           (excellent)
+Level  20: dodge                   (excellent)
+Level  20: rescue                  (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: vitalize mana           (excellent)
+Level  24: blindfight              (excellent)
+Level  30: tumble                  (excellent)
+Level  33: escape                  (excellent)
+Level  40: critical hit            (excellent)
+Level  40: third attack            (excellent)
+Level  40: vitalize stamina        (excellent)
+Level  45: sense stealth           (excellent)
+Level  60: throw                   (excellent)
+Level  62: disarm foe              (excellent)
+Level  65: meditate                (excellent)
+Level  70: fourth attack           (excellent)
+Level  70: neutralize poison       (excellent)
+Level  70: extra damage            (excellent)
+Level  75: strike                  (excellent)
+Level  75: riding airborne         (excellent)
+Level  76: jab                     (excellent)
+Level  80: fifth attack            (excellent)
+Level  80: shield block            (excellent)
+Level 100: lethal blow             (excellent)
+
+ 
+spells monk
+
+These are the spells the class monk will learn:
+
+Level   1: read essence           (excellent)
+Level   2: armor                  (excellent)
+Level   4: cure light                  (good)
+Level   4: sense traps            (excellent)
+Level   5: detect magic           (excellent)
+Level   8: detect evil            (excellent)
+Level   8: protection from good   (excellent)
+Level  11: word of healing             (good)
+Level  12: detect invisibility    (excellent)
+Level  12: protection from evil        (good)
+Level  14: detect poison          (excellent)
+Level  15: bless                  (excellent)
+Level  18: flesh restore          (excellent)
+Level  20: blindness                   (good)
+Level  20: summon mount           (excellent)
+Level  22: remove curse           (excellent)
+Level  23: remove poison          (very good)
+Level  25: detect good            (excellent)
+Level  25: cure blind                  (good)
+Level  25: strength               (excellent)
+Level  26: haste                  (excellent)
+Level  27: cure critic                 (good)
+Level  29: sense life                  (good)
+Level  35: locate object          (excellent)
+Level  38: flesh anew             (excellent)
+Level  40: accuracy               (very good)
+Level  45: heal                        (good)
+Level  51: word of recall              (good)
+Level  55: group heal             (excellent)
+Level  60: sanctuary              (excellent)
+Level  65: regeneration           (excellent)
+Level  75: fly                    (excellent)
+Level  85: dexterity              (excellent)
+Level  90: portal                 (excellent)
+Level  95: mystical coat          (excellent)
+Level 100: charisma               (excellent)
+
+ 
+help druid
+DRUID 
+
+Druids are the caretakers of the forces of Nature.  They draw their
+mystical abilities from the planet itself, giving them holistic 
+powers in healing and defensive magics, and it even allows them to
+call upon the Forces for protection in the ways of offensive spells.
+Druids are unique in the fact that they have access to such spells like
+"Blaze" and "Flood".
+ 
+Armor Classification: Leather
+ 
+ 
+ 
+Races that allow Druids: Alaghi, Centaur, Changelings, Fairy, Half-elf,
+Human, Wemic, and Neutral remort races.
+ 
+See Also: SPELLS DRUID, SKILLS DRUID
+
+ 
+spells druid
+
+These are the spells the class druid will learn:
+
+Level   1: armor                  (excellent)
+Level   1: cure light             (excellent)
+Level   1: earthquake               (Perfect)
+Level   1: thorn blast            (excellent)
+Level   1: read essence           (excellent)
+Level   1: reverse vitalize man   (excellent)
+Level   4: word of healing        (excellent)
+Level   5: bless                  (excellent)
+Level   6: detect magic           (excellent)
+Level   6: protection from good   (excellent)
+Level   7: cat eyes               (excellent)
+Level   8: detect evil            (excellent)
+Level   9: chill touch            (excellent)
+Level   9: sense traps            (excellent)
+Level  10: detect invisibility    (excellent)
+Level  10: detect poison          (excellent)
+Level  10: flesh restore          (excellent)
+Level  12: blindness              (excellent)
+Level  13: protection from evil   (excellent)
+Level  13: shocking sphere        (excellent)
+Level  14: cure blind             (excellent)
+Level  15: detect good            (excellent)
+Level  16: cure critic            (excellent)
+Level  17: remove curse           (excellent)
+Level  18: dispel evil            (excellent)
+Level  19: sense life             (excellent)
+Level  19: rejuvenation           (excellent)
+Level  20: poison                 (excellent)
+Level  20: summon mount           (excellent)
+Level  21: remove poison          (excellent)
+Level  22: star flare             (excellent)
+Level  23: strength               (excellent)
+Level  24: flesh anew             (excellent)
+Level  25: frostbite              (excellent)
+Level  26: word of recall         (excellent)
+Level  26: haste                  (excellent)
+Level  28: enchant weapon         (excellent)
+Level  29: sanctuary              (excellent)
+Level  30: heal                   (excellent)
+Level  30: flame blade            (excellent)
+Level  32: infravision            (excellent)
+Level  35: harm                   (excellent)
+Level  35: recharge light         (excellent)
+Level  35: entangle               (excellent)
+Level  37: regeneration           (excellent)
+Level  38: levitation             (excellent)
+Level  40: summon                 (excellent)
+Level  40: group heal             (excellent)
+Level  40: relocate               (excellent)
+Level  41: fog                    (excellent)
+Level  45: fly                    (excellent)
+Level  50: charm person           (excellent)
+Level  51: identify               (excellent)
+Level  51: slow                   (excellent)
+Level  52: fear                   (excellent)
+Level  56: group recall           (excellent)
+Level  56: psychic blast          (excellent)
+Level  57: wizard shield          (excellent)
+Level  60: mystical coat          (excellent)
+Level  60: accuracy               (excellent)
+Level  67: acid blast             (excellent)
+Level  70: vorpal plating         (excellent)
+Level  70: portal                 (excellent)
+Level  73: charge wand            (excellent)
+Level  75: dire bear form         (excellent)
+Level  85: invisibility           (excellent)
+Level  90: rimefang               (excellent)
+Level  90: group relocate         (excellent)
+Level  90: flood                  (excellent)
+Level  90: dire wolf form         (excellent)
+Level  94: blaze                  (excellent)
+Level  95: mage gauntlets         (excellent)
+Level 100: lightning breath       (excellent)
+Level 105: cyclone                (excellent)
+
+
+ 
+skills druid
+
+These are the skills the class druid will learn:
+
+Level   1: stab                      (average)
+Level   1: bludgeon                (excellent)
+Level   1: slash                         (bad)
+Level   1: chop                         (poor)
+Level   1: spellcraft              (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   5: swim                    (excellent)
+Level   5: first aid               (excellent)
+Level   8: climb                   (excellent)
+Level  20: riding landbased        (excellent)
+Level  27: vitalize mana           (excellent)
+Level  30: second attack           (excellent)
+Level  30: throw                   (excellent)
+Level  45: track                     (average)
+Level  55: dodge                        (good)
+Level  60: critical hit            (excellent)
+Level  60: parrying                     (fair)
+Level  70: meditate                     (good)
+Level  75: riding airborne         (excellent)
+Level  75: smash                   (excellent)
+Level  75: dire strike             (excellent)
+Level  83: sense stealth             (average)
+Level  85: swipe                   (excellent)
+Level  90: fade                    (excellent)
+Level  90: flank attack            (excellent)
+Level  95: furious howl            (excellent)
+
+
+ 
+BARD 
+
+Minstrels, story tellers, dashing journeymen, these are just a few of
+the many roles a Bard can play in the realm of Mystical.  Usually
+characterized as a "Jack-of-all-Trades", this master of nothing in
+particular has access to a wide variety of spells and attacks, borrowing
+some from the Wizard, the Priest, the Rogue, and even the Swordsman.
+They are ultimate utility class, and are also the only class with
+access to the "Constitution" spell.
+ 
+Armor Classification: Mail
+ 
+ 
+ 
+Races that allow Bards: Barbarian, Centaur, Changeling, Half-elf,
+Human, Wemic, and the Neutral remort races.
+ 
+See also: SPELLS BARD, SKILLS BARD
+
+ 
+spells bard
+
+These are the spells the class bard will learn:
+
+Level   1: song of battle         (excellent)
+Level   5: song of summoning      (excellent)
+Level  10: song of power          (excellent)
+Level  16: strength                 (average)
+Level  20: summon mount           (excellent)
+Level  21: magic missile          (excellent)
+Level  22: armor                       (good)
+Level  22: cure light             (very good)
+Level  23: arc fire                    (good)
+Level  24: cure blind                  (fair)
+Level  25: burning hands               (good)
+Level  25: detect magic           (excellent)
+Level  25: protection from good   (excellent)
+Level  25: song of rejuvenation   (excellent)
+Level  26: vorpal plating              (good)
+Level  27: detect evil            (excellent)
+Level  28: blindness              (excellent)
+Level  28: chill touch                 (good)
+Level  29: detect invisibility    (excellent)
+Level  30: bless                       (good)
+Level  30: color spray                 (fair)
+Level  31: warstrike                   (good)
+Level  33: shocking grasp              (good)
+Level  35: flesh restore               (good)
+Level  35: song of haste          (excellent)
+Level  36: enchant weapon         (excellent)
+Level  37: curse                  (excellent)
+Level  39: fireball                    (good)
+Level  39: remove curse                (fair)
+Level  40: teleport                    (fair)
+Level  40: cure critic                 (good)
+Level  40: flame blade              (average)
+Level  41: remove poison               (fair)
+Level  44: cat eyes                 (average)
+Level  45: invisibility                (good)
+Level  46: lightning bolt              (good)
+Level  46: psychic blast          (excellent)
+Level  46: read essence             (average)
+Level  50: protection from evil   (excellent)
+Level  50: sleep                  (excellent)
+Level  50: word of healing          (average)
+Level  50: flesh anew                  (fair)
+Level  52: mage gauntlets           (average)
+Level  53: ice storm                   (good)
+Level  55: detect good            (excellent)
+Level  55: earthquake                  (fair)
+Level  55: sanctuary                   (fair)
+Level  55: summon                   (average)
+Level  55: spectre touch               (fair)
+Level  55: relocate               (excellent)
+Level  55: group relocate         (excellent)
+Level  56: dispel evil                 (fair)
+Level  56: necrotic strike             (fair)
+Level  57: levitation                  (good)
+Level  58: shocking sphere             (fair)
+Level  60: charm person           (excellent)
+Level  60: heal                        (fair)
+Level  60: song of restoration    (excellent)
+Level  61: accuracy                 (average)
+Level  62: frostbite                   (fair)
+Level  62: sense life                  (good)
+Level  65: harm                        (fair)
+Level  65: poison                   (average)
+Level  65: quick fix                   (good)
+Level  67: regeneration                (fair)
+Level  67: haste                    (average)
+Level  68: lightning breath            (good)
+Level  69: acid breath                 (good)
+Level  70: locate object          (excellent)
+Level  70: group heal             (excellent)
+Level  71: frost breath                (good)
+Level  73: infravision              (average)
+Level  73: gas breath                  (good)
+Level  73: charge wand              (average)
+Level  75: fly                         (good)
+Level  75: fire breath                 (good)
+Level  78: star flare                  (fair)
+Level  80: word of recall         (excellent)
+Level  80: group recall           (excellent)
+Level  85: beacon                 (excellent)
+Level 100: constitution           (excellent)
+Level 107: song of devastation    (excellent)
+Level 109: wizard shield            (average)
+Level 109: reverse vitalize man     (average)
+
+ 
+skills bard
+
+These are the skills the class bard will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   5: swim                    (excellent)
+Level   8: climb                   (excellent)
+Level  12: track                     (average)
+Level  13: caution                 (excellent)
+Level  18: parrying                     (good)
+Level  20: second attack           (excellent)
+Level  20: two-handed weapon       (excellent)
+Level  20: riding landbased        (excellent)
+Level  23: bluff                   (excellent)
+Level  25: spellcraft                (average)
+Level  25: unfair fight            (excellent)
+Level  26: backstab                     (good)
+Level  27: disarm foe              (excellent)
+Level  29: sneak                   (excellent)
+Level  30: kick                    (excellent)
+Level  32: sense stealth                (fair)
+Level  33: taunt                   (excellent)
+Level  34: mounted battle          (excellent)
+Level  36: bash                    (excellent)
+Level  36: scout                   (excellent)
+Level  38: hide                    (excellent)
+Level  41: circle around                (fair)
+Level  45: dodge                   (very good)
+Level  47: pick lock               (excellent)
+Level  48: third attack            (excellent)
+Level  54: throw                   (excellent)
+Level  60: critical hit            (excellent)
+Level  60: tumble                  (excellent)
+Level  60: vitalize mana           (excellent)
+Level  62: shield block            (excellent)
+Level  72: escape                  (excellent)
+Level  75: riding airborne         (excellent)
+Level  76: ambush                  (excellent)
+Level  91: kick dirt               (excellent)
+Level 100: shield bash             (excellent)
+Level 106: assassinate                  (fair)
+
+ 
+help assassin
+ASSASSIN 
+
+These hired blades are more than just mere Assassins, they're death 
+reincarnate.  More silent than a shadow, and deadlier than venom, these 
+masters of the night are a darker version of Rogues.  Although their
+skillset is similar, they tend to be deadlier with certain skills such as 
+backstab and assassinate.  
+ 
+Armor Classification: Leather
+  
+ 
+Races that allow Assassins: Bugbear, Changeling, Draconian, Drow, Githzerai,
+Half-orc, Ratman and the Evil remort races
+ 
+See also: SKILLS ASSASSIN
+
+ 
+skills assassin
+
+These are the skills the class assassin will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                      (average)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   1: caution                 (excellent)
+Level   1: break                   (excellent)
+Level   3: hide                    (excellent)
+Level   5: swim                    (excellent)
+Level   5: sneak                   (excellent)
+Level   5: backstab                (excellent)
+Level   8: climb                   (excellent)
+Level   9: throw                   (excellent)
+Level  10: poison blade            (excellent)
+Level  12: dodge                      (Superb)
+Level  13: bluff                   (excellent)
+Level  14: tumble                  (excellent)
+Level  15: second attack           (excellent)
+Level  15: escape                  (excellent)
+Level  15: unfair fight            (excellent)
+Level  18: disarm foe              (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: elite bluff             (excellent)
+Level  22: kick                    (excellent)
+Level  22: blindfight              (excellent)
+Level  22: sense stealth           (excellent)
+Level  24: pick lock               (excellent)
+Level  24: stun                    (excellent)
+Level  30: critical hit            (excellent)
+Level  30: elite poison blade      (excellent)
+Level  33: track                        (good)
+Level  35: dual weapons            (excellent)
+Level  35: parrying                (excellent)
+Level  40: fan of knives           (excellent)
+Level  40: circle around           (excellent)
+Level  40: first to attack         (excellent)
+Level  41: scout                   (excellent)
+Level  43: intimidate              (excellent)
+Level  44: third attack            (excellent)
+Level  45: assassinate             (excellent)
+Level  49: kick dirt               (excellent)
+Level  60: extra damage            (excellent)
+Level  65: neutralize poison       (excellent)
+Level  75: riding airborne         (excellent)
+Level  75: ambush                  (excellent)
+Level  90: lethal blow             (excellent)
+Level 105: elite backstab          (excellent)
+
+ 
+spells assassin
+
+These are the spells the class assassin will learn:
+
+Level  20: summon mount           (excellent)
+
+ 
+DARKNIGHT 
+
+DarKnights are the anti-paladin. They're ruthless, evil, and chaotic.
+Persuing their own agenda, they crush any who come between them and 
+their goals with no remorse.  Their combat skills closesly resemble
+that of their holy brethren, but have forsaken the holy arts in favor
+of greater offensive magics.  So tainted by the darkness are these 
+warriors that they can innately sense good as it approaches.
+ 
+Armor Classification: Plate
+ 
+ 
+ 
+Races that allow DarKnights: Changelings, Draconians, Drow, Githzerai,
+Half-orc, Flind, Gnoll and the Evil remort races
+ 
+See also: SPELLS DARKNIGHT, SKILLS DARKNIGHT
+
+ 
+spells darknight
+
+These are the spells the class darknight will learn:
+
+Level   1: reverse vitalize man        (good)
+Level   1: malfesor               (excellent)
+Level  17: psychic blast               (good)
+Level  20: summon mount           (excellent)
+Level  26: magic missile          (very good)
+Level  26: cat eyes                 (average)
+Level  27: detect magic           (excellent)
+Level  28: arc fire                    (good)
+Level  30: burning hands               (good)
+Level  30: protection from good   (excellent)
+Level  31: vorpal plating              (fair)
+Level  32: levitation               (average)
+Level  32: accuracy                    (fair)
+Level  33: color spray                 (fair)
+Level  35: blindness                   (good)
+Level  36: invisibility             (average)
+Level  36: warstrike                   (fair)
+Level  38: infravision              (average)
+Level  39: strength                    (fair)
+Level  40: shocking grasp              (fair)
+Level  42: curse                       (good)
+Level  44: fireball                    (good)
+Level  50: flame blade              (average)
+Level  51: lightning bolt              (good)
+Level  53: fly                      (average)
+Level  57: mage gauntlets           (average)
+Level  58: ice storm                (average)
+Level  60: death and decay        (excellent)
+Level  65: charm person             (average)
+Level  65: sleep                       (good)
+Level  70: locate object            (average)
+Level  70: quick fix                   (good)
+Level  70: beacon                 (excellent)
+Level  71: poison                      (fair)
+Level  72: lightning breath         (average)
+Level  73: charge wand              (average)
+Level  74: acid breath              (average)
+Level  75: detect invisibility    (excellent)
+Level  75: bloodlust              (excellent)
+Level  76: frost breath             (average)
+Level  78: gas breath               (average)
+Level  80: teleport                 (average)
+Level  80: fire breath              (average)
+Level  85: word of recall           (average)
+Level  90: necrotic strike        (excellent)
+Level  95: rimefang                 (average)
+Level  95: group recall           (excellent)
+Level  98: identify                 (average)
+Level 103: haste                       (good)
+Level 105: mystic shield            (average)
+
+
+ 
+skills darknight
+
+These are the skills the class darknight will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: reverse vitalize sta    (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   1: lifebreaker             (excellent)
+Level   5: swim                         (good)
+Level   6: rescue                  (excellent)
+Level   9: climb                   (excellent)
+Level  10: second attack           (excellent)
+Level  10: spellcraft                (average)
+Level  10: two-handed weapon       (excellent)
+Level  11: parrying                (excellent)
+Level  12: caution                 (excellent)
+Level  14: unfair fight            (excellent)
+Level  14: mounted battle          (excellent)
+Level  15: kick                    (excellent)
+Level  16: battle tactics          (excellent)
+Level  17: bash                    (excellent)
+Level  19: sense stealth           (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: souldrinker             (excellent)
+Level  23: berzerk                 (excellent)
+Level  23: headbang                (excellent)
+Level  24: dodge                        (good)
+Level  27: kick dirt               (excellent)
+Level  29: escape                  (excellent)
+Level  31: third attack            (excellent)
+Level  31: blindfight              (excellent)
+Level  33: sneak                   (excellent)
+Level  38: first to attack         (excellent)
+Level  40: scout                     (average)
+Level  42: hide                    (excellent)
+Level  45: dual weapons            (excellent)
+Level  45: vitalize stamina        (excellent)
+Level  47: critical hit            (excellent)
+Level  50: track                     (average)
+Level  50: vitalize mana           (excellent)
+Level  52: disarm foe              (excellent)
+Level  56: push                    (excellent)
+Level  60: throw                   (excellent)
+Level  62: intimidate              (excellent)
+Level  65: shield block            (excellent)
+Level  66: extra damage            (excellent)
+Level  75: riding airborne         (excellent)
+Level  85: shield bash             (excellent)
+Level 102: lethal blow             (excellent)
+Level 107: unholy fist             (excellent)
+
+
+RANGER 
+
+Rangers are warriors of the woods.  Nature's answer to the Paladin and
+DarKnight.  They are rugged, and fight well with a sword (or axe, 
+depending on your tastes), dabble in some offensive spells, but tend to
+focus more on the healing aspects of magic.  They also tend to act as
+scouts, and their relationship with the forest has granted them limited
+stealth abilities, allowing them to conceal their presence. They are
+also the only class that learns the spell "Dexterity".
+ 
+Armor Classification: Mail
+ 
+ 
+ 
+Races that allow Rangers: Alaghi, Barbarian, Centaur, Changeling, Elf,
+Fairy, Giff, Half-elf, Human, Wemic, the Good and Neutral remort races.
+ 
+See also: SKILLS RANGER, SPELLS RANGER
+
+ 
+skills ranger
+
+These are the skills the class ranger will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: track                   (excellent)
+Level   1: archery                 (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   1: caution                 (excellent)
+Level   1: point-blank shot        (excellent)
+Level   3: swim                    (excellent)
+Level   5: sneak                   (excellent)
+Level   6: climb                   (excellent)
+Level   9: second attack           (excellent)
+Level  12: two-handed weapon       (excellent)
+Level  12: scout                   (excellent)
+Level  14: kick                    (excellent)
+Level  14: mounted battle          (excellent)
+Level  16: parrying                     (good)
+Level  16: concussive shot         (excellent)
+Level  18: rescue                  (excellent)
+Level  20: blindfight              (excellent)
+Level  20: riding landbased        (excellent)
+Level  21: barrage                 (excellent)
+Level  25: spellcraft              (excellent)
+Level  27: third attack            (excellent)
+Level  27: headbang                (excellent)
+Level  30: battle tactics          (excellent)
+Level  32: disarm foe              (excellent)
+Level  34: sense stealth           (excellent)
+Level  38: hide                    (excellent)
+Level  38: bash                    (excellent)
+Level  38: first to attack         (excellent)
+Level  45: dodge                   (excellent)
+Level  47: critical hit            (excellent)
+Level  49: wrath                   (excellent)
+Level  50: poison blade            (excellent)
+Level  50: piercing shot           (excellent)
+Level  55: heroic rescue           (excellent)
+Level  55: vitalize stamina        (excellent)
+Level  55: kick dirt               (excellent)
+Level  60: throw                   (excellent)
+Level  60: vitalize mana           (excellent)
+Level  66: extra damage            (excellent)
+Level  70: tumble                  (excellent)
+Level  70: escape                  (excellent)
+Level  71: push                    (excellent)
+Level  75: dual weapons            (excellent)
+Level  75: riding airborne         (excellent)
+Level  80: meditate                  (average)
+Level 100: shield bash             (excellent)
+Level 102: lethal blow             (excellent)
+
+
+spells ranger
+
+These are the spells the class ranger will learn:
+
+Level  15: cat eyes               (excellent)
+Level  19: wildfire               (excellent)
+Level  20: detect magic           (excellent)
+Level  20: sense life             (excellent)
+Level  20: infravision            (excellent)
+Level  20: summon mount           (excellent)
+Level  26: protection from good   (excellent)
+Level  27: blindness                   (fair)
+Level  30: armor                       (good)
+Level  30: detect poison              (awful)
+Level  32: poison                 (excellent)
+Level  35: cure light             (very good)
+Level  35: detect evil            (excellent)
+Level  40: detect invisibility    (excellent)
+Level  40: magic missile               (fair)
+Level  45: strength                 (average)
+Level  45: remove poison          (excellent)
+Level  49: haste                  (very good)
+Level  50: frostbite                   (good)
+Level  55: bless                       (good)
+Level  60: detect good            (excellent)
+Level  61: fog                         (good)
+Level  65: earthquake               (average)
+Level  65: entangle               (excellent)
+Level  73: charge wand              (average)
+Level  75: summon                   (average)
+Level  75: relocate               (excellent)
+Level  80: locate object            (average)
+Level  85: enchant weapon              (fair)
+Level  85: word of recall           (average)
+Level  90: heal                     (average)
+Level  95: fly                         (good)
+Level  95: group recall           (excellent)
+Level 100: identify                 (average)
+Level 100: group heal             (excellent)
+Level 100: dexterity              (excellent)
+
+ 
+help priest
+PRIEST 
+
+Whereas Paladins are the Hands of God, Priests are the voice.  Trained
+in not only restorative and defensive magics, but also violent and chaotic
+spells as well, the Priest can stand their ground, finding very little
+resistance along the way.  They are also the only class in the realm to
+have access to the powerful spell "Toxic Cloud".
+
+Armor Classification: Mail
+
+
+
+Races that allow Priests: Aarakocra, Bugbear, Bullywug, Centaur, 
+Changeling,
+Dwarf, Flind, Giant, Giff, Gnoll, Gnome, Half-elf, Halfling, Half-orc, Human,
+Lizardman, Minotaur, Wemic, and the Good and Evil remort races.
+
+See also: SPELLS PRIEST, SKILLS PRIEST, TOXIC CLOUD
+
+ 
+spells priest
+
+These are the spells the class priest will learn:
+
+Level   1: armor                  (excellent)
+Level   1: cure light             (excellent)
+Level   1: mind jab               (excellent)
+Level   2: detect magic           (excellent)
+Level   2: sense traps            (excellent)
+Level   3: word of healing        (excellent)
+Level   3: protection from good   (excellent)
+Level   3: read essence           (excellent)
+Level   4: detect invisibility    (excellent)
+Level   5: bless                  (excellent)
+Level   5: chill touch            (excellent)
+Level   6: detect evil            (excellent)
+Level   6: invisibility           (excellent)
+Level   6: flesh restore          (excellent)
+Level   7: curse                  (excellent)
+Level   8: blindness              (excellent)
+Level   8: cure blind             (excellent)
+Level   8: detect poison          (excellent)
+Level   9: detect good            (excellent)
+Level  10: earthquake             (excellent)
+Level  10: mind blade             (excellent)
+Level  14: remove curse           (excellent)
+Level  14: strength               (excellent)
+Level  14: cat eyes               (excellent)
+Level  15: cure critic            (excellent)
+Level  15: remove poison          (excellent)
+Level  17: spectre touch          (excellent)
+Level  18: poison                 (excellent)
+Level  20: protection from evil   (excellent)
+Level  20: flesh anew             (excellent)
+Level  20: flame blade            (excellent)
+Level  20: summon mount           (excellent)
+Level  22: psychic blast          (excellent)
+Level  24: recharge light         (excellent)
+Level  25: dispel evil            (excellent)
+Level  25: sanctuary              (excellent)
+Level  25: sense life             (excellent)
+Level  26: summon                 (excellent)
+Level  26: relocate               (excellent)
+Level  27: levitation             (excellent)
+Level  28: shocking sphere        (excellent)
+Level  29: haste                  (excellent)
+Level  30: heal                   (excellent)
+Level  32: frostbite              (excellent)
+Level  35: harm                   (excellent)
+Level  36: accuracy               (excellent)
+Level  38: word of recall         (excellent)
+Level  39: turn undead            (excellent)
+Level  40: locate object          (excellent)
+Level  40: group heal             (excellent)
+Level  43: infravision            (excellent)
+Level  45: fly                    (excellent)
+Level  47: regeneration           (excellent)
+Level  48: star flare             (excellent)
+Level  48: group recall           (excellent)
+Level  50: divine storm           (excellent)
+Level  50: identify               (excellent)
+Level  53: charge wand            (excellent)
+Level  60: charm person           (excellent)
+Level  65: toxic cloud            (excellent)
+Level  69: slow                   (excellent)
+Level  70: portal                 (excellent)
+Level  73: mystic shield          (excellent)
+Level  80: death strike           (excellent)
+Level  80: rimefang               (excellent)
+Level  81: restoration            (excellent)
+Level  85: holy word restore      (excellent)
+Level  88: purify                 (excellent)
+Level  95: holy word reckoning    (excellent)
+Level  95: mystical coat          (excellent)
+Level 100: wisdom                 (excellent)
+Level 109: guardian angel         (excellent)
+
+ 
+skills priest
+
+These are the skills the class priest will learn:
+
+Level   1: bludgeon                (excellent)
+Level   1: spellcraft              (excellent)
+Level   1: reverse vitalize sta    (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   3: first aid               (excellent)
+Level   6: climb                   (excellent)
+Level   8: swim                         (good)
+Level  15: track                         (bad)
+Level  20: riding landbased        (excellent)
+Level  25: second attack           (excellent)
+Level  25: parrying                     (fair)
+Level  30: throw                   (excellent)
+Level  35: critical hit            (excellent)
+Level  45: vitalize mana           (excellent)
+Level  50: dodge                        (good)
+Level  75: riding airborne         (excellent)
+Level  75: fade                    (excellent)
+
+
+SWORDSMAN 
+
+Swordsmen are masters of hand-to-hand weapons combat, possessing the
+raw skill and talent for bloodshed unlike any other class.  However,
+they are completely void of magical talent, making them slightly 
+vulnerable in positions where they need to heal themselves.  This class
+has exclusive access to the skill "Fifth AttacK" making them just that
+more deadly.
+ 
+Armor Classification: Plate
+ 
+ 
+ 
+Races that allow Swordsmen: All races, for the exception of Fairies.
+ 
+See also: SKILLS SWORDSMAN
+
+ 
+skills swordsman
+
+These are the skills the class swordsman will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: reverse vitalize sta    (excellent)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   4: caution                 (excellent)
+Level   5: second attack           (excellent)
+Level   5: swim                    (excellent)
+Level   6: parrying                   (Superb)
+Level   8: climb                   (excellent)
+Level   8: two-handed weapon       (excellent)
+Level   9: unfair fight            (excellent)
+Level  10: kick                    (excellent)
+Level  11: rescue                  (excellent)
+Level  12: bash                    (excellent)
+Level  13: sense stealth           (excellent)
+Level  16: platebreaker            (excellent)
+Level  17: headbang                (excellent)
+Level  18: berzerk                 (excellent)
+Level  19: dodge                        (good)
+Level  20: battle tactics          (excellent)
+Level  20: blindfight              (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: whirlwind               (excellent)
+Level  21: escape                  (excellent)
+Level  25: mortal strike           (excellent)
+Level  26: third attack            (excellent)
+Level  28: mounted battle          (excellent)
+Level  30: defensive stance        (excellent)
+Level  32: disarm foe              (excellent)
+Level  33: first to attack         (excellent)
+Level  35: vitalize stamina        (excellent)
+Level  38: scout                     (average)
+Level  39: push                    (excellent)
+Level  40: dual weapons            (excellent)
+Level  45: critical hit            (excellent)
+Level  46: taunt                   (excellent)
+Level  48: fourth attack           (excellent)
+Level  48: kick dirt               (excellent)
+Level  50: rage                    (excellent)
+Level  52: heroic rescue           (excellent)
+Level  55: shield block            (excellent)
+Level  58: intimidate              (excellent)
+Level  60: throw                   (excellent)
+Level  61: extra damage            (excellent)
+Level  65: fifth attack            (excellent)
+Level  66: track                     (average)
+Level  75: riding airborne         (excellent)
+Level  75: shield bash             (excellent)
+Level  82: pugilism                (excellent)
+Level 101: lethal blow             (excellent)
+
+ 
+spells swordsman
+
+These are the spells the class swordsman will learn:
+
+Level  20: summon mount           (excellent)
+
+
+ WIZARD 
+
+Wizards are the master of the arcane.  Though unable to wield most weapons, or
+wear most armor, Wizards find themselves not needing such things.  Their 
+mastery of their art provides them with the knowledge to defend themselves and,
+in time, become a serious threat to any who may cross their paths.  Though, 
+this knowledge comes at a sacrifice, for most Wizards find it almost 
+impossible to learn any divine or restorative spells.  They are also the only 
+class to have access to Power Word magic.
+ 
+Armor Classification: Cloth
+ 
+ 
+ 
+Races that allow Wizards: Changeling, Draconian, Drow, Elf, Fairy, Githzerai,
+Half-elf, Halfling, Human and ALL remort races.
+ 
+See also: SPELLS WIZARD, SKILLS WIZARD, POWER WORDS
+
+ 
+spells wizard
+
+These are the spells the class wizard will learn:
+
+Level   1: magic missile          (excellent)
+Level   1: cat eyes               (excellent)
+Level   1: reverse vitalize man   (excellent)
+Level   2: detect magic           (excellent)
+Level   2: read essence                (good)
+Level   3: detect invisibility    (excellent)
+Level   3: arc fire               (excellent)
+Level   3: protection from good   (excellent)
+Level   3: sense traps            (excellent)
+Level   4: burning hands          (excellent)
+Level   4: vorpal plating         (excellent)
+Level   5: invisibility           (excellent)
+Level   5: flame blade            (excellent)
+Level   6: blindness              (excellent)
+Level   7: color spray            (excellent)
+Level   8: strength                    (good)
+Level   9: enchant weapon         (excellent)
+Level  10: teleport               (excellent)
+Level  11: warstrike              (excellent)
+Level  12: detect evil            (excellent)
+Level  12: levitation             (excellent)
+Level  13: locate object          (excellent)
+Level  13: star flare             (excellent)
+Level  14: shocking grasp         (excellent)
+Level  15: curse                  (excellent)
+Level  16: psychic blast          (excellent)
+Level  17: fireball               (excellent)
+Level  17: relocate               (excellent)
+Level  18: infravision            (excellent)
+Level  19: sleep                  (excellent)
+Level  20: earthquake                 (awful)
+Level  20: summon mount           (excellent)
+Level  21: fly                    (excellent)
+Level  22: lightning bolt         (excellent)
+Level  23: mage gauntlets              (good)
+Level  25: charm person                (good)
+Level  27: recharge light           (average)
+Level  28: ice storm              (excellent)
+Level  29: haste                  (excellent)
+Level  30: poison                      (good)
+Level  32: sense life             (excellent)
+Level  33: charge wand            (excellent)
+Level  40: word of recall         (excellent)
+Level  41: lightning breath       (excellent)
+Level  43: acid breath            (excellent)
+Level  43: wizard shield          (excellent)
+Level  45: frost breath           (excellent)
+Level  47: gas breath             (excellent)
+Level  49: fire breath            (excellent)
+Level  50: identify               (excellent)
+Level  53: phase blur                   (bad)
+Level  55: death strike           (excellent)
+Level  55: beacon                 (excellent)
+Level  56: accuracy               (excellent)
+Level  60: regeneration               (awful)
+Level  60: group recall           (excellent)
+Level  61: power word paralyze          (bad)
+Level  65: rimefang               (excellent)
+Level  69: slow                   (excellent)
+Level  70: mystic shield               (good)
+Level  70: portal                 (excellent)
+Level  75: maelstrom              (excellent)
+Level  77: limited invulnerabil        (poor)
+Level  80: armor                      (awful)
+Level  80: group relocate         (excellent)
+Level  81: power word blind            (poor)
+Level  85: gravity focus          (excellent)
+Level  95: mystical coat               (good)
+Level 100: intelligence           (excellent)
+Level 100: wish                   (excellent)
+Level 100: tensers transformati   (excellent)
+Level 101: power word kill            (awful)
+Level 109: invulnerability            (awful)
+Level 109: familiar               (excellent)
+
+ 
+skills wizard
+
+These are the skills the class wizard will learn:
+
+Level   1: stab                      (average)
+Level   1: bludgeon                  (average)
+Level   1: slash                        (poor)
+Level   1: chop                        (awful)
+Level   1: spellcraft              (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   5: swim                         (good)
+Level   5: first aid               (excellent)
+Level  10: climb                   (excellent)
+Level  20: throw                   (excellent)
+Level  20: riding landbased        (excellent)
+Level  25: escape                  (excellent)
+Level  35: vitalize mana           (excellent)
+Level  40: second attack           (excellent)
+Level  45: critical hit            (excellent)
+Level  55: parrying                     (fair)
+Level  60: dodge                        (good)
+Level  72: fade                    (excellent)
+Level  75: riding airborne         (excellent)
+
+ 
+NECROMANCER 
+
+The Necromancer.  Shrouded in darkness and death, this specialized spellcaster
+has an array of frightening magic at his fingertips.  Armed with the ability to
+raise the dead on a whim, in many different forms, he can quickly build a small
+army with no threat to losing lives.  To add to their already formidable spell
+book, these death mages also sport a healthy selection of arcane magics, ready
+to be deployed at a moment's notice.
+ 
+Armor Classification: Cloth
+ 
+ 
+ 
+Races that allow Necromancers: Changelings, Draconians, Drow,
+Half-Ogres, Lizardmen and the Evil remort races
+ 
+See also: SKILLS NECROMANCER, SPELLS NECROMANCER, NECROMANCER HOW
+
+ 
+skills necromancer
+
+These are the skills the class necromancer will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: spellcraft              (excellent)
+Level   1: spellcasting          (level-based)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   8: swim                    (excellent)
+Level  10: climb                   (excellent)
+Level  20: riding landbased        (excellent)
+Level  25: throw                   (excellent)
+Level  32: critical hit            (excellent)
+Level  35: vitalize mana           (excellent)
+Level  50: second attack           (excellent)
+Level  55: parrying                     (fair)
+Level  65: dodge                        (good)
+Level  75: riding airborne         (excellent)
+Level  82: fade                    (excellent)
+
+
+ 
+spells necromancer
+
+These are the spells the class necromancer will learn:
+
+Level   1: pestilential blast     (excellent)
+Level   1: raise skeleton         (excellent)
+Level   2: detect magic           (excellent)
+Level   5: curse                    (Perfect)
+Level   6: invisibility           (excellent)
+Level   7: burning hands          (excellent)
+Level   8: strength               (excellent)
+Level  10: poison                    (Superb)
+Level  14: sense traps            (excellent)
+Level  15: blindness              (excellent)
+Level  16: shocking sphere        (excellent)
+Level  18: vorpal plating         (excellent)
+Level  20: detect poison          (excellent)
+Level  20: summon mount           (excellent)
+Level  22: psychic blast          (excellent)
+Level  24: detect invisibility    (excellent)
+Level  24: shocking grasp         (excellent)
+Level  25: raise zombie           (excellent)
+Level  30: locate object          (excellent)
+Level  30: death and decay        (excellent)
+Level  32: fly                    (excellent)
+Level  33: haste                  (excellent)
+Level  35: chill touch            (excellent)
+Level  40: raise mage             (excellent)
+Level  45: harm                   (excellent)
+Level  45: soul coil                (Perfect)
+Level  46: sense life             (excellent)
+Level  50: necrotic strike        (excellent)
+Level  50: slow                   (excellent)
+Level  55: relocate               (excellent)
+Level  58: spectre touch          (excellent)
+Level  60: rimefang               (excellent)
+Level  65: sleep                  (excellent)
+Level  67: acid blast             (excellent)
+Level  69: charge wand            (excellent)
+Level  70: portal                 (excellent)
+Level  72: energy drain           (excellent)
+Level  75: maelstrom              (excellent)
+Level  75: death touch              (Perfect)
+Level  75: death coil               (Perfect)
+Level  77: death strike              (Superb)
+Level  80: raise vampire          (excellent)
+Level  84: fear                   (excellent)
+Level  86: cat eyes               (excellent)
+Level  95: mystical coat          (excellent)
+Level 100: raise dead             (excellent)
+Level 100: tensers transformati   (excellent)
+Level 105: wizard shield          (excellent)
+Level 109: raise dracolich        (excellent)
+
+
+ PIRATE 
+
+Yar, matey! These ruthless sailors have once agained return to the seas of 
+Mystical, pillaging and plundering, and causing violent mayhem. Though they 
+are more skilled in brutal combat then they're land-lubbin' Rogue brethren, 
+Pirates still dabble in thievery and tend to lend from both the Swordsman and
+the Rogue skillset. (They also say ARRRR every once in a while!)
+ 
+Armor Classification: Mail
+ 
+ 
+Races that allow Pirates:
+ 
+See also: SKILLS PIRATE
+
+ 
+skills pirate
+
+These are the skills the class pirate will learn:
+
+Level   1: stab                    (excellent)
+Level   1: bludgeon                (excellent)
+Level   1: slash                   (excellent)
+Level   1: chop                    (excellent)
+Level   1: swim                      (Perfect)
+Level   1: pierce                  (excellent)
+Level   1: scan                    (excellent)
+Level   8: climb                   (excellent)
+Level   9: sneak                   (excellent)
+Level   9: caution                 (excellent)
+Level  10: kick                    (excellent)
+Level  10: two-handed weapon       (excellent)
+Level  12: bash                    (excellent)
+Level  20: riding landbased        (excellent)
+Level  20: platebreaker            (excellent)
+Level  20: wrath                   (excellent)
+Level  22: whirlwind               (excellent)
+Level  23: unfair fight            (excellent)
+Level  24: dodge                        (good)
+Level  25: second attack           (excellent)
+Level  25: backstab                (excellent)
+Level  25: escape                  (excellent)
+Level  25: headbang                (excellent)
+Level  26: bluff                   (excellent)
+Level  30: pick lock               (excellent)
+Level  32: disarm foe              (excellent)
+Level  35: parrying                (very good)
+Level  35: battle tactics          (excellent)
+Level  36: hide                    (excellent)
+Level  36: steal                   (excellent)
+Level  36: tumble                  (excellent)
+Level  36: scout                   (excellent)
+Level  38: rescue                  (excellent)
+Level  40: berzerk                 (excellent)
+Level  42: throw                   (excellent)
+Level  44: blindfight              (excellent)
+Level  45: defensive stance        (excellent)
+Level  48: third attack            (excellent)
+Level  50: critical hit            (excellent)
+Level  50: poison blade            (excellent)
+Level  55: track                     (average)
+Level  55: vitalize stamina        (excellent)
+Level  65: shield block            (excellent)
+Level  68: extra damage            (excellent)
+Level  75: riding airborne         (excellent)
+Level  75: motley crew             (excellent)
+Level  78: fourth attack           (excellent)
+Level  85: pugilism                (excellent)
+Level  85: shield bash             (excellent)
+Level  86: push                    (excellent)
+Level  89: kick dirt               (excellent)
+Level  89: rage                    (excellent)
+Level  89: chokehold               (excellent)
+Level  98: assassinate                  (fair)
+Level  99: double cross            (excellent)
+Level 105: thrust                  (excellent)
+
+ 
+spells pirate
+
+These are the spells the class pirate will learn:
+
+Level  20: summon mount           (excellent)
