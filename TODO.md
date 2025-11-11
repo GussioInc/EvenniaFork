@@ -51,9 +51,29 @@ The `HELP GROUP` entry describes how players can form groups.
 *   **Experience Sharing**: How is XP shared among group members? Is it split evenly? Do members have to be in the same room or area?
 *   **Group Commands**: We will need to implement the `group` command to invite players and the `gt` (group tell) command for communication.
 
+## Races
+
+**Design Note (2025-11-11):** The race system has been overhauled to use the `MUD Races Index.txt` as the definitive source. The old races, including the "remort" races, have been removed. The new system introduces `max_stats` for each race, which are enforced by the `StatsHandler`. It also adds a `classes_allowed` attribute to each race, though this is not yet used by the game.
+
 ## Racial Innate Abilities
 
 **Design Note (2025-11-07):** Most innate abilities are the spell or skill of the same name, but without a cooldown timer. This should be the default implementation approach.
+
+The `MUD Races Index.txt` file lists many innate abilities for races. The exact mechanics for these are not always clear. The following is a list of abilities from the new race file that need to be implemented:
+*   `sense stealth`
+*   `battle tactics`
+*   `sense passages`
+*   `tough skin`
+*   `polymorph`
+*   `horn butt`
+*   `tail lash`
+*   `extra damage`
+*   `beak dive`
+*   `beastial strength`
+*   `rabid bite`
+*   `fade`
+*   `unfair fight`
+*   `pounce`
 
 The `crawl.txt` file lists many innate abilities for races. The exact mechanics for these are not always clear.
 
