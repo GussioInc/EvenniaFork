@@ -1,0 +1,379 @@
+HUMAN 
+
+Go to the nearest mirror and have a look. Maybe not the finest specimen,
+but you'll suffice. :)
+
+Alignment: Neutral
+Innate Skills: sense stealth, battle tactics
+
+Max Stats: str - 18 int - 18 wis - 18 dex - 18 con - 18 cha - 18
+
+Classes Allowed: Priest, Monk, DarKnight, Bard, Wizard, Druid Ranger,
+Paladin, Swordsman, Assassin, Rogue, Pirate, Necromancer
+
+
+ELVES 
+
+Elves consider themselves to be 'firstborn'. Their long lifespan sometimes
+makes them arrogant towards their distant human cousins. They have slender
+lithe bodies with long, fair hair.
+
+Alignment: Good
+Innate Skills: Infravision, Tumble
+
+Max Stats: str - 18  int - 18  wis - 18  dex - 19  con - 17  cha - 18
+
+
+Half-Elves 
+
+Part human, part elf - they prefer to be called half elf rather than half 
+human. They are often rejected both among the elves and the humans. They
+share the long lifespan of the elves but have a more muscular body than
+elves in general.
+
+Alignment: Good
+Innate Effects: Infravision
+Innate Skills: Sense Passages
+
+Max Stats:  str - 18  int - 18  wis - 18  dex - 18  con - 18  cha - 18
+
+Classes Allowed: Priest, Bard, Wizard, Druid, Ranger, Paladin, Swordsman,
+Warrior/Thief, Warrior/Cleric, Thief/Cleric, Warrior/Magic-User, 
+Thief/Magic-User, Warrior/Thief/Cleric, Warrior/Thief/Magic-User, 
+Warrior/Cleric/Magic-User
+
+
+DWARF 
+
+Don't make the mistake of calling them a dwarf. These short but stout people
+have biceps like a maidens waist. And we are not talking about an elf maiden.
+Stocky fellows who love beer, they are often described.  Besides that they
+fancy gold and a good fight.
+Alignment: Good
+Innate Effects: Infravision
+
+Max Stats: str - 20  int - 16  wis - 18  dex - 16  con - 20  cha - 17
+
+
+GNOME 
+
+Gnomes are distant cousins to the dwarves and halflings. They are of the
+same height, but not as stocky as their fellow dwarves. They are however
+not a trifle smarter than them.  They are often found aroung the world
+trying to solve the most ridiculous problems.
+
+Alignment: Good
+Innate Effects: Infravision
+Innate Skills: Hide
+
+Max Stats:  str - 16  int - 20  wis - 18  dex - 20  con - 18  cha - 18
+
+Classes Allowed: Priest, Swordsman, Rogue, Warrior/Thief, Thief/Illusionist, 
+Warrior/Illusionist, Warrior/Thief/Illusionist, Warrior/Cleric/Illusionist
+
+
+HALFLING 
+
+These small people are often underestimated because of their size. That is
+their advantage however. Most halflings are peace loving and lazy, seldom
+leaving their village to roam among the 'giants', but there are young
+adventurous ones that will lighten your purse if you don't watch out.
+
+
+Alignment: Good
+Innate Skills: Detect Evil, Hide, Accuracy
+
+Max Stats: str - 16  int - 18  wis - 18  dex - 20  con - 18  cha - 18
+
+
+BARBARIAN 
+
+Not known for their intelligence, barbarians can be your good friend in a
+knock-down fight.
+
+
+Alignment: Neutral
+Innate Skills: Berzerk, Intimidate
+
+Max Stats: str - 19  int - 17  wis - 16  dex - 17  con - 19  cha - 18
+
+
+HALF-ORCS 
+
+These poor 'cretins' were born after the orc raids on human villages, and
+are despised in general. They have the body of the orc and the brain of the
+human. They are fierce fighters and thus sometimes accepted in the cities.
+
+Alignment: Evil
+Innate Skills: Resist Poison (+30), Regeneration
+
+Max Stats: str - 19  int - 16  wis - 16  dex - 16  con - 18  cha - 16
+
+
+HALF-OGRES 
+
+Long ago the Irda was among the fairest people on the realms. Perverted by
+evil magic, some have turned to the hideous Ogres. Some of them have
+escaped this perversion to some degree though. Stronger than the general
+human, the curse makes them little a dull-witted.
+
+Alignment: Neutral
+Innate Skills: Tough Skin (-40 AC), Parrying
+
+Max Stats: str - 18  int - 18  wis - 18  dex - 18  con - 18  cha - 18
+
+
+Changelings 
+
+A rare race whose origins are unknown. It is said they can shift into another 
+form.
+
+Alignment:  Neutral
+Innate Effects: Regeneration
+Innate Skills: Polymorph
+
+Max Stats:  str - 16  int - 18  wis - 16  dex - 16  con - 16  cha - 16
+
+Classes Allowed: All, except Necromancer
+
+
+FAIRY 
+
+Small with gossamer wings, these playful legendary people often try to find
+someone to harass or joke with. They are extremely difficult to catch and
+often magical. If you see one, befriend it or flee!
+
+Alignment: Good
+Innate Effects: Fly, Sanctuary
+
+Max Stats:  str - 14  int - 20  wis - 18  dex - 20  con - 16  cha - 18
+
+Classes Allowed: Wizard, Druid, Ranger, Warrior/Cleric, Thief/Cleric, 
+Warrior/Thief/Mage
+
+
+MINOTAUR 
+
+Minotaurs have their own code of honor. The one still standing is the winner.
+These bull-like creatures are extremely strong. Even unarmed they can
+dismember you with their horns. Since their appearance is often intimidating
+enough, they seldom use their wits.
+
+Alignment: Neutral
+Innate Skills: Horn Butt, Intimidate
+
+Max Stats: str - 20  int - 14  wis - 14  dex - 18  con - 20  cha - 16
+
+
+RATMAN 
+
+With cruel magic, an unknown god made the sewer rats larger and more
+intelligent - ratmen. They are still considered to be vermin among the local
+people though, but accepted by most.
+Alignment: Evil
+Innate Effects: Sneak
+Innate Skills: Hide, Parrying
+
+Max Stats: str - 18  int - 17  wis - 18  dex - 20  con - 17  cha - 17
+
+
+DROW 
+
+These cousins to the surface elves are feared for their cruelty. They dwell
+in the darkness and have some innate magic abilities. They feel awkward out
+in the sun since their eyes have long been adjusted to darkness.
+Alignment: Evil
+Innate Effects: Infravision, Detect Good
+
+Max Stats: str - 18  int - 19  wis - 18  dex - 18  con - 18  cha - 17
+
+
+LIZARDMAN 
+
+Of unknown origin, these creatures have been on the realm probably longer than
+any other race. They usually avoid civilization and are hermits even among
+themselves. Their size and fearful snapping tail makes them worthy opponents
+indeed.
+
+Alignment: Neutral
+Innate Skills: Tail Lash, Intimidate
+
+Max Stats: str - 20  int - 16  wis - 17  dex - 18  con - 18  cha - 16
+
+
+GIANTS 
+
+Giants are a race of humanoids, approximately 10-14 feet tall. Giants make
+superb fighters because of their incredible strength, and reasonable clerics.
+They'd make good thieves if all locks could be overcome by brute force,
+but they still make damn good battering rams.
+
+Alignment: Evil
+Innate Skills: Intimidate, Extra Damage
+
+Max Stats: str - 21  int - 14  wis - 16  dex - 14  con - 21  cha - 14
+
+
+DRACONIANS 
+
+Draconians are half-humanoid, half-dragon hybrid. Draconians make good
+fighters, mages and thieves generally. All Draconians are large creatures,
+with large wings on their backs which enable them to fly well for their
+bulk.
+
+Alignment: Evil
+Innate Skills: Fly, Detect Good
+
+Max Stats: str - 19  int - 17  wis - 16  dex - 17  con - 19  cha - 17
+
+
+CENTAUR 
+
+The Centaur is a half-man, half horse hybrid. Centaurs excel in classes
+related to woodlands, and make decent bards and priests as well. Most
+Centaurs are fond of good food and drinks, making them unpredictable and
+a pain in the neck at times.
+
+Alignment: Good
+Innate Skills: Infravision, Regeneration
+
+Max Stats: str - 19  int - 15  wis - 15  dex - 16  con - 20  cha - 18
+
+
+AARAKOCRA 
+
+A race of intelligent bird-men who live only among the highest mountain
+peaks. They have a wingspan of nearly 20 feet, and the males have very
+colorful plumage. Aarakocra are strong swift fliers, and use this to a
+great advantage. As a race they have only recently come into contact
+with humans and their ilk.
+
+Alignment: Neutral
+Innate Skills: Fly, Beak Dive
+
+Max Stats: str - 17  int - 18  wis - 18  dex - 19  con - 17  cha - 18
+
+
+ALAGHI 
+
+A race of forest-dwelling humanoids with barrel chests, short legs, and
+long powerful arms. Alaghi are covered from head to toe with long thick
+hair. They stand well over 6 feet tall and weigh more than 300 pounds.
+They are a shy and peaceful race with a driving curiosity - it is this 
+curiosity that has brought them out of hiding recently to join the other
+races of Mystical.
+
+Alignment: Good
+Innate Effects: Beastial Strength (+4 Damroll) 
+Innate Skills: Hide
+
+Max Stats:  str - 20  int - 16  wis - 18  dex - 18  con - 18  cha - 18
+
+Classes Allowed: Druid, Ranger, Swordsman, Warrior/Cleric, Warrior/Thief, 
+Thief/Cleric, Warrior/Thief/Cleric
+
+
+BUGBEAR 
+
+Generally thought to be a race of "monsters". Bugbears stand about 7 feet in 
+height with very muscular frames. They have thick hides and coarse dark hair. 
+Most Bugbears live by plundering and ambush, taking slaves and eating 
+anything they can kill. Some unusual representatives of the species who 
+struggle to control their vicious temperment and natural inclination to bully 
+others have been recently observed consorting in the towns and villages of 
+Mystical.
+
+Alignment:  Evil
+Innate Effects: Infravision, Beastial Strength (+4 damroll)
+
+Max Stats:  str - 19  int - 17  wis - 18  dex - 18  con - 18  cha - 17
+
+Classes Allowed: Priest, Assassin, Swordsman, Rogue, Warrior/Thief, 
+Warrior/Cleric, Thief/Cleric, Warrior/Thief/Cleric
+
+
+BULLYWUG 
+
+Bipedal frog-like amphibians, usually inhabiting swamps, are strong swimmers
+and equally comfortable in or out of water. They are covered with a smooth
+green hide with huge frog-like faces and bulging eyes. They do not actually
+walk, as such, but hop.
+
+Alignment: Neutral
+Innate Skills: Swim, Hide, Cat Eyes
+
+Max Stats: str - 18  int - 17  wis - 18  dex - 19  con - 18  cha - 16
+
+
+FLIND 
+
+Flinds are a sort of cross between a hyena and a human. They are covered 
+with mangy brown fur, with bestial muzzles and long muscular limbs. Flinds
+tend to be organized and less savage than most humanoids. Still, they are
+quick to violence, but are more likely to consider the consequences first, 
+then plan a careful attack later.
+
+Alignment:  Evil
+Innate Skills: Hide, Rabid Bite
+
+Max Stats:  str - 19  int - 18  wis - 18  dex - 18  con - 18  cha - 17
+
+Classes Allowed: Priest, DarKnight, Swordsman, Rogue, Warrior/Thief, 
+Warrior/Cleric, Warrior/Thief/Cleric
+
+
+GIFF 
+
+A race of hulking, powerfully muscled mercenaries that resemble bipedal
+hippopotami. Giff are not known as towers of intellect, but they are strong
+and loyal. Giff society honors most the fighting prowess of an individual.
+Thus, they are some of the greatest warriors in the history of Mystical.
+
+Alignment: Neutral
+Innate Effects: Resist Magic (+30), Regeneration
+
+Max Stats: str - 20  int - 17  wis - 18  dex - 17  con - 19  cha - 18
+
+
+GITHZERAI 
+
+A race of thin and gaunt people, with sharp features and thin faces. They 
+are nomadic by nature, with no known homeland, but are fiercely loyal to 
+each other. Where they come from has become a bit of a mystery on Mystical 
+- if the Githzerai know, none of them are talking.
+
+Alignment: Neutral
+Innate Skills: Fade
+
+Max Stats:  str - 18  int - 18  wis - 18  dex - 18  con - 18  cha - 18
+
+Classes Allowed: Monk, DarKnight, Wizard, Assassin, Swordsman, Rogue, 
+Warrior/Magic-User, Thief/Magic-User, Warrior/Thief/Magic-User
+
+
+GNOLL 
+
+Gnolls are a race of hyena-like scavengers, with a disposition to match.
+They are among the most chaotic of all the races of Mystical, finding it 
+hard to see past the moment. Some members of the race do try to overcome 
+their short tempers, and natural tendency to lie, cheat, and steal.
+
+Alignment: Evil
+Innate Skills: Unfair Fight, Rabid Bite
+
+Max Stats:  str - 19  int - 17  wis - 18  dex - 18  con - 18  cha - 17
+
+Classes Allowed: Priest, DarKnight, Swordsman, Rogue, Warrior/Thief
+
+
+WEMICS 
+
+Wemics are centaur-like creatures with the bodies of lions and the torso
+of humans. Wemics are nomads and never build a permanent home. Wemics are
+a very warlike race of people, they are also extremely curious about the
+world.
+
+Alignment: Neutral
+Innate Skills: Pounce
+
+Max Stats: str - 18  int - 18  wis - 18  dex - 17  con - 19  cha - 19
