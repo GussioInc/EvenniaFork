@@ -20,8 +20,8 @@ from commands.setchar import CmdSetChar
 from commands.datetime import CmdGameTime, CmdRealTime, CmdCalendar
 from commands.area_importer import CmdImportArea
 from commands.group_commands import CmdFollow, CmdGroup, CmdGTell, CmdGWho
+from commands.equipment_commands import CmdWear
 from evennia.contrib.rpg.equipment import (
-    CmdWear,
     CmdRemove,
     CmdInventory,
 )

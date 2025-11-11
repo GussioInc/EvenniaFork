@@ -51,6 +51,13 @@ The `HELP GROUP` entry describes how players can form groups.
 *   **Experience Sharing**: How is XP shared among group members? Is it split evenly? Do members have to be in the same room or area?
 *   **Group Commands**: We will need to implement the `group` command to invite players and the `gt` (group tell) command for communication.
 
+## Classes
+
+**Design Note (2025-11-11):** The class system has been overhauled to use the `MUD Classes Skills Spells Learned.txt` as the definitive source. This introduces several new mechanics and design considerations:
+*   **Skill Proficiencies**: Each class now has a maximum proficiency level for each skill and spell. This is stored in the `skills` dictionary on the class definition. The `SkillHandler` has been updated to store both the current proficiency and the maximum. The actual training of skills (raising proficiency) is not yet implemented.
+*   **Armor Restrictions**: A new `armor_type` system has been implemented. Objects have an `armor_type` attribute (1=Cloth, 2=Leather, 3=Mail, 4=Plate), and classes have an `armor_restriction` that represents the heaviest type they can wear. This is enforced by a custom `CmdWear`.
+*   **Removed Mechanics**: The old system of `base_hp`, `hp_per_level`, `xp_table`, and `skills_at_level` has been removed from the class definitions. These will need to be re-implemented based on new data or design decisions.
+
 ## Races
 
 **Design Note (2025-11-11):** The race system has been overhauled to use the `MUD Races Index.txt` as the definitive source. The old races, including the "remort" races, have been removed. The new system introduces `max_stats` for each race, which are enforced by the `StatsHandler`. It also adds a `classes_allowed` attribute to each race, though this is not yet used by the game.

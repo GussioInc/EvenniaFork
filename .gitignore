@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Evennia-specific
+.evennia_-e_basetmp
+server/logs/*
+!server/logs/.gitkeep
+server/portal/portal.pid
+server/server.pid
+game/logs/*
+!game/logs/.gitkeep
+game/portal/portal.pid
+game/server.pid
