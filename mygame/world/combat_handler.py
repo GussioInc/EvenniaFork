@@ -19,6 +19,8 @@ class CombatHandler(DefaultScript):
         self.db.combatants = []
         # This dict tracks NPC aggro: {npc: {pc: hate_value,...},...}
         self.db.aggro_map = {}
+        # This set tracks who has dealt damage this fight
+        self.db.participants = set()
 
     def add_combatant(self, combatant):
         """Adds a new combatant to the fight."""
@@ -137,7 +139,7 @@ class CombatHandler(DefaultScript):
         
         if hit_roll + str_mod + hit_bonus < defender.buffs.get_mod("armor"):
             attacker.msg(f"You miss {defender.key}!")
-            defender.msg(f"{attacker.key} misses you!")
+            defender.msg(f"{self.get_character_display(attacker)} misses you!")
             return
 
         # 2. Damage Roll
@@ -148,9 +150,18 @@ class CombatHandler(DefaultScript):
         # at_damage will handle aggro generation
         defender.at_damage(dmg, attacker)
         
+        # Track participation for XP sharing
+        self.db.participants.add(attacker)
+
         attacker.msg(f"You hit {defender.key} for {dmg} damage!")
-        defender.msg(f"{attacker.key} hits you for {dmg} damage!")
-        # mygame/world/combat_handler.py
+        defender.msg(f"{self.get_character_display(attacker)} hits you for {dmg} damage!")
+
+    def get_character_display(self, char):
+        """Returns a formatted string for a character's name in combat."""
+        name = char.key
+        if hasattr(char, "ndb") and char.ndb.follow_target:
+            name += " (Following)"
+        return name
 
 class CharacterCombatHandler:
     """

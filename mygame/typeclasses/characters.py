@@ -20,6 +20,21 @@ from world.class_handler import ClassHandler
 from world.race_handler import RaceHandler
 from world.skill_handler import SkillHandler
 from world.combat_handler import CharacterCombatHandler
+from world.groups import Group
+
+class GroupHandler:
+    """Handles group mechanics for a character."""
+    def __init__(self, character):
+        self.character = character
+        self.group = None  # Reference to the Group object
+
+    @property
+    def is_leader(self):
+        return self.group and self.group.leader == self.character
+
+    @property
+    def is_in_group(self):
+        return self.group is not None
 
 class Character(DefaultCharacter):
     """
@@ -57,6 +72,11 @@ class Character(DefaultCharacter):
     def combat(self):
         """Accesses the character's combat helper. Use: self.combat.target"""
         return CharacterCombatHandler(self)
+
+    @lazy_property
+    def group(self):
+        """Accesses the character's group helper."""
+        return GroupHandler(self)
         
     @lazy_property
     def buffs(self):
@@ -169,7 +189,26 @@ class Character(DefaultCharacter):
         # Grant XP to the attacker
         if attacker and not self.is_pc:
              xp_value = self.level * 100 # Example formula
-             attacker.gain_exp(xp_value, source=self)
+
+             if not attacker.group.is_in_group:
+                 attacker.gain_exp(xp_value, source=self)
+             else:
+                 group = attacker.group.group
+                 eligible_members = [
+                     member for member in group.members
+                     if member in attacker.combat.handler.db.participants
+                     and member.location == attacker.location
+                 ]
+
+                 if not eligible_members:
+                     # Fallback to the killer if no one else is eligible
+                     attacker.gain_exp(xp_value, source=self)
+                     return
+
+                 xp_share = xp_value // len(eligible_members)
+                 group.send_message(f"The group gains {xp_value} experience from the kill!")
+                 for member in eligible_members:
+                     member.gain_exp(xp_share, source=self)
 
     def gain_exp(self, amount, source=None):
         """
@@ -187,3 +226,16 @@ class Character(DefaultCharacter):
         
         # Delegate all level-up logic to the handler
         self.class_handler.check_for_level_up()
+
+    def at_post_move(self, source_location):
+        """
+        Called after a successful move.
+        This is used to trigger followers to follow.
+        """
+        super().at_post_move(source_location)
+
+        # See if anyone is following this character
+        for follower in self.location.contents:
+            if hasattr(follower, "ndb") and follower.ndb.follow_target == self:
+                # The 'execute_cmd' will respect movement costs, delays, etc.
+                follower.execute_cmd(f"goto {self.location.dbref}")
