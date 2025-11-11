@@ -1,5 +1,18 @@
 # mygame/world/stats_handler.py
-from evennia.contrib.rpg.traits import TraitHandler
+from evennia.contrib.rpg.traits import TraitHandler, Trait
+
+class StatTrait(Trait):
+    """A custom Trait class to enforce max stats."""
+    def __set__(self, instance, value):
+        """This is called when the trait's value is set."""
+        race = instance.obj.race_handler.get_race_obj()
+        max_stat = race.max_stats.get(self.key.upper(), 99)
+
+        if value > max_stat:
+            value = max_stat
+            instance.obj.msg(f"Your {self.name} is maxed out at {max_stat}.")
+
+        super().__set__(instance, value)
 
 class StatsHandler(TraitHandler):
     """
@@ -11,12 +24,12 @@ class StatsHandler(TraitHandler):
         
     def initialize(self):
         """Called by Character.at_object_creation to set defaults."""
-        self.add("STR", "Strength", trait_type="static", base=10)
-        self.add("DEX", "Dexterity", trait_type="static", base=10)
-        self.add("CON", "Constitution", trait_type="static", base=10)
-        self.add("INT", "Intelligence", trait_type="static", base=10)
-        self.add("WIS", "Wisdom", trait_type="static", base=10)
-        self.add("CHA", "Charisma", trait_type="static", base=10)
+        self.add("STR", "Strength", trait_type="static", base=10, trait_class=StatTrait)
+        self.add("DEX", "Dexterity", trait_type="static", base=10, trait_class=StatTrait)
+        self.add("CON", "Constitution", trait_type="static", base=10, trait_class=StatTrait)
+        self.add("INT", "Intelligence", trait_type="static", base=10, trait_class=StatTrait)
+        self.add("WIS", "Wisdom", trait_type="static", base=10, trait_class=StatTrait)
+        self.add("CHA", "Charisma", trait_type="static", base=10, trait_class=StatTrait)
 
 # mygame/world/vitals_handler.py
 from evennia.contrib.rpg.traits import TraitHandler

@@ -36,11 +36,17 @@ def convert_area(input_path, output_path):
             if command == "M":
                 mob_vnum = int(parts[2])
                 room_vnum = int(parts[4])
-                f.write(f'ev.search_object("vnum", {mob_vnum})[0].location = ev.search_object("vnum", {room_vnum})[0]\n')
+                if mob_vnum in parsed_data["mobiles"]:
+                    f.write(f'ev.search_object("vnum", {mob_vnum})[0].location = ev.search_object("vnum", {room_vnum})[0]\n')
+                else:
+                    print(f"Warning: Mobile VNUM {mob_vnum} not found in area file. Skipping reset.")
             elif command == "O":
                 obj_vnum = int(parts[2])
                 room_vnum = int(parts[4])
-                f.write(f'ev.search_object("vnum", {obj_vnum})[0].location = ev.search_object("vnum", {room_vnum})[0]\n')
+                if obj_vnum in parsed_data["objects"]:
+                    f.write(f'ev.search_object("vnum", {obj_vnum})[0].location = ev.search_object("vnum", {room_vnum})[0]\n')
+                else:
+                    print(f"Warning: Object VNUM {obj_vnum} not found in area file. Skipping reset.")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
