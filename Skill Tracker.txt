@@ -1,0 +1,48 @@
+Skill Implementation Tracker
+
+This file tracks the implementation of non-magical skills from the reference file
+and notes any discrepancies, unimplemented features, or design questions.
+
+Implemented Skills:
+- Assassinate
+- Backstab
+- Bash
+- Bashdoor (Placeholder)
+- Blindfight
+- Bluff
+- Circle Around
+- Dodge
+- Escape
+- Extra Damage
+- First Aid
+- Hide
+- Kick
+- Kick Dirt
+- Legsweep
+- Neutralize Poison
+- Parrying
+- Push (Placeholder)
+- Rescue (Placeholder)
+- Scan (Placeholder)
+- Second Attack
+- Shield Block
+- Sneak
+- Steal
+- Taunt (Placeholder)
+- Third Attack
+- Thieves Guild
+- Track (Placeholder)
+
+Unimplemented Features:
+- Skill Proficiency: A system for checking skill proficiency is needed for
+  many of the implemented skills to function correctly.
+- Positional Combat: Skills like Backstab and Circle Around need a system
+  for determining a character's position relative to their target.
+- Stun/Status Effects: A more robust system for handling stuns and other
+  status effects is needed for skills like Bash and Kick Dirt.
+- Exit Interactions: Skills like Bashdoor and Push need a system for
+  interacting with exits.
+
+Design Questions:
+- Cooldowns: Many skills have cooldowns that are based on rounds rather than
+  seconds. The current cooldown system may need to be modified to support this.

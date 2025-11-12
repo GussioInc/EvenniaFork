@@ -1,0 +1,100 @@
+Spell Implementation Tracker
+
+This file tracks the implementation of spells from the reference file
+and notes any discrepancies, unimplemented features, or design questions.
+
+Implemented Spells:
+- Accuracy
+- Acid Blast (Saving throw omitted)
+- Acid Breath (Saving throw omitted)
+- Arc Fire (Saving throw omitted)
+- Armor
+- Bless
+- Blindness (Saving throw omitted)
+- Bloodlust
+- Color Spray (Saving throw omitted)
+- Cure Critic
+- Cure Light
+- Curse (Saving throw omitted)
+- Detect Evil
+- Detect Good
+- Detect Magic
+- Detect Poison
+- Dispel Evil
+- Divine Storm (Saving throw omitted)
+- Divine Wrath
+- Earthquake
+- Energy Drain (Saving throw omitted)
+- Fireball
+- Fire Breath (Saving throw omitted)
+- Frost Breath (Saving throw omitted)
+- Gas Breath (Saving throw omitted)
+- Group Heal
+- Group Recall
+- Harm (Saving throw omitted)
+- Heal (Cures blindness)
+- Holy Word: Restore
+- Ice Storm (Saving throw omitted)
+- Invisibility
+- Lightning Bolt (Saving throw omitted)
+- Lightning Breath (Saving throw omitted)
+- Magic Missile
+- Mass Invisibility
+- Poison (Saving throw omitted)
+- Protection From Evil (Simplified to general AC bonus)
+- Protection From Good (Simplified to general AC bonus)
+- Remove Curse
+- Remove Poison
+- Sanctuary
+- Sense Life
+- Shocking Grasp (Saving throw omitted)
+- Sleep (Saving throw omitted)
+- Strength
+- Teleport
+- Word of Recall
+
+Unimplemented Features:
+- Saving Throws: A global system for saving throws needs to be designed and
+  implemented. This will affect many of the implemented spells.
+- Enchant Weapon: This spell was skipped due to difficulties modifying the
+  base Object class. This needs to be revisited.
+- Alignment-based effects: Spells like Protection From Evil are currently
+  simplified. A more robust alignment system is needed for them to function
+  as described.
+
+Design Questions:
+- Buff stacking: The `Strength` spell is noted as being stackable. The current
+  buff system may not support this correctly. This needs to be investigated.
+- "Break on attack" for Invisibility: The combat system needs to be updated
+  to check for and remove the `invisibility` buff when the character
+  attacks or is attacked.
+- Teleport `zone` keyword: The `Teleport` spell assumes a "zone" tag on
+  rooms, which may not exist. A zone system needs to be implemented or the
+  spell needs to be modified.
+
+Abilities Requiring New Systems:
+- Ranged Combat (Archery, Shoot, Piercing Shot): Requires a system for
+  ranged attacks, projectiles, and targeting across multiple rooms.
+- Advanced Melee Skills (Backstab, Assassinate, Circle Around): These need
+  positional combat mechanics and special damage multipliers.
+- Special Combat Moves (Bash, Kick, Legsweep): Require a stun/status effect
+  system that is more robust than the current implementation. `Bashdoor`
+  also needs interaction with Exits.
+- Pet/Summoning System (Familiar, Guardian Angel, Raise Dead): A major new
+  feature is required to handle pets, their commands, and their AI.
+- Memorization Mechanic (Holy Words, Power Words): These spells need a
+  system for "memorizing" them before they can be cast, which is different
+  from a standard cooldown.
+- Mounts and Riding (Riding Airborne/Landbased): Requires a full system for
+  mounts, mounted combat, and fast travel.
+- Automatic Skills (Battle Tactics): Needs a mechanism for skills to be
+  used automatically by characters (especially NPCs) under certain
+  conditions.
+- Delayed/Triggered Effects (Break): The `Break` skill requires a system
+  for applying debuffs that have a delayed damage effect triggered by
+  specific actions.
+- Environmental Effects (Blaze, Fly): `Blaze` needs to be able to affect
+  adjacent rooms and apply damage over time to a room. `Fly` requires
+  special room flags to allow access to otherwise unreachable areas.
+- Death Blow Mechanics (Cheating Death): A hook in the `at_damage` or
+  `at_defeat` methods is needed to trigger effects that prevent death.

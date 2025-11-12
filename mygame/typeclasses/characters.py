@@ -117,8 +117,39 @@ class Character(DefaultCharacter):
         self.skills.initialize()
         self.combat.initialize()
         self.equipment.initialize()
+
+        self.db.alignment = 0 # -1000 (evil) to 1000 (good)
         
         self.scripts.add("world.regen_script.RegenScript")
+
+    @property
+    def hitroll(self):
+        """Calculates hitroll from stats and buffs."""
+        # Example: STR mod for melee, DEX for ranged
+        base_hit = (self.stats.STR.value - 10) // 2
+        buff_hit = self.buffs.get_total("hitroll", 0)
+        return base_hit + buff_hit
+
+    @property
+    def damroll(self):
+        """Calculates damroll from stats and buffs."""
+        base_dam = (self.stats.STR.value - 10) // 2
+        buff_dam = self.buffs.get_total("damroll", 0)
+        return base_dam + buff_dam
+
+    @property
+    def ac(self):
+        """Calculates armor class from DEX and buffs."""
+        base_ac = (self.stats.DEX.value - 10) // 2
+        buff_ac = self.buffs.get_total("ac", 0)
+        return 10 + base_ac + buff_ac
+
+    @property
+    def magic_resistance(self):
+        """Calculates magic resistance from stats and buffs."""
+        base_mr = (self.stats.WIS.value - 10) // 2
+        buff_mr = self.buffs.get_total("magic_resistance", 0)
+        return base_mr + buff_mr
 
     @property
     def level(self):
@@ -159,11 +190,16 @@ class Character(DefaultCharacter):
         """
         Called when this character takes damage.
         """
-        # Check for damage reduction from buffs (like Armor spell)
-        damage_reduction = self.buffs.get_total("damage_reduction", 0)
-        amount -= damage_reduction
+        # Handle flat and percentage-based damage reduction
+        flat_reduction = self.buffs.get_total("damage_reduction_flat", 0)
+        percent_reduction = self.buffs.get_total("damage_reduction_percent", 0)
+
+        amount -= flat_reduction
+        amount *= (1 - percent_reduction)
+
+        amount = round(amount)
         if amount < 1:
-            amount = 1  # Always do at least 1 damage
+            amount = 1
 
         self.vitals.HP.current -= amount
         
