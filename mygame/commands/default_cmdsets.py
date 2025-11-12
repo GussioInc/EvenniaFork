@@ -21,6 +21,7 @@ from commands.datetime import CmdGameTime, CmdRealTime, CmdCalendar
 from commands.area_importer import CmdImportArea
 from commands.group_commands import CmdFollow, CmdGroup, CmdGTell, CmdGWho
 from commands.equipment_commands import CmdWear
+from commands.character_commands import CmdSkills
 from evennia.contrib.rpg.equipment import (
     CmdRemove,
     CmdInventory,
@@ -60,6 +61,7 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         self.add(CmdGroup())
         self.add(CmdGTell())
         self.add(CmdGWho())
+        self.add(CmdSkills())
 
 
 class AccountCmdSet(default_cmds.AccountCmdSet):
