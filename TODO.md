@@ -57,6 +57,8 @@ The `HELP GROUP` entry describes how players can form groups.
 *   **Skill Proficiencies**: Each class now has a maximum proficiency level for each skill and spell. This is stored in the `skills` dictionary on the class definition. The `SkillHandler` has been updated to store both the current proficiency and the maximum. The actual training of skills (raising proficiency) is not yet implemented.
 *   **Armor Restrictions**: A new `armor_type` system has been implemented. Objects have an `armor_type` attribute (1=Cloth, 2=Leather, 3=Mail, 4=Plate), and classes have an `armor_restriction` that represents the heaviest type they can wear. This is enforced by a custom `CmdWear`.
 *   **Removed Mechanics**: The old system of `base_hp`, `hp_per_level`, `xp_table`, and `skills_at_level` has been removed from the class definitions. These will need to be re-implemented based on new data or design decisions.
+*   **Multi-classing**: The "Increased Cost Model" for multi-classing has been implemented. Multi-class characters have a `num_classes` attribute (2 for dual, 3 for tri), and the `ClassHandler` is set up to multiply the XP required for the next level by this number. This system is not fully active yet, as no classes currently have XP tables.
+*   **Missing Multi-Class Combinations**: The `MUD Races Index.txt` file mentions "Warrior/Thief/Illusionist" and "Warrior/Cleric/Illusionist" as valid class combinations for Gnomes, but these were not defined in the `MUD Multi Class Skills Spells Learned.txt` file. Skill lists for these combinations will need to be created.
 
 ## Races
 

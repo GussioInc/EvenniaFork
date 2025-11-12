@@ -11,6 +11,7 @@ class BaseClass:
     key = "base"
     armor_restriction = ARMOR_TYPES["plate"]
     skills = {}
+    num_classes = 1
 
 class Rogue(BaseClass):
     key = "rogue"
@@ -296,4 +297,180 @@ class Pirate(BaseClass):
         "extra damage": 80, "riding airborne": 80, "motley crew": 80, "fourth attack": 80,
         "pugilism": 80, "shield bash": 80, "push": 80, "kick dirt": 80, "rage": 80,
         "chokehold": 80, "assassinate": 50, "double cross": 80, "thrust": 80, "summon mount": 80,
+    }
+
+# --- Multi-Classes ---
+
+class WarriorThief(BaseClass):
+    key = "warrior/thief"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "reverse vitalize sta": 80, "pierce": 80, "scan": 80, "caution": 80,
+        "swim": 80, "sneak": 80, "climb": 80, "second attack": 80, "hide": 80, "parrying": 80, "rescue": 80,
+        "pick lock": 80, "dodge": 80, "unfair fight": 80, "platebreaker": 80, "throw": 80, "first aid": 80,
+        "backstab": 80, "kick": 80, "riding landbased": 80, "bash": 80, "blindfight": 80, "escape": 80,
+        "steal": 80, "whirlwind": 80, "berzerk": 80, "tumble": 80, "disarm foe": 80, "third attack": 80,
+        "poison blade": 80, "mounted battle": 80, "dual weapons": 80, "scout": 80, "first to attack": 80,
+        "push": 80, "critical hit": 80, "neutralize poison": 80, "fan of knives": 80, "vitalize stamina": 80,
+        "fourth attack": 80, "track": 40, "heroic rescue": 80, "shield block": 80, "extra damage": 80,
+        "sense stealth": 60, "kick dirt": 80, "riding airborne": 80, "circle around": 80, "intimidate": 80,
+        "shield bash": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80, "summon mount": 80,
+    }
+
+class WarriorCleric(BaseClass):
+    key = "warrior/cleric"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["mail"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "spellcraft": 80, "reverse vitalize sta": 80,
+        "spellcasting": 100, "pierce": 80, "scan": 80, "first aid": 80, "swim": 80, "caution": 80, "climb": 80,
+        "second attack": 80, "parrying": 80, "rescue": 80, "platebreaker": 80, "kick": 80, "riding landbased": 80,
+        "unfair fight": 80, "bash": 80, "blindfight": 80, "dodge": 70, "escape": 80, "whirlwind": 80,
+        "berzerk": 80, "third attack": 80, "disarm foe": 80, "mounted battle": 80, "first to attack": 80,
+        "push": 80, "critical hit": 80, "scout": 80, "vitalize mana": 80, "vitalize stamina": 80,
+        "dual weapons": 80, "throw": 80, "fourth attack": 80, "heroic rescue": 80, "shield block": 80,
+        "extra damage": 80, "sense stealth": 80, "kick dirt": 80, "riding airborne": 80, "track": 40,
+        "intimidate": 80, "shield bash": 80, "lethal blow": 80, "armor": 80, "reverse vitalize man": 80,
+        "cure light": 80, "detect magic": 80, "protection from good": 80, "detect poison": 60,
+        "word of healing": 80, "detect evil": 80, "chill touch": 60, "detect invisibility": 80,
+        "bless": 80, "curse": 60, "sense traps": 80, "blindness": 80, "cure blind": 80, "earthquake": 80,
+        "flesh restore": 80, "read essence": 60, "detect good": 80, "remove curse": 80, "cure critic": 80,
+        "summon mount": 80, "remove poison": 80, "strength": 60, "cat eyes": 40, "spectre touch": 60,
+        "poison": 60, "sense life": 70, "protection from evil": 80, "flesh anew": 80, "flame blade": 80,
+        "summon": 80, "relocate": 80, "sanctuary": 80, "dispel evil": 80, "psychic blast": 70,
+        "levitation": 60, "shocking sphere": 70, "heal": 80, "frostbite": 60, "harm": 80, "accuracy": 60,
+        "recharge light": 50, "group heal": 80, "turn undead": 60, "infravision": 60, "fly": 60,
+        "regeneration": 70, "star flare": 60, "group recall": 80, "identify": 50, "charm person": 40,
+        "charge wand": 60, "invisibility": 60, "mystic shield": 50, "rimefang": 50, "death strike": 40,
+        "lightning breath": 70, "mystical coat": 50, "guardian angel": 80,
+    }
+
+class WarriorMagicUser(BaseClass):
+    key = "warrior/magic-user"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["cloth"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "spellcraft": 80, "reverse vitalize sta": 80, "spellcasting": 100,
+        "pierce": 80, "scan": 80, "swim": 80, "first aid": 80, "caution": 80, "climb": 80, "second attack": 80,
+        "parrying": 80, "rescue": 80, "platebreaker": 80, "kick": 80, "riding landbased": 80, "unfair fight": 80,
+        "bash": 80, "blindfight": 80, "dodge": 70, "escape": 80, "whirlwind": 80, "berzerk": 80, "third attack": 80,
+        "disarm foe": 80, "mounted battle": 80, "vitalize mana": 80, "first to attack": 80, "push": 80,
+        "critical hit": 80, "scout": 80, "vitalize stamina": 80, "dual weapons": 80, "throw": 80, "fourth attack": 80,
+        "heroic rescue": 80, "shield block": 80, "extra damage": 80, "sense stealth": 80, "kick dirt": 80,
+        "riding airborne": 80, "track": 40, "intimidate": 80, "shield bash": 80, "lethal blow": 80,
+        "magic missile": 80, "cat eyes": 60, "reverse vitalize man": 80, "detect magic": 80,
+        "detect invisibility": 80, "arc fire": 80, "burning hands": 80, "protection from good": 80,
+        "sense traps": 70, "vorpal plating": 60, "levitation": 60, "color spray": 60, "invisibility": 80,
+        "blindness": 60, "warstrike": 80, "read essence": 50, "infravision": 60, "shocking grasp": 70,
+        "enchant weapon": 80, "curse": 60, "fireball": 80, "teleport": 60, "summon mount": 80,
+        "psychic blast": 70, "locate object": 60, "lightning bolt": 80, "fly": 80, "sleep": 70,
+        "flame blade": 80, "mage gauntlets": 60, "ice storm": 80, "detect good": 80, "charm person": 60,
+        "sense life": 60, "poison": 40, "accuracy": 80, "lightning breath": 80, "acid breath": 80,
+        "frost breath": 80, "gas breath": 80, "fire breath": 80, "word of recall": 60, "charge wand": 80,
+        "strength": 60, "quick fix": 60, "beacon": 80, "rimefang": 80, "group recall": 80,
+        "identify": 60, "death strike": 80, "maelstrom": 80, "relocate": 80, "mystic shield": 60,
+        "gravity focus": 80, "group relocate": 80, "wish": 80, "tensers transformati": 80, "familiar": 80,
+    }
+
+class ThiefCleric(BaseClass):
+    key = "thief/cleric"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 40, "spellcraft": 80, "spellcasting": 100, "pierce": 80,
+        "scan": 80, "caution": 80, "first aid": 80, "swim": 80, "sneak": 80, "climb": 80, "hide": 80, "pick lock": 80,
+        "dodge": 80, "unfair fight": 80, "throw": 80, "second attack": 80, "backstab": 80, "riding landbased": 80,
+        "escape": 80, "steal": 80, "tumble": 80, "disarm foe": 80, "kick": 80, "parrying": 70, "poison blade": 80,
+        "dual weapons": 80, "scout": 80, "third attack": 80, "neutralize poison": 80, "fan of knives": 80,
+        "vitalize mana": 80, "critical hit": 80, "track": 40, "sense stealth": 80, "riding airborne": 80,
+        "circle around": 80, "kick dirt": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80,
+    }
+
+class ThiefMagicUser(BaseClass):
+    key = "thief/magic-user"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 40, "spellcraft": 80, "spellcasting": 100, "pierce": 80,
+        "scan": 80, "caution": 80, "swim": 80, "first aid": 80, "sneak": 80, "climb": 80, "hide": 80, "pick lock": 80,
+        "dodge": 80, "unfair fight": 80, "throw": 80, "second attack": 80, "backstab": 80, "riding landbased": 80,
+        "escape": 80, "steal": 80, "tumble": 80, "disarm foe": 80, "kick": 80, "poison blade": 80, "dual weapons": 80,
+        "parrying": 70, "scout": 80, "vitalize mana": 80, "third attack": 80, "neutralize poison": 80,
+        "fan of knives": 80, "critical hit": 80, "track": 40, "sense stealth": 80, "riding airborne": 80,
+        "circle around": 80, "kick dirt": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80,
+    }
+
+class ClericMagicUser(BaseClass):
+    key = "cleric/magic-user"
+    num_classes = 2
+    armor_restriction = ARMOR_TYPES["cloth"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 20, "chop": 30, "spellcraft": 80, "spellcasting": 100, "pierce": 80,
+        "scan": 80, "first aid": 80, "swim": 80, "climb": 80, "riding landbased": 80, "second attack": 80,
+        "parrying": 50, "escape": 80, "vitalize mana": 80, "dodge": 60, "throw": 80, "critical hit": 80,
+        "riding airborne": 80,
+    }
+
+class WarriorThiefCleric(BaseClass):
+    key = "warrior/thief/cleric"
+    num_classes = 3
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "spellcraft": 80, "reverse vitalize sta": 80, "spellcasting": 100,
+        "pierce": 80, "scan": 80, "caution": 80, "first aid": 80, "swim": 80, "sneak": 80, "climb": 80, "second attack": 80,
+        "hide": 80, "parrying": 80, "rescue": 80, "pick lock": 80, "dodge": 80, "unfair fight": 80, "platebreaker": 80,
+        "throw": 80, "backstab": 80, "kick": 80, "riding landbased": 80, "bash": 80, "blindfight": 80, "escape": 80,
+        "steal": 80, "whirlwind": 80, "berzerk": 80, "tumble": 80, "disarm foe": 80, "third attack": 80,
+        "poison blade": 80, "mounted battle": 80, "dual weapons": 80, "scout": 80, "first to attack": 80,
+        "push": 80, "critical hit": 80, "neutralize poison": 80, "fan of knives": 80, "vitalize mana": 80,
+        "vitalize stamina": 80, "fourth attack": 80, "track": 40, "heroic rescue": 80, "shield block": 80,
+        "extra damage": 80, "sense stealth": 80, "kick dirt": 80, "riding airborne": 80, "circle around": 80,
+        "intimidate": 80, "shield bash": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80,
+    }
+
+class WarriorThiefMagicUser(BaseClass):
+    key = "warrior/thief/magic-user"
+    num_classes = 3
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "spellcraft": 80, "reverse vitalize sta": 80, "spellcasting": 100,
+        "pierce": 80, "scan": 80, "caution": 80, "swim": 80, "first aid": 80, "sneak": 80, "climb": 80, "second attack": 80,
+        "hide": 80, "parrying": 80, "rescue": 80, "pick lock": 80, "dodge": 80, "unfair fight": 80, "platebreaker": 80,
+        "throw": 80, "backstab": 80, "kick": 80, "riding landbased": 80, "bash": 80, "blindfight": 80, "escape": 80,
+        "steal": 80, "whirlwind": 80, "berzerk": 80, "tumble": 80, "disarm foe": 80, "third attack": 80,
+        "poison blade": 80, "mounted battle": 80, "dual weapons": 80, "scout": 80, "vitalize mana": 80,
+        "first to attack": 80, "push": 80, "critical hit": 80, "neutralize poison": 80, "fan of knives": 80,
+        "vitalize stamina": 80, "fourth attack": 80, "track": 40, "heroic rescue": 80, "shield block": 80,
+        "extra damage": 80, "sense stealth": 80, "kick dirt": 80, "riding airborne": 80, "circle around": 80,
+        "intimidate": 80, "shield bash": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80,
+    }
+
+class WarriorClericMagicUser(BaseClass):
+    key = "warrior/cleric/magic-user"
+    num_classes = 3
+    armor_restriction = ARMOR_TYPES["cloth"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 80, "spellcraft": 80, "reverse vitalize sta": 80, "spellcasting": 100,
+        "pierce": 80, "scan": 80, "first aid": 80, "swim": 80, "caution": 80, "climb": 80, "second attack": 80,
+        "parrying": 80, "rescue": 80, "platebreaker": 80, "kick": 80, "riding landbased": 80, "unfair fight": 80,
+        "bash": 80, "blindfight": 80, "dodge": 70, "escape": 80, "whirlwind": 80, "berzerk": 80, "third attack": 80,
+        "disarm foe": 80, "mounted battle": 80, "vitalize mana": 80, "first to attack": 80, "push": 80,
+        "critical hit": 80, "scout": 80, "vitalize stamina": 80, "dual weapons": 80, "throw": 80, "fourth attack": 80,
+        "heroic rescue": 80, "shield block": 80, "extra damage": 80, "sense stealth": 80, "kick dirt": 80,
+        "riding airborne": 80, "track": 40, "intimidate": 80, "shield bash": 80, "lethal blow": 80,
+    }
+
+class ThiefClericMagicUser(BaseClass):
+    key = "thief/cleric/magic-user"
+    num_classes = 3
+    armor_restriction = ARMOR_TYPES["leather"]
+    skills = {
+        "stab": 80, "bludgeon": 80, "slash": 80, "chop": 40, "spellcraft": 80, "spellcasting": 100, "pierce": 80,
+        "scan": 80, "caution": 80, "first aid": 80, "swim": 80, "sneak": 80, "climb": 80, "hide": 80, "pick lock": 80,
+        "dodge": 80, "unfair fight": 80, "throw": 80, "second attack": 80, "backstab": 80, "riding landbased": 80,
+        "escape": 80, "steal": 80, "tumble": 80, "disarm foe": 80, "kick": 80, "parrying": 70, "poison blade": 80,
+        "dual weapons": 80, "scout": 80, "vitalize mana": 80, "third attack": 80, "neutralize poison": 80,
+        "fan of knives": 80, "critical hit": 80, "track": 40, "sense stealth": 80, "riding airborne": 80,
+        "circle around": 80, "kick dirt": 80, "ambush": 80, "assassinate": 60, "lethal blow": 80,
     }

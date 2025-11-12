@@ -25,6 +25,16 @@ class ClassHandler:
         "wizard": classes.Wizard,
         "necromancer": classes.Necromancer,
         "pirate": classes.Pirate,
+        "warrior/thief": classes.WarriorThief,
+        "warrior/cleric": classes.WarriorCleric,
+        "warrior/magic-user": classes.WarriorMagicUser,
+        "thief/cleric": classes.ThiefCleric,
+        "thief/magic-user": classes.ThiefMagicUser,
+        "cleric/magic-user": classes.ClericMagicUser,
+        "warrior/thief/cleric": classes.WarriorThiefCleric,
+        "warrior/thief/magic-user": classes.WarriorThiefMagicUser,
+        "warrior/cleric/magic-user": classes.WarriorClericMagicUser,
+        "thief/cleric/magic-user": classes.ThiefClericMagicUser,
     }
     
     def __init__(self, obj):
@@ -60,16 +70,33 @@ class ClassHandler:
     def check_for_level_up(self):
         """
         Called by Character.gain_exp.
-        Checks for new skills to learn.
+        Checks XP against the class-specific XP table.
         """
         class_obj = self.get_class_obj()
-        level = self.obj.db.level
+        current_level = self.obj.db.level
         
-        # In the new system, skills are not learned by level.
-        # This can be expanded later.
-        pass
+        # XP-based leveling is disabled until xp_tables are added to classes
+        # xp_needed = class_obj.xp_table.get(current_level + 1)
+        # if not xp_needed:
+        #     return # Max level
+        #
+        # xp_needed *= class_obj.num_classes
+        #
+        # if self.obj.db.xp >= xp_needed:
+        #     self.do_level_up(class_obj)
+
+        # For now, just learn skills based on current level
+        for skill_key, max_prof in class_obj.skills.items():
+             self.obj.skills.learn(skill_key, max_proficiency=max_prof)
             
     def do_level_up(self, class_obj):
         """Performs all logic for gaining a level."""
-        # This method is not currently used, but is kept for future expansion.
-        pass
+        self.obj.db.level += 1
+        level = self.obj.db.level
+
+        self.obj.msg(f"|gYou have advanced to Level {level}!|n")
+
+        # HP/MP gains can be added back here when hit_die/mana_die are on classes
+
+        # 3. Check for another level-up (for multi-level gains)
+        self.check_for_level_up()
