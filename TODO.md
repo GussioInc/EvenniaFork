@@ -129,6 +129,9 @@ The `crawl.txt` file lists many innate abilities for races. The exact mechanics 
 
 ## Skill & Spell Mechanics
 
+*   **Proficiency Display**: **Implemented (2025-11-11)**. A `skills` command has been created to display a character's known skills and their proficiency levels. The numerical proficiency (1-100) is translated into a string rating for the player (not learned, awful, poor, bad, average, fair, good, very good, excellent, superb, perfect).
+    *   **Next Step**: The mechanics for *training* skills to increase proficiency have not yet been implemented. This will be a core part of character progression.
+
 *   **Damage Formulas**: The help files rarely specify exact damage. I will need to devise balanced formulas for skills and spells (e.g., `Bash`, `Kick`). The initial implementation will be a best guess based on descriptions.
 *   **Success Chances**: Skills like `Disarm` or `Bash` (for stunning) will require a success chance calculation, likely based on attacker's skill/stats vs. defender's stats. These will be implemented with placeholder logic for now.
 *   **Mage Spell Assumptions**:
