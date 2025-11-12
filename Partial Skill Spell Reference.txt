@@ -1,0 +1,2893 @@
+
+ACCURACY 
+
+       Usage: cast 'accuracy' : cast 100
+      Effect: +4 hitroll
+        Cost: 25
+    Duration: caster level/2 hours
+Casting Time: 12
+      Target: Caster only
+
+ACID BLAST 
+
+       Usage: cast 'acid blast' <target> : cast 116 <target>
+      Damage: (8 + level/26)d10 + 40
+        Save: Save vs. Poison
+        Cost: 27 + level*0.18
+    Duration: Instant.
+Casting Time: 17
+      Target: One player or MOB
+
+ACID BREATH 
+
+       Usage: cast 'acid breath' : cast 59
+      Damage: See below
+        Save: Save vs. Poison
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 33
+      Target: All MOBs in room
+
+This is an Area Affect spell.  If the caster's hp is less than 200, then
+the damage is 100+1d100.  Otherwise the damage is 100+1d(hp-100).
+
+ARC FIRE 
+
+       Usage: cast 'arc fire' <target> : cast 48 <target>
+      Damage: (2 + level/4)d12
+        Save: Save vs. Fire
+        Cost: 6 + level*0.75
+    Duration: Instant
+Casting Time: 17
+      Target: One MOB or character
+
+This spell catches your enemy in an arc of fire, causing serious damage.
+
+
+ help archery
+ARCHERY 
+
+Archery is a ranger skill that allows rangers to use ranged weapons
+in battle.  In order to use archery, the ranger must wield a fireweapon
+and hold a projectile in his offhand.  The ranger uses the shoot 
+command to fire his weapon at his opponent.  The ranger can have range 
+up to eight rooms away.  Damage is based on dexterity.
+
+
+ help armor
+ARMOR 
+
+       Usage: cast 'armor' <target> : cast 1 <target>
+      Effect: -20 AC
+        Cost: 12
+    Duration: 24 hours
+Casting Time: 12
+      Target: Any character
+
+ASSASSINATE 
+
+Assassinate is a way to sneak up on a person and attempt to place your dagger
+in his back, at exactly the point where it does most damage.  A successful
+attempt will halve your opponent's health instantly. A good begin is half the
+work done!
+The chance of successfully assassinating a person depends on how well you
+have practiced assassinate at your guild.
+
+BACKSTAB 
+
+
+Rogue class' only
+Backstab is a way to sneak up on a target and attempt to place your weapon
+in its back at exactly the weakest spot to inflict maximum damage. A success-
+ful backstab gives a damage multiplier that is level based. The chance of
+successfully backstabbing something depends on how well you have practiced
+backstab and your attributes. You can always backstab a sleeping target.
+
+
+ BARRAGE 
+
+Barrage is melee area of effect skill.
+Rangers will hit opponents in the same room for damage
+based on their Dextery and Movement Points.
+A Firing weapon is required.
+
+ 
+BASH 
+
+Fighters only
+
+The success of a bash depends upon how well you are learned. To bash someone
+is to attempt to 'knock' that person over. If you succeed you will inflict
+10 points of damage, and cause the victim to fall on its rear. The victim 
+will be unable to issue any commands for 4 rounds of violence. If you miss 
+you lose your balance and fall.
+
+A bash makes you unable to type commands for 4 rounds of violence.
+Note that hitting a person who is resting/sitting will inflict 1.5*damage.
+
+
+BASHDOOR 
+
+This is an ability that anyone with the skill bash also has. If a door is
+weak and you can't find the key or just can't be bothered finding the key,
+you can attempt to bash the door down. However, you'll take a small amount
+of damage when you attempt this and it's not guaranteed to work.
+
+Usage: 'bashdoor <direction>'
+
+ 
+BATTLE TACTICS 
+
+Veterans know the benefit of tactics. Even for a small group, fighting
+strategically is always a benefit. If you are a leader of a group, you will
+automatically use this skill to aid your party in battle by shouting orders
+to them.
+
+ BEACON 
+
+       Usage: cast 'beacon' : cast 93
+      Effect: Sets a "recall" point
+        Cost: 30
+    Duration: Instant
+Casting Time: 12
+      Target: Caster only
+
+Beacon is used to set a temporary return point.  Cast beacon to set a beacon
+in the room you are in. Cast beacon again to return to the beacon and clear
+the beacon. A third casting sets a new return point, etc.  Your set beacon
+will also clear if you log out or die.
+
+ 
+BEAK DIVE 
+
+Special attack for Aarakocra that does level/8 additional damage.
+
+BERZERK 
+
+Fighters only
+Your adrenaline will flow through your veins and you will hit the foes
+harder and faster and meaner until they die OR you do. Fleeing is out
+of the question.
+
+> berzerk
+
+See Also: : RESCUE KICK BASH HEADBANG
+
+ Blaze 
+
+       Usage: cast 'blaze' <target> : cast 121 <target>
+      Damage: 20 + (2 + level/8)d15
+        Save: Save vs. Fire
+        Cost: 50
+    Duration: 8 minutes
+Casting Time: 17
+      Target: One room
+
+This is an Area Affect spell.  It deals its fire damage multiple times
+within its duration.  This spell is special in that it can be cast on
+adjacent rooms.  For example, cast 'blaze' east. Watch out! If cast in
+the room the caster is in, it will damage him as well!
+
+BLESS 
+
+       Usage: cast 'bless' <target> : cast 3 <target>
+      Effect: +2 to Hitroll, +25 to Magic resistance
+        Cost: 8
+    Duration: 6 hours
+Casting Time: 12
+      Target: Any character
+
+ 
+BLINDFIGHT 
+
+This skill enables you to continue fighting although you have been
+blinded.
+
+ 
+BLINDNESS 
+
+       Usage: cast 'blindness' <target> : 4 <target>
+      Effect: -4 to Hitroll, +40 to AC and blinds the target
+        Save: Save vs. Magic
+        Cost: 13
+    Duration: 2 hours 
+Casting Time: 12
+      Target: One MOB or character
+
+This spell will fail if the target is higher level than the caster.
+
+Bloodlust 
+
+        Usage: cast 'bloodlust' <target> : cast 138 <target>
+       Effect: +10 to INT, CON, and STR
+         Cost: 20
+     Duration: 6 hours
+ Casting Time: 12
+       Target: Any character
+
+ 
+BLUDGEON 
+
+A general skill for all classes. The knowledge of how to use bludgeoning
+weapons like hammers, clubs etc. You will have a greater chance of
+hitting your enemy with a bludgeoning weapon if you have this skill practiced.
+
+See Also:  PIERCE SLASH STAB CHOP
+
+ BLUFF 
+
+Bluffing your opponent stops the battle until the victim realizes you
+tricked them.  You can use your opponent's confusion to your own advantage
+for as long as it lasts!
+
+ 
+BRAIN BURST 
+
+       Usage: cast 'brain burst' <target> : cast 160 <target>
+      Damage: 1d6 initially, Delayed damage up to Max hit / 2
+        Save: Save vs. Intelligence
+        Cost: 200
+    Duration: Instant for initial damage, few rounds for delayed damage
+Casting Time: 10
+      Target: One MOB or character
+
+Brain burst is a powerful illusionist spell that injects a mental damage
+seed that will explode for massive damage a few rounds later.
+
+ BREAK 
+
+One of the core Assassin skills, break allows the assassin
+to set up his prey before going in for the kill.
+
+To use: break <option> <target>
+
+Assassins have the option to break three of their target's
+abilities:
+
+ARMOR - break armor <target>
+ <upon use> no effect
+
+POISON - break poison <target>
+ <upon use> reduces target's poison resistance by 2/3
+
+NERVE - break nerve <target>
+ <upon use> reduces target's total hit point regeneration
+ to 0 and total move regeneration by 1/2
+
+If the target with the break flees or is circled or
+backstabbed, the breaks will activate and deal 1/8
+of the target's maximum hit points in damage, and
+then the breaks will disappear. Break Armor, however
+applies a debuff that reduces the target's armor
+by the assassin's dexterity, lasting 1 minute.
+
+However, if combat is ended in any way besides the
+target fleeing (eg. via summoning, the assassin flees,
+etc.), then the breaks will remain until the target
+flees manually or is backstabbed or circled.
+
+Using the break command delays the user for 2 rounds
+regardless of success and is not aggressive.
+
+Other classes that can backstab or circle may also
+activate an assassin's breaks if they use those skills
+on a target that has breaks applied on them.
+
+See also: ASSASSIN
+
+ 
+CAT EYES 
+
+       Usage: cast 'cat eyes' : cast 47
+      Effect: See below
+        Cost: 12
+    Duration: 15 hours
+Casting Time: 12
+      Target: Caster only
+
+This spell allows the caster to see his surroundings as if they were
+fully lit even in absolute darkness.
+
+ 
+CAUTION 
+
+This skill keeps you from blindly walking into deathtraps.
+
+ 
+CHARGE WAND 
+
+       Usage: cast 'charge wand' <target> : cast 98 <target>
+      Effect: Increase wand/staff's charge by 1.
+        Cost: 80
+    Duration: Instant
+Casting Time: 12
+      Target: One item with charges
+
+This spell will add a charge to a given item, the target.  There is a small
+chance (3-5%, decreasing with higher intelligence of the caster,) that the
+item will be destroyed whenever this spell is cast.  This can also happen if
+you overcharge the item, so be prudent with use of this spell.
+
+ 
+CHARM PERSON 
+
+       Usage: cast 'charm person' <victim> : cast 7 <victim>
+        Save: Save vs. Charm
+        Cost: 45
+    Duration: 6 * 18/INT of victim hours
+Casting Time: 12
+      Target: MOBs only
+
+When cast, this spell will cause the target to follow the caster, and
+complete any task ordered of him by his master.
+
+See Also: ORDER
+
+ 
+ 
+
+Cheating Death
+
+This ability allows anyone that is a registered killer (SAFEPK)/(PK)
+a chance to cheat death and avoid a lethal blow.  Only those 
+skilled in these arts would be able to see death coming for 
+them and pull off such a move.  Although if you do manage to pull 
+off such a move you will be stunned for a couple rounds until you 
+are able to regain your stance.
+
+           (SAFEPK) 25% chance  (PK) 50% chance 
+
+ 
+CHILL TOUCH 
+
+       Usage: cast 'chill touch' <target> : cast 8 <target>
+      Damage: 1d12 + level (max of +60)
+      Effect: -(1+caster_level/7) to STR
+        Save: Save vs. Cold
+        Cost: 6 + level*0.50
+    Duration: Instant for damage, see below for effect duration.
+Casting Time: 33
+      Target: One MOB or character
+
+Chill Touch drains the target's strength for 4 hours if the victim fails
+their save and 1 hour if they succeed at it.
+
+ 
+CHOKEHOLD 
+
+Chokehold is a skill that silences your opponent leaving them unable
+to cast spells.  The duration is level based and is calculated by
+the formula: 1 + (level/11)
+
+ 
+CHOP 
+
+A general skill. The knowledge of how to use chopping weapons like different
+sorts of axes. You will have a greater chance of hitting your enemy with a
+chopping weapon if you have this skill practiced.
+
+See Also: PIERCE BLUDGEON SLASH STAB
+
+ 
+CHROMATIC STORM 
+
+       Usage: cast 'chromatic storm' : cast 158
+      Damage: See below
+        Save: Save vs. Intelligence
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 17
+      Target: All MOBs in room
+
+This is an Area Affect spell.  Damage is based on the Max hit of the 
+caster.
+
+ CIRCLE AROUND 
+
+This rogue skill is like backstab. In the heat of a fight, you can try to
+nimbly circle around your enemy's defenses and put your dagger in his neck.
+Circle can only be used on an enemy which is currently fighting. For mobs,
+there is a delay of 1 round after using circle.  When using it against
+players, Rogues and Assassins have a delay of 2 rounds, but for all other
+classes, there is a delay of 3 rounds.
+
+
+> circle
+
+ 
+CLIMB 
+
+There are many hills and mountains in the world that keep most adventurers
+away. This skill will let you explore some of these mountains.
+
+ 
+COLOR SPRAY 
+
+       Usage: cast 'color spray' <target> : cast 10 <target>
+      Damage: (2 + level/10)d10
+        Save: Save vs. Energy
+        Cost: 5 + level*0.23
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+
+ 
+CREATE FOOD 
+
+       Usage: cast 'create food' : cast 12
+        Cost: 15
+    Duration: Instant
+Casting Time: 12
+      Target: None
+
+This spell will create on piece of waybread which is placed in your inventory.
+This tasty treat will completely satisfy any hunger your character has.
+
+ 
+CREATE WATER 
+
+       Usage: cast 'create water' <object> : cast 13 <object>
+        Cost: 15
+    Duration: Instant
+Casting Time: 12
+      Target: One container of liquid
+
+This spell is cast with a bottle, canteen, etc. as the target.  When cast, it
+completely fills the container with water, allowing you to quench your thirst.
+
+ CRITICAL HIT 
+
+Critical hit is a skill that allows the character to perform any other
+skill or spell with an increased efficiency.  This includes melee damage,
+melee skill damage, spell damage, and heal amounts. 
+
+ 
+CURE BLIND 
+
+       Usage: cast 'cure blind' <target> : cast 14 <target>
+      Effect: Removes the effects of a blindness spell
+        Cost: 14
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character 
+
+ CURE CRITIC 
+
+       Usage: cast 'cure critic' <target> : cast 15 <target>
+      Effect: Cures ((3 + level/8)d16 + level) hp
+        Cost: 12 + level*0.47
+    Duration: Instant
+Casting Time: 12
+      Target: One character
+
+
+CURE LIGHT 
+
+       Usage: cast 'cure light' <target> : cast 16 <target>
+      Effect: Cures ((1 + level/6)d6 + level) hp
+        Cost: 2 + level*0.50
+    Duration: Instant
+Casting Time: 33
+      Target: One character
+
+ 
+CURSE 
+
+       Usage: cast 'curse' <victim> : cast 17 <victim>
+      Effect: -((level/20)+1) to Hitroll and Damroll of target
+        Save: Save vs. Magic
+        Cost: 12
+    Duration: Level minutes
+Casting Time: 12
+      Target: One MOB or character
+
+Note that this spell can also be cast on items, but doesn't actually do
+anything to them.
+
+ 
+CYCLONE 
+
+       Usage: cast 'cyclone' <target> : cast 164 <target>
+      Damage: Up to target's max hit depending on intelligence  
+        Save: Target's intelligence
+        Cost: 10 + level*8
+    Duration: Instant
+Casting Time: 160
+      Target: One MOB or character
+
+ 
+Sorry, there is no help on that keyword.
+
+ 
+RECHARGE LIGHT 
+
+       Usage: cast 'recharge light' <target> : cast 114 <target>
+      Effect: Increase light's burn time
+        Cost: 200
+    Duration: Instant
+Casting Time: 24
+      Target: One light
+
+This spell will add time onto the lifespan of a light.  There is a chance,
+10-20 percent depending on caster level, that the light will be destroyed
+each time this spell is cast.  This will also happen if you charge the
+light with more than 24 hours of time, so be prudent with use of this spell.
+
+ 
+DEATH AND DECAY 
+
+       Usage: cast 'death and decay' : cast 65
+      Damage: See below
+        Save: Save vs. Alignment Good
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 16
+      Target: All MOBs in room
+
+This is an Area Affect spell.  Damage is based on the Max hit of the 
+caster.
+
+ 
+DEATH COIL 
+
+       Usage: cast 'death coil' <target> : cast 141 <target>
+      Damage: Vampiric Spell: (removes 100hp from target, adds 50hp to caster)
+        Save: Save vs. Poison
+        Cost: 35
+    Duration: Instant
+Casting Time: 16
+      Target: One MOB or character
+
+ 
+
+DEATH STRIKE 
+
+       Usage: cast 'death strike' <target> : cast 76 <target>
+      Damage: Max hit of target * 1.2 (max of 10000)
+        Save: None
+        Cost: 11 + level*8
+    Duration: Instant
+Casting Time: 320
+      Target: One MOB or character
+
+ 
+DEATH TOUCH 
+
+       Usage: cast 'death touch' <target> : cast 136 <target>
+        Cost: 40
+    Duration: 1/5 hour
+Casting Time: 15
+      Target: One character or Mob
+
+Death touch causes all healing spells to harm one affected by it.
+Death touch also causes the afflicted to suffer damage over time
+equal to (4 + level/16)d12 per round.
+
+ 
+ 
+DETECT EVIL 
+
+       Usage: cast 'detect evil' : cast 18
+      Effect: See below
+        Cost: 12
+    Duration: 12 + caster-level hours
+Casting Time: 12
+      Target: Caster only
+
+For the duration of this spell the caster will see E! to the left of the name
+of any mob or character they see with an evil alignment.
+
+ DETECT GOOD 
+
+       Usage: cast 'detect good' : cast 11
+      Effect: See below
+        Cost: 12
+    Duration: 12 + caster-level hours
+Casting Time: 12
+      Target: Caster only
+
+For the duration of this spell the caster will see G! to the left of the name
+of any mob or character they see with a good alignment.
+
+ 
+Sorry, there is no help on that keyword.
+
+ DETECT MAGIC 
+
+       Usage: cast 'detect magic' <target> : cast 20 <target>
+        Cost: 50
+    Duration: (20 or level, whichever is more) minutes
+Casting Time: 20
+      Target: One MOB or character
+
+For the duration of this spell, the recipient may use EXAMINE <object> to
+determine the exact attributes of any item.  Also, any item listed in the
+room or in an inventory will have (magic) written by it if the item is
+enchanted.
+
+DETECT POISON 
+
+       Usage: cast 'detect poison' <target> : cast 21 <target>
+      Effect: See below
+        Cost: 24
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+This spell will tell you whether or not the target is poisoned.
+
+ 
+DIAGNOSE 
+
+diagnose
+diagnose <character>
+
+The DIAGNOSE command tells you how wounded a character looks. If you are
+fighting someone, you can use DIAGNOSE with no arguments to diagnose the
+person you're fighting.
+
+> diagnose
+> diagnose rasmussen
+
+ 
+DIG 
+
+Attempt to unearth buried treasure, you pirate, you.
+
+ 
+DIRE BEAR FORM 
+
+Dire bear form is a druid spell that allows the druid to shapeshift
+into a bear to take on qualities of a warrior class.  In this form,
+the druid's int and wis become his str and dex respectively. The druid
+also gets an added large bonus to his con and small bonus to his hitroll.
+Use maintain 'dire bear form' to enter this form and use 
+cancel 'dire bear form' to return to your caster form.  You can switch
+into the dire wolf form from this form at any time.  You cannot cancel
+back to caster form in battle.
+
+ DIRE STRIKE 
+
+Dire strike is a druid skill used to stun an opponent that requires the
+druid to be in dire bear form or dire wolf form.  In dire bear form,
+the stun lasts for eight rounds.  In dire wolf form, the stun lasts for
+six rounds.  The damage done is equal to 25 * number of rounds of stun. 
+
+ 
+DIRE WOLF FORM 
+
+Dire wolf form is a druid spell that allows the druid to shapeshift
+into a wolf to take on qualities of a thief class.  In this form,
+the druid's int and wis become his dex and str respectively. The druid
+also gets an added large bonus to his hitroll and small bonus to his con.
+Use maintain 'dire wolf form' to enter this form and use 
+cancel 'dire wolf form' to return to your caster form.  You can switch
+into the dire bear form from this form at any time.  You cannot cancel
+back to caster form in battle.
+
+ 
+DISARM FOE
+ 
+Skill: Disarm Foe 
+
+This thief/warrior skill allows you to disarm your opponent and send 
+his/her/it's weapon flying. Chances of success depend on your level, your 
+opponents level and your skill level.
+
+ 
+DISPEL EVIL 
+
+       Usage: cast 'dispel evil' <target> : cast 22 <target>
+      Damage: See below
+        Save: None
+        Cost: 1+level*0.50
+    Duration: Instant
+Casting Time: 33
+      Target: One MOB or player
+
+   This spell, when cast, will do 50% of the victim's maximum hitpoints in
+damage under the right conditions.  If the caster is evil, the caster will
+receive the damage instead.  If neither the caster nor the target are evil,
+no damage will be dealt at all.
+
+DIVINE STORM 
+
+       Usage: cast 'divine storm' : cast 49
+      Damage: See below
+        Save: Save vs. Alignment Evil
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 17
+      Target: All MOBs in room
+
+
+This is an Area Affect spell.  Damage is based on the Max hit of the 
+caster.
+
+ 
+Divine Wrath 
+
+        Usage: cast 'divine wrath' <target> : cast 140 <target>
+       Effect: +10 to CON, STR, and CHA
+         Cost: 20
+     Duration: 6 hours
+ Casting Time: 12
+       Target: Any character
+
+ 
+DODGE 
+
+A thief skill that makes you able to dodge your enemy's attacks. The better
+you are, the more attacks you can dodge.
+
+  
+DOUBLE CROSS 
+
+Double cross is a pirate skill where the pirate sets a pirate trick on
+his opponent that will cause damage in a few rounds.
+
+ SENSE LIFE 
+
+       Usage: cast 'sense life' : cast 44
+      Effect: See below
+        Cost: 13
+    Duration: Level hours
+Casting Time: 12
+      Target: Caster only
+
+When cast, this spell will give the caster the ability to sense hidden
+life forms in the room.
+
+ SENSE TRAPS 
+
+       Usage: cast 'sense traps' : cast 102
+        Cost: 40
+    Duration: Caster level hours
+Casting Time: 12
+      Target: Caster only
+
+This spell prevents you from walking into deathtraps.
+
+EARTHQUAKE 
+
+       Usage: cast 'earthquake' : cast 23
+      Damage: 8d16 + level (max of +70)
+        Save: None
+        Cost: 25 + 6*number of targets in room
+    Duration: Instant
+Casting Time: 9
+      Target: All MOBs in room
+
+ 
+ 
+ELITE BACKSTAB 
+
+Those who have mastered the attack of backstab can 
+further increase their effectiveness of their attack. 
+Elite backstab enhances the backstab skill such that each
+time it is used, it deals additonal damage equivalent 
+1 to 5 times the user's DEXTERITY.  This also affects
+circle damage.
+
+ ELITE BLUFF 
+
+Those who have mastered the art of bluffing in combat
+can further increase their advantage by sneaking in
+attacks and healing themselves even while performing
+feint maneuvers.
+
+Elite bluff enhances the bluff skill such that each
+time it is used, it deals damage equivalent to 125%
+of the user's DEXTERITY multiplied by a number
+between two to four. This same amount heals the user
+at the same time. This effect occurs before the
+actual bluff maneuver executes, and regardless of
+whether it succeeds or not.
+
+See also: BLUFF, ROGUE
+
+  
+ENCHANT WEAPON 
+
+       Usage: cast 'enchant weapon' <target> : cast 24 <target>
+        Cost: 20
+    Duration: Permanent
+Casting Time: 40
+      Target: One non-magical weapon
+
+This spell will enchant a non-magical weapon with a random variety of effects,
+ranging from Hitroll bonuses to hitpoint regeneration.
+
+ 
+ENERGY DRAIN 
+
+       Usage: cast 'energy drain' <target> : cast 25 <target>
+      Damage: 1d20 usually (See below)
+        Save: Save vs. Magic
+        Cost: 24
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+On opponents at around the same level or higher as the caster, this spell does
+1d20 as shown above.  If the spell is used on an opponent less than one-third
+of the caster's level, then the spell does damage equal to one-third of the
+opponents max hp, assuming this is greater than 1d20.  If the spell is used
+on an opponent between one-third and two-thirds of the caster's level, then it
+does one-sixth of the opponents max hp, assuming this is greater than 1d20.
+
+ 
+ENTANGLE 
+
+       Usage: cast 'entangle' <target> : cast 117 <target>
+      Effect: Explained below
+      Damage: 10
+        Save: Save vs. Poison
+        Cost: 35
+    Duration: (3 + (level/10)) minutes for entangle and poison effect
+Casting Time: 12
+      Target: One player or MOB
+
+   This druid spell shows the perfect control of nature the druids master. It
+summons thick poisonous vines to grow up from the earth to trap the victim in
+their grasp. In addition, these vines attempt to poison whoever they catch.
+While a victim is held by this spell, they are unable to move (including flee).
+
+  
+ESCAPE 
+
+This skill is the knowledge of how to avoid panic facing overwhelming enemies.
+Instead of fleeing there is a chance that you may succeed with your escape,
+losing no experience. It is, however, a difficult skill.
+
+
+Familiar 
+
+       Usage: cast 'familiar' : cast 135
+        Cost: 700
+    Duration: Instant
+Casting Time: 320
+      Target: None
+
+This creates a powerful familiar, a translucent dragon, for the caster.
+You can only have one familiar.
+
+ 
+Families 
+
+Your family is everyone who shares the same last name as you. Relationships
+within the family (brother, mother, etc.) are entirely arbitrary, and up to
+you for roleplaying purposes.  The FAMILY command will list all the
+characters who are part of your family.
+
+See Also: BIRTH
+
+ 
+FANOFKNIVES 
+
+Fan of knives is an area effect melee skill that
+will hit all opponents in the room for damage based on
+total movement points.
+
+ 
+FEAR 
+
+       Usage: cast 'fear' <target> : cast 55 <target>
+      Damage: None
+        Save: Save vs. Magic
+        Cost: 40
+    Duration: Instant
+Casting Time: 20
+      Target: One MOB or character
+
+This spell, if successful will make the target flee in terror.
+
+
+ 
+FIRE BREATH 
+
+       Usage: cast 'fire breath' : cast 56 
+      Damage: See below
+        Save: Save vs. Fire
+        Cost: 1 + (8 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 33
+      Target: All MOBs in room
+
+   This is an Area Affect spell.  If the caster's hp is less than 200, then
+the damage is 100+1d100.  Otherwise the damage is 100+1d(hp-100).
+
+ 
+FIREBALL 
+
+       Usage: cast 'fireball' <target> : cast 26 <target>
+      Damage: (level)d3
+        Save: Save vs. Fire
+        Cost: level*0.75
+    Duration: Instant
+Casting Time: 17
+      Target: One MOB or character
+
+
+FIRST AID 
+
+This skill is quite useful when your best friend is lying in the dirt,
+about to die (incapacitated, mortally wounded). You can try to stop the
+bleeding by using first aid.
+
+> aid digi
+
+ 
+FIRST TO ATTACK 
+
+You are always lightfooted and ready to spring. Seldom will you be surprised
+by an ambush. If surprised, you often recover fast enough to deliver the first
+blow. Maybe that will change the outcome of the battle?
+
+ 
+FLAME BLADE 
+
+       Usage: cast 'flame blade' : cast 95
+      Effect: See below
+        Cost: 15 + level*3.00
+    Duration: 16 hours
+Casting Time: 240
+      Target: Caster
+
+This spell creates a flame blade to be wielded by the caster in combat;
+its power scales up as the caster increases in level.  Be careful, this
+will only work if you have a free hand.
+
+ 
+FLANK ATTACK 
+
+Flank attack is a druid skill that requires the druid to be in dire wolf
+form.  In the heat of a fight, you can try to flank your enemy's defenses 
+and bite his neck.  Flank attack can only be used on an enemy which is
+currently fighting. For mobs, there is a delay of 1 round after using 
+flank attack.  When using it against players, there is a delay of 2 
+rounds.
+
+> flank attack
+
+ 
+FLEE 
+
+If you are in a fight and things are beginning to get a little uncomfortable
+(maybe you are dying), just type 'flee', and presto! you are out of harm's way
+- that is, IF there is a suitable exit nearby, and IF that exit doesn't simply
+bring you from the ashes to the fire... but then again, who wants to live forever?
+
+ 
+FLESH ANEW 
+
+       Usage: cast 'flesh anew' <target> : cast 64 <target>
+      Effect: (4d16 + level) hp & (8d16 + level) mv 
+        Cost: 16 + level*0.25
+    Duration: Instant
+Casting Time: 12
+      Target: One character
+
+ 
+FLESH RESTORE 
+
+       Usage: cast 'flesh restore' <target>: cast 62 <target>
+      Effect: Restores full hit and move points
+        Cost: level*1.80
+    Duration: Instant
+Casting Time: 480
+      Target: One character
+
+ 
+FLETCH 
+
+Fletch is used to create arrows.
+
+Usage:
+  fletch <object>
+
+Example:
+  fletch arrow
+
+ 
+ 
+Flood 
+
+       Usage: cast 'flood' : cast 118
+      Damage: (1 + level/4)d20 + 30
+        Save: Save vs. Cold
+        Cost: 35 + level*0.60
+Casting Time: 18
+    Duration: Instant
+
+Summons the forces of Nature's waters to wash away all opposition.
+This is an Area Affect spell.
+
+
+FLY 
+
+       Usage: cast 'fly' <target> : cast 45 <target>
+      Effect: See below
+        Cost: 40
+    Duration: 10 + level/10 hours
+Casting Time: 12
+      Target: One MOB or character
+
+When cast, this spell gives the gift of flight, therefore enabling the
+recipient to use less movement points and not to fall when travelling. 
+They will also be able to fly up into otherwise unreachable areas.
+
+ 
+Fog 
+
+       Usage: cast 'fog' : cast 122
+      Effect: Covers a room with a dense fog
+        Cost: 15
+    Duration: 20 minutes
+Casting Time: 8
+      Target: Current Room
+
+This spell covers the room the caster is in with a dense fog, obscuring vision.
+
+
+ FROST BREATH 
+
+       Usage: cast 'frost breath' : cast 58
+      Damage: See below
+        Save: Save vs. Cold
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 33
+      Target: All MOBs in room
+
+This is an Area Affect spell.  If the caster's hp is less than 200, then
+the damage is 100+1d100.  Otherwise the damage is 100+1d(hp-100).
+
+ FROSTBITE 
+
+       Usage: cast 'frostbite' <target> : cast 6 <target>
+      Damage: (14 + level/14)d8 + 16
+        Save: Save vs. Cold
+        Cost: 18 + level*0.125
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+ FURIOUS HOWL 
+
+Furious howl is a group buff druid skill that grants all group members
+who have assist toggled an extra attack and a buff to hitroll and dexterity.  
+Furious howl requires the druid to be in dire wolf form. 
+
+
+GAS BREATH 
+
+       Usage: cast 'gas breath' : cast 57
+      Damage: See below
+        Save: Save vs. Poison
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 33
+      Target: All MOBs in room
+
+This is an Area Affect spell.  If the caster's hp is less than 200, then
+the damage is 100+1d100.  Otherwise the damage is 100+1d(hp-100).
+
+GRAVITY FOCUS 
+
+       Usage: cast 'gravity focus' <target> : cast 90 <target>
+      Damage: Max of (10 + level/20)d10 + 100 or percent of max hit
+        Save: None
+        Cost: 50 + level*0.11
+    Duration: Instant
+Casting Time: 20
+      Target: One MOB or character
+
+ 
+Group Heal 
+
+       Usage: cast 'group heal' : cast 91
+      Effect: 3d16 + 100 + level (max of +75)
+        Cost: 25 + (10 + level*0.25) * (# of your group in the room)
+    Duration: Instant
+Casting Time: 12
+      Target: All members of caster's group in the room
+
+Group heal only works when you are grouped, otherwise you won't heal anybody.
+The spell effect is the same as heal, only that this spell affects all of your
+group members in the room with you.
+
+ 
+Group Recall 
+
+       Usage: cast 'group recall' : cast 92
+        Save: None
+        Cost: 15 + (10 + level*0.25) * (# of group members in the room)
+    Duration: Instant
+Casting Time: 1
+      Target: All members of caster's group in the room
+
+   Group recall only works when you are grouped (otherwise you won't recall
+anybody).  The spell recalls all group members to the hometown of the caster.
+
+ 
+GROUP RELOCATE 
+
+       Usage: cast 'group relocate' <target> : cast 104 <target>
+      Effect: Relocates the caster's group to <target>
+        Cost: 15
+    Duration: Instant
+Casting Time: 12
+      Target: A player character or city portal
+
+   Group relocate only works when you are grouped (otherwise you won't relocate
+anybody).  The spell relocates all group members to the target specified. You
+can't relocate to a character who has summon protection on, nor to any room
+that is flagged as LAWFUL, GODROOM, NO_MAGIC, ARENA, or PRIVATE.  There are
+city portals at SUNDHAVEN, MEADOWDALE, THALOS, LONDONIAN, FELLS (Fells Glen,)
+and IMMORTAL (Immortal Realm.)
+
+See Also: RELOCATE, PORTAL
+
+ 
+GROUP SPLENDOR 
+
+
+       Usage: cast 'group splendor' : cast 155 
+      Effect: Int, Wis, Detect Invis, Detect Magic, Sense Traps 
+        Cost: 20 per person in group
+    Duration: 4 + (level/2) hours
+Casting Time: 10
+      Target: None
+
+ 
+GUARDIAN ANGEL 
+
+       Usage: cast 'guardian angel' : cast 163
+        Cost: 700
+    Duration: Instant
+Casting Time: 320
+      Target: None
+
+This creates a powerful companion, a guardian angel, for the caster.
+You can only have one guardian angel.
+
+ 
+HARM 
+
+       Usage: cast 'harm' <target> : cast 27 <target>
+      Damage: (16 + level/16)d8
+        Save: Save vs. Magic
+        Cost: 16 + level*0.125
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+HASTE 
+
+       Usage: cast 'haste' : cast 110
+        Cost: 100
+    Duration: 1 hour
+Casting Time: 33
+      Target: Caster only
+
+The haste spell either removes a slow effect from the caster, OR increases the
+speed at which you cast spells and the number of attacks per round or battle.
+
+See Also: SLOW
+
+ 
+HEADBANG 
+
+The success of a headbang depends upon how well you are learned and the level
+difference with your opponent. The damage you do depends on how strong you are.
+
+
+Usage: bang <victim>
+
+See Also: RESCUE BASH BERZERK KICKDIRT KICK
+
+
+ 
+HEAL 
+
+       Usage: cast 'heal' <target> : cast 28 <target>
+      Effect: Cures (3d16 + 100 + level (max of +75)) hp and removes blindness
+        Cost: 45
+    Duration: Instant
+Casting Time: 7
+      Target: One character
+
+ 
+HEROIC RESCUE 
+
+This skill works in conjunction with rescue and protect. Heroic rescue will let
+you throw yourself between your friend and the enemy, making you receive the
+full damage the opponent was about to do. Of course, there is a thin line 
+between heroism and foolishness...
+
+ 
+HIDE
+
+When you type hide there is a chance that you hide in the room. If hidden
+you can only be "sensed" by the "sense life" spell. Even if you are
+sensed, your identity will remain hidden. Hide is broken by pressing
+return, regardless of whether you typed a command or not.
+
+> hide
+
+Ok.
+>  (you wait for ex. 5 mins and remain hidden for 5 mins)
+
+>  (You pressed enter and no longer hide)
+
+ 
+
+HOLY WORDS 
+
+Holy words are the most potent of all spells, transforming long periods of
+tedious memorization into a single, sublime burst of arcane majesty.  They can
+only be learned by the most dedicated spellcasters, but they have truly
+devastating effects. No saves are allowed against holy words of any kind, nor
+is there a way to resist them.
+PREPARING:
+
+A holy word must be memorized before you will be able to use it.  This is done
+by casting the spell as normal.  This can be a long and tedious process in many
+cases.  When it reaches 100%, you will have memorized it.
+All holy words you have memorized will show up in your statistics window.  You
+can't have more than one of any given holy word memorized simultaneously. i.e.
+You may have a 'Reckoning' and a 'Restore' memorized, but not two of 'Restore'.
+
+USING:
+Holy words may only be used in combat, and some have additional restrictions
+outlined under their individual descriptions.  You use a memorized holy word
+by typing, not saying, it.  e.x.:
+> reckoning
+NOT
+> 'reckoning'
+Using aliases is recommended for the longer ones.  Once you use the word in
+combat, your memory will be cleared of that word, and you will need to memorize
+it again. 
+HOLY WORDS:
+
+RECKONING - The most gruesome of all holy words, this tremendously powerful 
+spell may instantly slay your opponent. Though beware! Invented by the council of
+mages as a self defense spell, this power word will backfire on any mage that
+uses it after initiating combat! In addition, you can only use this power word
+when your life is in danger (when you are at or below 1/4th of your maximum
+hitpoints).
+    To Memorize: cast 'holy word reckoning' : cast 66
+           Cost: 200
+   Casting Time: 960
+Effect Duration: Instantaneous
+
+RESTORE - This incredible healing spell will give you a complete restore!
+    To Memorize: cast 'holy word restore' : cast 67
+           Cost: 400
+   Casting Time: 480
+Effect Duration: Instantaneous
+
+ 
+HORN BUTT 
+
+Special attack for Minotaurs that does level/8 additional damage.
+
+ 
+
+ HUNT 
+
+Why bother to bring food along. Just flush out a rabbit and eat new-
+roasted rabbit.
+
+> hunt
+
+See Also:  TRACK
+
+ICE STORM 
+
+       Usage: cast 'ice storm' : cast 77
+      Damage: (6 + level/8)d20 + 20
+        Save: Save vs. Cold
+        Cost: 35 + level*0.60
+    Duration: Instant
+Casting Time: 15
+      Target: All MOBs in room
+
+  
+IDENTIFY 
+
+       Usage: cast 'identify' <target> : cast 53 <target>
+      Effect: See below
+        Cost: 100
+    Duration: Instant 
+Casting Time: 12
+      Target: One item or character
+
+The spell will tell the caster all properties of one single item, targeted
+by the spell.  When used on a character, this spell will tell you some of
+that character's physical attributes.
+
+INFRAVISION 
+
+       Usage: cast 'infravision' <target> : cast 46 <target>
+      Effect: Explained below.
+        Cost: 40
+    Duration: 12 + level hours
+Casting Time: 12
+      Target: One MOB or character
+
+When cast, this spell will give the recipient the ability to see players
+or MOBs in the room through their heat, needing no light.  It will not
+allow them to see room descriptions, items or exits.
+
+INNATE 
+
+Spells that automatically affect you without needing to be cast are 
+considered to be innate.  Innate spells never wear off.
+
+ 
+INTIMIDATE 
+
+This skill makes it so you are less likely to be attacked by an 
+aggressive mob.
+
+  
+INVISIBILITY 
+
+       Usage: cast 'invisible' <target> : cast 29 <target>
+      Effect: Makes target invisible, AC -40 
+        Cost: 22
+    Duration: 12 + (level/4) hours
+Casting Time: 12
+      Target: One MOB or character
+
+This spell will be broken if the target is attacked or attacks.
+
+JAB 
+
+This attack not only does damage to the monks opponent but also causes the enemy to lose mana. 
+
+KICK 
+
+Fighters only
+The success of a kick depends upon how well you are learned. The higher
+level you reach the harder you kick.
+
+See Also: RESCUE BASH BERZERK KICKDIRT HEADBANG
+
+KICKDIRT 
+
+Kick dirt in your opponent's face.  It stuns your opponent for 3 rounds
+and inflicts 10 points of damage.  If you fail, you will fall on your
+arse for 3 rounds.
+
+
+Usage: kickdirt <victim>
+
+See Also: KICK HEADBANG BASH "SHIELD BASH"
+
+Lay on Hands 
+
+       Usage: cast 'lay on hands' <target> : cast 139 <target>
+      Effect: Cures (100 + 3d16 + level(75 max)) hp
+      Effect: Removes harmful effects, see below.
+        Cost: 120
+    Duration: Instant
+Casting Time: 33
+      Target: One character
+
+This most powerful of curative magics not only heals the target greatly,
+but also removes the affects of Blindness, Poison, Curse, Sleep, and
+Slow from the recipient.
+ 
+LEGSWEEP 
+
+This will attempt to sweep the legs away from under your opponent, causing
+them to make a nasty fall. The damage you do depends on how strong you are.
+This skill will also infuriate your enemy, making them not even considering
+fleeing from you!
+
+Usage: legsweep <victim>
+
+ 
+Skill: Lethal Blow 
+
+Lethal blow is a high level warrior skill which allows you to slay any opponent
+with one hit if you're lucky enough. The chance of success depends on your
+level, skill level and opponent level. It's a rare thing to hit with a lethal
+blow, but it can end even the toughest fights very quickly.
+
+ 
+LEVITATION 
+
+       Usage: cast 'levitation' <target> : cast 51 <target>
+      Effect: See below
+        Cost: 20
+    Duration: 20 hours
+Casting Time: 12
+      Target: One MOB or character 
+
+When cast, this spell will cause the recipient to float slightly above 
+the ground, using less movement points and avoiding nasty falls. Unlike
+fly, this spell will NOT give the ability to enter really high areas.
+
+
+LIFEBREAKER 
+
+The lifebreaker skill deals 1/9 to 1/12 of the target's hit points in 
+damage but costs 1/12 movement points per use.  It can be used once
+per round.
+
+ 
+LIGHTNING BOLT 
+
+       Usage: cast 'lightning bolt' <target> : cast 30 <target>
+      Damage: (14 + level/14)d8 + 16
+        Save: Save vs. Energy
+        Cost: 18 + level*0.125
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+LOCATE OBJECT 
+
+       Usage: cast 'locate object' <target> : cast 31 <target>
+      Effect: See below
+        Cost: 50
+    Duration: Instant
+Casting Time: 12
+      Target: One type of object
+
+When cast, this spell will reveal to the caster all locations of target object.
+If you wish to include more than one descriptor for the item, you must enclose
+it with quotes, e.g. cast 31 "white hat".
+
+LIGHTNING BREATH 
+
+       Usage: cast 'lightning breath' : cast 60
+      Damage: See below
+        Save: Save vs. Energy
+        Cost: 1 + (4 + level*0.50)*number of targets in room
+    Duration: Instant
+Casting Time: 33
+      Target: All MOBs in room
+
+This is an Area Affect spell.  If the caster's hp is less than 200, then
+the damage is 100+1d100.  Otherwise the damage is 100+1d(hp-100).
+
+
+WARSTRIKE 
+
+       Usage: cast 'warstrike' <target> : cast 52 <target>
+      Damage: (4 + level/16)d12
+        Save: Save vs. Magic
+        Cost: 2 + level*0.25
+    Duration: Instant
+Casting Time: 3
+      Target: One MOB or character
+
+This spell sends war and chaos to surround your foe, inflicting serious damage.
+
+
+WHIRLWIND 
+
+Whirlwind is an area effect melee skill that
+will hit opponents in the room for damage based on
+total hit points for a cost of 1/15 of your total
+movement points.
+
+WILDFIRE 
+
+       Usage: cast 'wildfire' : cast 146
+      Damage: 10d12 + level (max of +75)
+        Save: Fire
+        Cost: 25 + 6*number of targets in room
+    Duration: Instant
+Casting Time: 10
+      Target: All MOBs in room
+
+
+
+WISH 
+
+       Usage: cast 'wish' <target> : cast 161 <target>
+      Damage: Up to target's max hit depending on intelligence
+      Effect: Up to full heal, cures blindness, poison, slow, and curse
+        Save: Target's intelligence
+    Duration: Instant
+Casting Time: 250
+        Cost: 1000
+      Target: One MOB or character
+
+Wish is the most powerful spell in the realm.  Only the masters
+of magic can cast this spell and their bidding is done.
+
+
+WIZARD SHIELD 
+
+       Usage: cast 'wizard shield' : cast 112
+      Effect: AC -20 per cast
+        Cost: 40
+    Duration: 1/2 hour
+Casting Time: 3
+      Target: Caster only
+
+You can cast this spell up to 5 times, for a total of -99 AC. The upkeep
+cost for maintaining this spell increases exponentially with the number
+of copies you are maintaining.
+
+
+WORD OF HEALING 
+
+       Usage: cast 'word of healing' <target> : cast 50 <target>
+      Effect: 2d16
+        Cost: 6
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+One of the most basic of healing spells, know to even some practitioners
+of the arcane arts.
+
+WORD OF RECALL 
+
+       Usage: cast 'word of recall' : cast 42
+      Effect: See below
+        Cost: 30
+    Duration: Instant 
+Casting Time: 12
+      Target: Caster only
+
+When cast, this spell will safely transport the caster to the temple of
+your hometown.  It's effect is identical to recall ! except that it
+doesn't charge you a large sum of money.  It will not work in certain
+situations such as a PK fight or an arena.
+
+WRATH 
+
+Certain classes are able to channel their wrath and
+give into it without completely losing control. Their
+discipline, training, or foolhardiness, in some cases,
+allows them to concentrate all of their effort into
+their attacks for a short duration.
+
+Wrath enrages the user for 2 rounds, but instead of
+doubling damage as with the berzerk skill, triples it.
+
+Wrath is usable only once every 8 rounds.
+
+See also: BERZERK
+
+MAELSTROM 
+
+       Usage: cast 'maelstrom' : cast 88
+      Damage: (1 + level/4)d20
+        Save: None
+        Cost: 5 + level*0.60
+    Duration: Instant
+Casting Time: 12
+      Target: All MOBs in room
+
+ 
+MAGE GAUNTLETS 
+
+       Usage: cast 'mage gauntlets' <target> : cast 70 <target>
+      Effect: +10 Hitroll
+        Cost: 18
+    Duration: 6 hours
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+Magic Missile 
+
+       Usage: cast 'magic missile' <target> : cast 32 <target>
+      Damage: (1 + level/8)d8
+        Save: None
+        Cost: 2 + level*0.25
+    Duration: Instant
+Casting Time: 3
+      Target: One MOB or character
+
+ 
+ 
+MALFESOR 
+
+       Usage: cast 'malfesor' : cast 154
+      Effect: See below
+        Cost: level * 10
+    Duration: level * hours
+Casting Time: 1
+      Target: Self
+
+
+Maintaining or casting Malfesor allows you to use lifebreaker and
+souldrinker skills at the cost of 80% of your maximum mana. 
+
+ 
+MARTIAL ARTS 
+
+This high-level monk proficiency makes you able to fly- or round kick your
+enemies to fragments. Why bother using a weapon when your fists and feet
+can do the job?
+
+ 
+MASS INVISIBILITY 
+
+       Usage: cast 'mass invisibility' : cast 156 
+      Effect: Makes group invisible, AC -40 
+        Cost: 21 per person in group
+    Duration: 12 + (level/4) hours
+Casting Time: 11
+      Target: None
+
+This spells casts invisibility on all of your group members.
+
+
+ 
+MEDITATE 
+
+This skill is for those familiar with their bodies and therefor can enter a
+state of calm for a short time, resting as if in deep sleep. If disturbed
+however, the skill can 'backfire' making you more tired/hurt than before.
+
+ MESMERIZE 
+
+       Usage: cast 'mesmerize' <target> : cast 159 <target> 
+      Effect: Stops the battle with your opponent 
+        Cost: 55
+    Duration: Instant
+Casting Time: 10
+      Target: One MOB or character
+
+
+MIND BLADE 
+
+       Usage: cast 'mind blade' <target> : cast 86 <target>
+      Damage: (1 + level/7)d12 + 70
+        Save: Int
+        Cost: 22 + level*0.20
+    Duration: Instant
+Casting Time: 6
+      Target: One MOB or character
+
+ MIND JAB 
+
+       Usage: cast 'mind jab' <target> : cast 79 <target>
+      Damage: (8 + level/12)d12
+        Save: Int
+        Cost: 20 + level(0.125)
+    Duration: Instant
+Casting Time: 4
+      Target: One MOB or character
+
+MORTAL STRIKE 
+
+Mortal strike is a swordsman skill where the attacker expertly places his
+weapon into his opponent's body causing massive damage.  Mortal strike is
+strength based.
+
+ MOTLEY CREW 
+
+Motley crew is a group buff pirate skill that gives all members of the 
+group a buff in charisma, strength, and dexterity and also grants them
+an extra attack. 
+
+ MOUNTED BATTLE 
+
+The skill of fighting most effectively on a horse back. Unexperienced adventurers
+are only hampered by their horses, but you know how to use the mount as an
+advantage.
+
+ 
+MYSTIC SHIELD 
+
+       Usage: cast 'mystic shield' : cast 71
+      Effect: AC -40
+        Cost: 40
+    Duration: 24 hours
+Casting Time: 12
+      Target: Caster only
+
+ 
+MYSTICAL COAT 
+
+       Usage: cast 'mystical coat' : cast 75
+      Effect: AC -50
+        Cost: 60
+    Duration: 48 hours
+Casting Time: 12
+      Target: Caster only
+
+Multiple Attacks 
+
+Depending on your class, you can attack up to five times each 'round'.
+All classes, including spellcasters, can practice second attack.  
+Third attack is available to thieves and warriors, and only warriors 
+get fourth attack and fifth attack.
+
+
+See Also: dual weapons, combat
+
+ 
+NECROTIC STRIKE 
+
+       Usage: cast 'necrotic strike' <target> : cast 41 <target>
+      Damage: A roll up to maxhit of target depending on alignment
+        Save: Target's alignment
+        Cost: 10 + level*.5
+    Duration: Instant
+Casting Time: 150
+      Target: One MOB or character
+
+
+ 
+VISIBLE 
+
+Use this command to break your spell of invisibility before it expires.
+
+VITALIZE MANA 
+
+You have means to change some of your physical endurance to your mental plane.
+1/4 of your movement points will be converted to half that many mana points.
+
+VITALIZE STAMINA 
+
+You have means to use your will to endure more physical strain.  To ignore your
+tired muscles. You can restore your health at the cost of move.
+
+VLEVEL 
+
+When calculating spell costs or damage, the level of the victim of the spell.
+
+VORPAL PLATING 
+
+       Usage: cast 'vorpal plating' <target> : cast 67 <target>
+      Effect: AC -30
+        Cost: 20
+    Duration: 12 hours
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+PARRYING 
+
+This skill enables you to parry enemy attacks. This means that you
+will not get hit as much during battle.  In order to parry, you will
+need to either wield or hold a weapon, or hold a shield.
+
+ 
+PHASE BLUR 
+
+       Usage: cast 'phase blur' : cast 80
+      Effect: AC -40
+        Cost: 26
+    Duration: 3 hours
+Casting Time: 12
+      Target: Caster only
+
+ PICK LOCKS 
+
+This is a rogue skill, used mainly by thieves, assassins, rogues, and
+sometimes bards for picking locks.  Not all locks can be picked.
+
+pick <door>
+
+> pick door
+> pick safe
+
+See Also: OPEN CLOSE LOCK UNLOCK
+
+ 
+PIERCE 
+
+A general skill for all classes. The knowledge of how to use piercing
+weapons like spears. You will have a greater chance of hitting your enemy
+with a piercing weapon if you have this skill practiced.
+
+See Also: BLUDGEON SLASH STAB CHOP
+
+ PIERCING SHOT 
+
+Piercing shot allows the ranger to skillfully shoot the target with 
+a more powerful shot that takes off a percentage of the target's max
+hit points.  You must have the archery skill and be wielding a bow 
+and holding an arrow to use this skill.  The syntax is: 
+piercingshot <target> <direction>
+If the ranger has the skill point-blank shot, he can fire at his
+opponent by typing: piercingshot <target> or just piercingshot 
+if in battle.  Piercing shot takes 200 move to use. 
+
+ 
+ PLATEBREAKER 
+
+Various techniques can be used by a skilled warrior
+to inflict damage through armor. Whether it is
+through the use of blunt weapon edges, spiked hilts,
+or even his own weight and momentum, the Platebreaker
+technique damages its victims with total disregard
+for their armor.
+
+Platebreaker deals 1/12 of the victim's max hit
+points in damage, and costs 1/24 of the user's max
+movement points. Platebreaker is usable once per
+round.
+
+
+ POISON 
+
+       Usage: cast 'poison' <target> : cast 33 <target>
+      Effect: Poisons target, -((level/7)+1) to STR 
+        Save: Save vs. Poison
+        Cost: 16
+    Duration: level/2 hours
+Casting Time: 12
+      Target: One MOB or character
+
+ 
+POISON BLADE 
+
+Veteran rogues know the benefit of always keeping their weapons tainted with
+poison. The poison is seldom deadly, but having the enemy disoriented and
+dizzy is always an advantage.
+
+
+ POLYMORPH 
+
+Changelings may polymorph into the form of others.
+
+POLYMORPH FLY Gives you the ability to fly for a short time.
+POLYMORPH HIDE Allows you to blend in with your surroundings.
+POLYMORPH <mob> Allows you to take the form of a mob.
+POLY Cancels current polymorph effects. 
+
+If you POLYMORPH HIDE, you will still show up in WHO, TELL, WHERE, STATE,
+and OOC.  In addition, anyone who knows you are in the room may target
+you with commands.
+
+
+PORTAL 
+
+       Usage: cast 'portal' <target> : cast 97 <target>
+      Effect: Opens a portal to the target
+        Cost: 200
+    Duration: level/20 hours
+Casting Time: 12
+      Target: A player character or city portal
+    
+This spell opens a portal that allows any number of characters to move to the
+targeted location within the duration.  You can't open a portal to a character
+who has summon protection on, nor can you open one to any room that is flagged
+as LAWFUL, GODROOM, NO_MAGIC, ARENA, or PRIVATE.  There are city beacons at
+SUNDHAVEN, MEADOWDALE, THALOS, LONDONIAN, LOTHIAN and MAZTICA.
+   
+See Also: RELOCATE
+
+
+POUNCE 
+
+Special attack for Wemics that knocks down and stuns the enemy for 3 rounds
+and does level/10 damage.
+
+ 
+ POWER WORDS 
+
+Power words are the most potent of all spells, transforming long periods of
+tedious memorization into a single, sublime burst of arcane majesty.  They can
+only be learned by the most dedicated spellcasters, but they have truly
+devastating effects. No saves are allowed against power words of any kind, nor
+is there a way to resist them.
+
+PREPARING
+
+A power word must be memorized before you will be able to use it.  This is done
+by casting the spell as normal.  This can be a long and tedious process in many
+cases.  When it reaches 100%, you will have memorized it.
+
+All power words you have memorized will show up in your statistics window.  You
+can't have more than one of any given power word memorized simultaneously. i.e.
+You may have a 'KILL' and a 'BLIND' memorized, but not two of 'BLIND'.
+
+USING
+
+Power words may only be used in combat, and some have additional restrictions
+outlined under their individual descriptions.  You use a memorized power word
+by typing, not saying, it.  e.x.:
+
+> limited invulnerability
+NOT
+> 'limited invulnerability'
+
+Using aliases is recommended for the longer ones.  Once you use the word in
+combat, your memory will be cleared of that word, and you will need to memorize
+it again. 
+
+POWER WORDS
+
+PARALYZE - This power word is used to place your opponent in a temporary state
+of paralysis, during which they are helpless and cannot harm you.  This spell
+only works when you are attacked; if the caster is the one who initiated
+combat, the spell will backfire.
+    To Memorize: cast 'power word paralyze' : cast 105
+           Cost: 50
+   Casting Time: 120
+Effect Duration: 19 minutes, about 10 rounds
+
+BLIND - An opponent can't hit what they can't see, so with this spell you will
+have little trouble getting the advantage. Unlike the blindness spell, power
+word blind can not be avoided.  It blinds your opponent, severely damaging their
+Hitroll, Damroll and AC.
+    To Memorize: cast 'power word blind' : cast 106
+           Cost: 75
+   Casting Time: 240
+Effect Duration: 1 hour
+
+KILL - The most gruesome of all power words, this tremendously powerful spell
+may instantly slay your opponent. Though beware! Invented by the council of
+mages as a self defense spell, this power word will backfire on any mage that
+uses it after initiating combat! In addition, you can only use this power word
+when your life is in danger (when you are at or below 1/4th of your maximum
+hitpoints).
+    To Memorize: cast 'power word kill' : cast 107
+           Cost: 200
+   Casting Time: 960
+Effect Duration: Instantaneous
+
+LIMITED INVULNERABILITY - Another quite useful spell. This little master-
+piece summons a blue shield of protection around your body. There is no sword
+or axe in this realm strong enough to penetrate this shield while it lasts,
+but beware, this shield will not protect you from magical damage, so pick
+your opponents carefully.
+    To Memorize: cast 'limited invulnerability' : cast 108
+           Cost: 400
+   Casting Time: 480
+Effect Duration: 32 minutes: 16 combat rounds
+
+INVULNERABILITY - The pinnacle of arcane achievement, this spell is truly
+awesome. No harm can be done to the user, as long as the radiating shield
+covers their body.
+    To Memorize: cast 'invulnerability' : cast 109
+           Cost: 600
+   Casting Time: 2400
+Effect Duration: 32 minutes: 16 combat rounds
+
+ PRACTICE 
+
+Practice is the way you improve your spells and skills. You must go to
+your guildmaster to let him/her help you improve.
+
+You can then use practice <skill>, to practice the appropriate skill.
+You can only practice a certain amount for each level you gain, and you
+do not have to use your pracs right away, they will be accumulated.
+
+For convenience, you can 'practice all' which will learn all of your skills
+and spells to the maximum proficiency level for the training cost and number
+of practices it would cost to do it manually.  
+NOTE: Practice uses your current intelligence. 
+
+
+ PREPARATION 
+
+Preparation is a rogue skill that when activated, ambush, backstab, circle, 
+and bluff will have proc poison blades.  The victim's poison resistance is 
+-150 for the purposes of checking whether poison blades is successful.  While 
+preparation is active, the user's mana and move regen is 0.
+
+ 
+PROTECT 
+
+If you protect someone, you will attempt to rescue them if you are in the
+same room as them when a mob or player attempts to attack them.
+
+See Also: RESCUE
+
+  
+PSYCHIC BLAST 
+
+       Usage: cast 'psychic blast' <target> : cast 99 <target>
+      Damage: 10
+        Save: Level based
+        Cost: 15
+    Duration: (level - 50 / 19) + 3 (min 3) rounds
+Casting Time: 12
+      Target: One player or MOB
+
+This spell attemps to stun an opponent with the force of your mind.  If
+they fail their save, they take a small amount of damage, and are stunned,
+unable to fight back, for a short period of time.
+
+ 
+PUGILISM 
+
+This skill allows you to fight without wielding a weapon.
+
+ 
+Purify 
+
+       Usage: cast 'purify' <target> : cast 123 <target>
+      Effect: Removes all non-permanent and non-innate affections.
+        Cost: 200
+    Duration: Instant
+Casting Time: 15
+      Target: One player or MOB
+
+ 
+PUSH 
+
+Use this skill to push someone to the next room.  It will also knock them
+down.  Requires PKOK registration to be used on another player.
+
+See Also: PKOK
+
+
+PROTECTION FROM GOOD 
+
+       Usage: cast 'protection from good' : cast 94
+      Effect: -20 AC against GOOD mobs
+        Cost: 16
+    Duration: 24 hours
+Casting Time: 12
+      Target: Caster only
+
+See Also: ALIGNMENT
+
+ 
+PROTECTION FROM EVIL 
+
+       Usage: cast 'protection from evil' : cast 34
+      Effect: -20 AC against EVIL mobs
+        Cost: 16
+    Duration: 24 hours
+Casting Time: 12
+      Target: Caster only
+
+See Also: ALIGNMENT
+
+
+PESTILENTIAL BLAST 
+
+       Usage: cast 'pestilential blast' <target> : cast 74 <target>
+      Damage: (1 + level/8)d8
+        Save: None
+        Cost: 2 + level*0.25
+    Duration: Instant
+Casting Time: 3
+      Target: One MOB or character
+
+
+QUICK FIX 
+
+       Usage: cast 'quick fix' <target> : cast 68 <target>
+      Effect: Cures ((3 + level/8)d16 + level) hp
+        Cost: 12 + level*0.47
+    Duration: Instant
+Casting Time: 6
+      Target: One MOB or character
+
+
+QUIVERING PALM 
+
+Monks have mastered the use of the energy within them
+- their ki. By channeling this ki and transferring this
+explosive energy into another person, the monk is able
+to injure his victim even after the initial point of
+contact.
+
+Quivering palm applies an affect on the victim that
+cannot be removed and will last for 5 to 7 seconds.
+At the end of that time, it will explode, injuring
+the victim for 1/6 to 1/2 of his maximum hit points.
+Using quivering palm lags the user by 2 rounds. This
+is also an offensive skill.
+
+See also: MONKS
+
+
+RABID BITE 
+
+Special attack for Gnolls and Flinds that does level/10 additional damage
+and can poison the enemy.
+
+  
+Rage 
+
+Rage allows a Swordsman to dispell the effects of slow.
+It lasts 1/2 a tick with a 1 tick cooldown.
+
+ 
+Raise Dead 
+
+       Usage: cast 'raise dead' <target> : cast 129 <target>
+        Cost: 300
+    Duration: Instant
+Casting Time: 240
+      Target: One Corpse
+
+The pinnacle of the necromancer's art, this spell raises a slain foe
+to serve the caster.  All but the greatest creatures in the land can
+be raised using this spell, and they remain as they did in life, with
+the exception that they now count as undead.  The creature follows the
+caster as a charmed monster, serving until it is destroyed.  All
+experience gained by the undead servant is transfered to the caster.
+There is no time limit to the creature's existance, but the caster is
+limited to controlling a number of undead equal to (level+1)/10
+(minimum 1).
+
+ 
+RAISE DRACOLICH 
+
+       Usage: cast 'raise dracolich' : cast 162 
+        Cost: 700
+    Duration: Instant
+Casting Time: 320
+      Target: None
+
+This is the greatest necromatic spell that creates a powerful 
+dracolich.  The dracolich follows the caster as a charmed monster, 
+serving until it is destroyed.  All experience gained by the undead 
+servant is transfered to the caster.  There is no time limit to the 
+creature's existance, but the caster is limited to controlling only 
+one dracolich.
+
+ 
+Raise Mage 
+
+       Usage: cast 'raise mage' : cast 127 
+        Cost: 50
+    Duration: Instant
+Casting Time: 50
+      Target: None
+
+This greater necromatic spell creates an undead mage.  The mage follows 
+the caster as a charmed monster, serving until it is destroyed.  All 
+experience gained by the undead servant is transfered to the caster. 
+There is no time limit to the creature's existance, but the caster is 
+limited to controlling a number of undead equal to (level+1)/10 
+(minimum 1).
+
+ 
+Raise Skeleton 
+
+       Usage: cast 'raise skeleton' : cast 125
+        Cost: 10
+    Duration: Instant
+Casting Time: 5
+      Target: None
+
+This necromantic spell summons a loyal skeletal servant.  The raised 
+skeleton follows the caster as a charmed monster, serving until it is 
+destroyed.  All experience gained by the undead servant is transfered 
+to the caster. There is no time limit to the creature's existance, but 
+the caster is limited to controlling a number of undead equal to 
+(level+1)/10 (minimum 1).
+
+ 
+Raise Vampire 
+
+       Usage: cast 'raise vampire' <target> : cast 128 <target>
+        Cost: 100
+    Duration: Instant
+Casting Time: 100
+      Target: None
+
+One of the most powerful spells of necromancy, this spell creates a
+vampiric servant.  The vampire follows the caster as a charmed monster,
+serving until it is destroyed.  All experience gained by the undead 
+servant is transfered to the caster.  There is no time limit to the 
+creature's existance, but the caster is limited to controlling a number
+of undead equal to (level+1)/10 (minimum 1). 
+
+ 
+Raise Zombie 
+
+       Usage: cast 'raise zombie' : cast 126
+        Cost: 25
+    Duration: Instant
+Casting Time: 5
+      Target: None
+
+This is a more powerful version of the spell "Raise Skeleton" summoning
+a zombie slave.  The raised zombie follows the caster as a charmed 
+monster, serving until it is destroyed.  All experience gained by the 
+undead servant is transfered to the caster.  There is no time limit 
+to the creature's existance, but the caster is limited to controlling 
+a number of undead equal to (level+1)/10 (minimum 1).
+
+ 
+ READ ESSENCE 
+
+       Usage: cast 'read essence' <target> : cast 101 <target>
+      Damage: None
+        Save: Save vs. Magic
+        Cost: 40
+    Duration: Instant
+Casting Time: 12
+      Target: MOBs only
+
+This spell let you read some of the target's basic stats.
+
+
+ RECHARGE LIGHT 
+
+       Usage: cast 'recharge light' <target> : cast 114 <target>
+      Effect: Increase light's burn time
+        Cost: 200
+    Duration: Instant
+Casting Time: 24
+      Target: One light
+
+This spell will add time onto the lifespan of a light.  There is a chance,
+10-20 percent depending on caster level, that the light will be destroyed
+each time this spell is cast.  This will also happen if you charge the
+light with more than 24 hours of time, so be prudent with use of this spell.
+
+
+ REGENERATION 
+
+       Usage: cast 'regeneration' <target> : cast 61 <target>
+      Effect: Explained below.
+        Cost: 60
+    Duration: 6 hours
+Casting Time: 12
+      Target: One character
+
+When cast, this spell will speed up a player's metabolism, causing
+an increased health sensation. The effect will cause you to regenerate
+hit points and movement much faster than normal.
+
+ REJUVENATION 
+
+       Usage: cast 'rejuvenation' <target> : cast 147 <target>
+      Effect: Cures (5d3 + level/2) hp per round
+        Cost: 25
+    Duration: 1/5 hour
+Casting Time: 1
+      Target: One character
+
+ 
+RELOCATE 
+
+       Usage: cast 'relocate' <target> | cast 96 <target>
+      Effect: Relocates you to <target>.
+        Cost: 45
+    Duration: Instant
+Casting Time: 12
+      Target: A player character or city portal
+
+You can not relocate to a character who has summon protection on, nor can
+you relocate to any room that is flagged as Lawful, Godroom, No_Magic, Arena
+or Private.  There are beacons in New Thalos, Sundhaven, Meadowdale,
+Lothian, and Londonia.  Also, there's a beacon in Maztica and the Memorial
+Gardens.
+
+  
+REMOVE CURSE 
+
+       Usage: cast 'remove curse' <target> : cast 35 <target>
+      Effect: Removes the effect of the Curse spell   
+        Cost: 14
+    Duration: Instant
+Casting Time: 12
+      Target: One Cursed MOB or character
+
+ 
+REMOVE POISON 
+
+       Usage: cast 'remove poison' <target> : cast 43 <target>
+      Effect: Removes the effects of Poison
+        Cost: 14
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+RESCUE 
+
+This command is useful if you want to try and make an attacker hit you
+instead of your poor friend who is being pummeled.  You can only 'turn'
+one monster for each rescue attempt. This is highly useful when playing
+in groups, of course.
+
+rescue <victim>
+
+> rescue quifael
+
+See Also: : BASH KICK BERZERK HEADBANG
+
+ 
+Restoration 
+
+       Usage: cast 'restoration' <target> : cast 120 <target>
+      Effect: Cures (100 + 3d16 + level(75 max)) hp
+      Effect: Removes harmful effects, see below.
+        Cost: 100
+    Duration: Instant
+Casting Time: 33
+      Target: One character
+
+This most powerful of curative magics not only heals the target greatly,
+but also removes the affects of Blindness, Poison, Curse, Sleep, Slow,
+Chill Touch and Spectre Touch from the recipient.
+
+RIDE 
+
+Ride is a command that uses riding landbased and riding
+airborne to quickly go to a zone.  After you use ride, you 
+will be set in a wait state equal to:
+(1425/(RIDING_LAND_PROFICIENCY + 2*RIDING_AIR_PROFICIENCY)) seconds
+If excellent at both, this should be 5 real life seconds.  In the case
+of a group, only the leader needs to have the mount.  You will be able
+to travel with the leader but will also have the same wait state.
+Syntax: ride <zone name>
+For example: ride "Crystal Plains"
+
+ 
+RIDING AIRBORNE 
+
+The ability to ride airborne mounts, such as large birds. Legend speaks of a
+winged horse roaming the lands. It would truely make for a great entrance to
+enter the crowded village square riding this magnificent beast!
+
+ RIMEFANG 
+
+       Usage: cast 'rimefang' <target> : cast 87 <target>
+      Damage: (8 + level/26)d10 + 60
+        Save: Save vs. Cold
+        Cost: 27 + level*0.18
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+REVERSE VITALIZE MANA 
+
+       Usage: cast 'reverse vitalize mana': cast 113
+      Effect: Converts some of your mana points into stamina
+        Cost: 1
+    Duration: Instant
+Casting Time: 1
+      Target: Caster only
+
+ 
+REVERSE VITALIZE STAMINA 
+
+This skill will let you convert some of your physical health into endurance.
+Be careful when you use it, since it may be very unhealthy to do this in battle.
+
+SANCTUARY 
+
+       Usage: cast 'sanctuary' <target> : cast 36 <target>
+      Effect: Halves the damage taken in combat by the target
+        Cost: 50
+    Duration: 4 hours
+Casting Time: 12
+      Target: One MOB or character
+
+
+SCAN 
+
+This skill will display location of mobs in your surrounding area with a
+range of 1 room. It's accuracy depends on how good you are at the skill.
+
+> scan
+North: 1 - [2] Beastly Fido
+   Up: 1 - Mercenary
+
+means that there are 2 beastly fidos 1 step north and 1 Mercenary 1 step 
+up.
+
+See Also: TRACK SCOUT
+
+SCOUT 
+
+This skill will display location of mobs in your surrounding area. It's
+accuracy depends on how good you are at the skill.
+
+> scout
+North: 1 - [2] Beastly Fido
+South: 2 - Mercenary
+
+means that there are 2 beastly fidos 1 step north and 1 Mercenary 2 steps 
+south.
+
+See Also: TRACK SCAN
+
+SENSE LIFE 
+
+       Usage: cast 'sense life' : cast 44
+      Effect: See below
+        Cost: 13
+    Duration: Level hours
+Casting Time: 12
+      Target: Caster only
+
+When cast, this spell will give the caster the ability to sense hidden
+life forms in the room.
+
+SENSE PASSAGES 
+
+Passages that aren't immediately obvious will still show in your [Exits:]
+display, only in a darker color and in uppercase letters.
+
+
+SENSE STEALTH 
+
+This skill is automatic and allows you to sense characters who are sneaking,
+success depends on your level compared to theirs and what skill level it is
+at. It is impossible to sense sneaking characters who are higher level than
+you are.
+
+SENSE TRAPS 
+
+       Usage: cast 'sense traps' : cast 102
+        Cost: 40
+    Duration: Caster level hours
+Casting Time: 12
+      Target: Caster only
+
+This spell prevents you from walking into deathtraps.
+
+SHIELD BASH 
+
+Fighters only
+Same as bash except it requires the use of a shield and stuns for 8 rounds
+and does 200 points of damage to the target.
+
+See Also: BASH
+
+SHIELD BLOCK 
+
+This skill enables you to block enemy attacks.  This means that you
+will not get hit as much during battle.  In order to shield block,
+you will need to hold a shield.
+
+SHOCKING GRASP 
+
+       Usage: cast 'shocking grasp' <target> : cast 37 <target>
+      Damage: (6 + level*3/16)d8
+        Save: Save vs. Energy
+        Cost: 6 + level*0.65
+    Duration: Instant
+Casting Time: 12
+      Target: One MOB or character
+
+SHOCKING SPHERE 
+
+       Usage: cast 'shocking sphere' <target> : cast 63 <target>
+      Damage: (8 + level/3)d8
+        Save: Save vs. Energy
+        Cost: 2 + level*0.75
+    Duration: Instant
+Casting Time: 17
+      Target: One MOB or character 
+
+SHOOT 
+
+Shoot is the command that a ranger uses to leverage his archery
+skill.  In order to shoot, the ranger must have a fireweapon equipped
+and projectile held.  The syntax is: shoot <target> <direction>
+If the ranger has the skill point-blank shot, he can fire at his
+opponent by typing: shoot <target> or just shoot if in battle.
+
+SLASH 
+
+A general skill for all classes. The knowledge of how to use slashing
+weapons like swords. You will have a greater chance of hitting your 
+enemy with a slashing weapon if you have this skill practiced.
+
+See Also:  PIERCE BLUDGEON STAB CHOP
+
+SLEEP 
+
+       Usage: cast 'sleep' <target> : cast 38 <target>
+      Effect: Puts your target to sleep 
+        Save: Save vs. Magic
+        Cost: 24
+    Duration: 1 + level/6 hours
+Casting Time: 12
+      Target: One MOB or character
+
+This spell will fail if the target level is higher than the caster's.  If
+you attack a monster you have magically put to sleep, it WILL wake up.
+
+SLOW 
+
+       Usage: cast 'slow' <target> : cast 111 <target>
+        Cost: 40
+    Duration: 1/2 hour
+Casting Time: 15
+      Target: One character or Mob
+
+The slow spell removes a haste effect from the target OR slows the victim
+down, slowing his spellcasting and limiting his attacks.
+
+See Also: HASTE
+
+SMASH 
+
+Smash is a druid skill that does damage to the target with total 
+disregard for their armor.  Smash requires the druid to be in
+dire bear form.  Smash deals 1/12 of the victim's max hit
+points in damage, and costs 1/24 of the user's max movement points. 
+Smash is usable once per round.
+
+SMITE 
+
+A holy person may ask his god to judge whether
+the creature before him is unfit to exist.
+Raising his weapon in the air and shouting a
+prayer, he may smite his opponents to instill
+fear in their hearts.
+
+Smite deals 1/4 to 1/3 of the victim's max hit points,
+and is usable only once every 6 to 8 rounds (random).
+Using smite lags the user by 1 round.
+
+See also: PALADIN
+
+Skill: Sneak 
+
+Used for sneaking (moving in and out of rooms without anyone taking notice).
+When you type sneak, you can check if you are actually sneaking by looking
+at your stats. If you successfully sneak, then you'll continue to sneak
+for a little while.
+
+> sneak
+
+ help socials
+
+SONG OF DEVASTATION 
+
+       Usage: cast 'song of devastation' <target> : cast 169 <target>
+      Damage: Max of (10 + level/20)d10 + 250 or percent of max hit
+        Save: None
+        Cost: 50 + level*0.11
+    Duration: Instant
+Casting Time: 20
+      Target: One MOB or character
+
+
+SONGS BARD 
+
+The bard has a number of songs available to him
+that he can use to strengthen, heal, or cure his
+party members, as well as injure his enemies.
+
+However, his songs are useless if no one hears
+them.
+
+The following songs require him to be a member
+of a party: song of summoning, song of power,
+song of restoration, song of rejuvenation, and
+song of haste.
+
+His attacking song, song of battle, can be used
+alone and, of course, only requires that his
+enemy be there to hear it.
+
+To use, simply cast them. (eg. cast 'song of power')
+
+The effects of his songs are thus:
+
+Song of Summoning: Summons all party members to
+the bard, regardless of their location.
+
+Song of Power: Casts divine wrath and bloodlust
+to all of his party members.
+
+Song of Restoration: Casts restoration to all of
+his party members.
+
+Song of Rejuvenation: Casts rejuvenation to all
+of his party members.
+
+Song of Haste: Casts haste to all of his party
+members.
+
+Song of Battle: Deals damage based on the bard's
+dexterity, half of his intelligence and wisdom, and
+150% of his charisma. These values are added and
+then multiplied by 1d3, then buffed further by the
+bard's spellpower.
+
+The more party members the bard has, the stronger
+the damage of Song of Battle.
+
+See also: DIVINE WRATH, BLOODLUST, RESTORATION,
+REJUVENATION, HASTE, SUMMON, SPELLPOWER
+
+SOUL COIL 
+
+       Usage: cast 'soul coil' <target> : cast 142 <target>
+      Damage: Leeching Spell: (removes 50mn from target, adds 25mn to caster)
+        Save: Save vs. Energy
+        Cost: 10
+    Duration: Instant
+Casting Time: 10
+      Target: One MOB or character
+
+SOULDRINKER 
+
+The souldrinker skill heals the user for 1/7 to 1/12 of the user's
+max hit points.  It alse restores the user's move for 1/7 to 1/12 of
+the user's max move.  It can be used once per round.
+
+SPECTRE TOUCH 
+
+       Usage: cast 'spectre touch' <target> : cast 73 <target>
+      Damage: 4d12 + level (max of +70), -(level/7+1) to DEX
+        Save: Save vs. Cold
+        Cost: 6 + level*0.50
+    Duration: Instant for damage, see below for effect duration
+Casting Time: 33
+      Target: One MOB or character
+
+   The Dexterity penalty lasts for one hour if the save is successful, or
+four hours if the save is unsuccessful.
+
+SPELLCASTING 
+
+This skill represents the basic knowledge for casting spells. It can also be
+seen as how experienced you are at casting spells. As a spellcaster, you can
+practice this skill only a little bit at your first level, and after that it
+will improve itself while you work hard earning the experience to level. This
+skill also helps you casting spells at a faster rate, making it possible to do
+more damage to your opponent in less time.
+
+
+SPELLCRAFT 
+
+The lore and history of spells. As an adept in this skill, you are able to
+determine what sort of spell others are casting, even if they are not of your
+class.
+
+SPELLPOWER 
+
+For each point of intelligence or wisdom, the effects
+of a player's spells are increased. This includes both
+healing spells and offensive spells.
+
+SPIN KICK 
+
+Spin kick is an area effect melee skill that
+will hit all opponents in the room for damage based
+on total hit points. This skill cost movement points
+to use.
+
+STAB 
+
+A general skill for all classes. The knowledge of how to use stabbing weapons
+like daggers, knives etc. You will have a greater chance of hitting your enemy
+with a stabbing weapon if you have this skill practiced.
+
+See Also:  PIERCE BLUDGEON SLASH CHOP
+
+STAR FLARE 
+
+       Usage: cast 'star flare' <target> : cast 72 <target>
+      Damage: (4 + level/27)d10 + 40
+        Save: Save vs. Energy
+        Cost: 20 + level*0.10
+    Duration: Instant
+Casting Time: 7
+      Target: One MOB or character
+
+STEAL 
+
+Rogues Only
+Use steal to steal gold or items from people. The chance of not getting
+caught depends on how well you have practiced steal, and if the person
+is asleep.
+
+> steal gold drunk
+
+> steal sword mercenary
+  (only possible if he is sleeping)
+
+
+STRENGTH 
+
+       Usage: cast 'strength' <target>: cast 39 <target>
+      Effect: See below
+        Cost: 25
+    Duration: 4 + (level/2) hours
+Casting Time: 12
+      Target: One MOB or character
+
+This spell will increase the strength of the target by 1 if the caster's
+level is below 19, or increase it by 2 if the caster's level is 19 or higher.
+Repeated applications will increase the target's strength further.
+
+Strike 
+
+This attack allows the monk to damage his opponent and stun them for 6 rounds.
+
+STRUGGLE 
+
+Using this will cause you to attempt to break free of any
+vines ensnaring you.  For example, if you are entangled,
+you can struggle, and, depending on your strength, dexterity,
+wisdom and intelligence, and a bit of luck, you can be well
+on your way to freedom, if not completely escape the bonds.
+
+STUN 
+
+The stun skill is a rogue skill that involves a sneaky rogue, a heavy blunt
+object (i.e. a rock or something) and the back of someone's head. Once the
+victim awakes again, they often find their personal belongings missing. That
+is, if they ever wake again at all.
+
+SUMMON 
+
+       Usage: cast 'summon' <victim> : cast 40 <victim>
+        Save: None
+        Cost: 45
+    Duration: Instant
+Casting Time: 12
+      Target: One character
+
+When cast, this spell will transport another player to the caster.
+This will not work if the target player has summon protection on, or if
+you are in certain rooms, such as PKOK zones.
+
+SUMMON MOUNT 
+
+       Usage: cast 'summon mount' : cast 167
+        Cost: 15
+    Duration: Instant
+Casting Time: 1
+      Target: None
+
+For charcaters level 75 or lower, this spell summons a 
+loyal level 1 magical horse to ride in the realm.  For 75
+and greater, the spell summons a hippogryph.
+
+SWIM 
+
+With this skill, you can swim across lakes, rivers and other shallow waters.
+
+SWIPE 
+
+Swipe is an area effect druid melee skill that does damage to all targets 
+in the room.  Swipe uses movement points to be performed.  Swipe 
+requires the druid to be in dire bear form. 
+
+TAIL LASH 
+
+Special attack for Lizardmen that does level/8 additional damage.
+
+TAUNT 
+
+Taunt a mob from the next room.  But beware, this will upset the victim.
+
+Usage:
+taunt <direction> <victim>
+
+Example:
+taunt east mummy
+
+TELEPORT 
+
+       Usage: cast 'teleport' {zone} : cast 2 {zone}
+        Cost: 50
+    Duration: Instant
+Casting Time: 12
+      Target: Caster only
+
+
+When cast, this spell will randomly transport the caster to another room.
+The optional keyword zone will keep you within the zone you are in currently. 
+Use with caution.  It cannot be used during a PK fight; if used in the
+Arena it will leave the character still in the Arena, though possibly in
+a different room.  There are also a number of rooms the spell will never
+take you to, including, but not limited to, no-magic rooms, private rooms,
+deathtraps and PKOK rooms.
+
+TENSERS TRANSFORMATION 
+
+Tenser's transformation is a powerful spell created by the archmage 
+Tenser. The spell allows the caster to transform into a melee fighting
+form. In this form, the caster's int and wis become his str and dex 
+respectively. The caster also gets an added large bonus to his con and 
+a small bonus to his hitroll.  Use maintain 'tensers transformation' to 
+enter this form and use cancel 'tensers transformation' to return to 
+your caster form.
+
+ help thatch
+THATCH 
+
+Thatch is used to combine weeds or foliage.
+
+Usage:
+  thatch <object>
+
+Example:
+  thatch roof
+
+THORN BLAST 
+
+       Usage: cast 'thorn blast' <dir> <target> : cast 78 <dir> <tar>
+      Damage: Intelligence and level based  
+        Save: Poison
+        Cost: 10 + level*.1
+    Duration: Instant
+Casting Time: 16
+      Target: One MOB or character
+
+Thorn blast is a druid spell that allows the druid to throw a thorn
+at a target in another room.
+
+THROW 
+
+Throw allows a player to throw his or her main hand weapon or
+a potion at a target.
+
+Usage: throw <item name to be thrown> <target to be thrown at>
+
+Weapons must have the THROW flag to be thrown.
+Damage of weapon throw is determined by the weight of the weapon.
+If the weapon is a stab weapon, then the formula is:
+(weight * character_level + 1) / 2
+Otherwise, it is:
+(weight * character_level + 3) / 4
+
+NOTE: Weapons fall to the floor after being thrown!
+
+THRUST 
+
+Thrust is a pirate skill where the pirate rears back and stabs his 
+weapon into his opponent's stomach causing massive damage.  Thrust
+is strength based.
+
+Toxic Cloud 
+
+       Usage: cast 'toxic cloud' : cast 119
+      Damage: (1 + level/2)d13
+        Save: Save vs. Poison
+        Cost: level*0.60 + 10*number of victims in room
+Casting Time: 12
+    Duration: Instant
+
+This is an Area Affect spell.
+
+TRACK 
+
+Used for finding the first step on the shortest route to a monster, or
+person.
+
+> track fido
+
+TUMBLE 
+
+This skill enables you to tumble away from enemy attacks. This means that you
+will not get hit as much during battle.
+
+TURN UNDEAD 
+
+       Usage: cast 'turn undead' <target> : cast 103 <target>
+      Damage: See below
+        Save: None
+        Cost: 1
+    Duration: Instant
+Casting Time: 6
+      Target: One undead MOB
+
+This spell will damage the undead in varying degrees.  MOBs of a level much
+lower than you will be destroyed instantly, whereas more formidable foes will
+be damaged, or forced to flee in fear.
+
+Two-Handed Weapon 
+
+This makes you skilled at fighting with weapons held on both hands. You will
+handle a two-handed sword or axe better if you practice this skill.
+
+
+UNFAIR FIGHT 
+
+You are familiar with all the tricks to make you the winner of a fight.  Some
+sand in the eyes. A well placed kick in the groin.  A bite on the arm.
+This skill is automatic and will be used when opportunity arises.
+
